@@ -1,0 +1,1171 @@
+
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="UTF-8">
+
+   
+        </head>
+    <body kdref="5">
+
+<!-- 置顶banner -->
+
+<!-- 首页头部 start -->
+<div class="header" data-pagetype="goods_index">
+    <div class="container">
+        <div class="lay-logo">
+            <span class="bg"><a href="http://www.kadang.com/" target="_self" class="logo-link" title="卡当网" kdref="366">卡当网</a></span>
+			<!--<a href="http://love.kadang.com/zt/qixi.html" target="_self" class="logo-link" title="七夕"  kdref="365"><img src="http://www.kadang.com/static/mall/index/logo-right.gif" alt="七夕" style="margin-top: -20px"></a>-->
+        </div>
+        <div class="lay-intro clearfix" kdref="1031">
+            <div class="intro-menu" id="J_IntroMenu">
+                <ul class="clearfix">
+                                        <li class="mod-menu">
+                        <a href="/index.php?act=member_snsindex" class="vm-hd islog" target="_top" title="我的卡当">我的卡当<i class="intro-icons icons-down trans rotate"></i><!--<em class="tipNum">2</em>--></a>
+                        <div class="vm-bd dropdown my-own" style="left: 0px; display: none;">
+                            <ul>
+                                <li><a href="/index.php?act=member&amp;op=order" class="islog" target="_top" title="我的订单">我的订单</a></li>
+                                <!--<li><i class="tipD"></i><a href="/index.php?act=member&amp;op=order" class="islog" target="_top">我的物流</a></li>-->
+                                <li><a href="/index.php?act=member_coupon&amp;op=list" class="islog" target="_top" title="我的优惠券">我的优惠券</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mod-menu">
+                        <a href="/index.php?act=cart" class="vm-hd" target="_top" title="购物车"> <i class="intro-icons icons-cart"></i>购物车<!-- <em>0</em>件 --><i class="intro-icons icons-down trans rotate"></i></a>
+                        <div class="vm-bd dropdown mini-cart" id="J_MiniCart">
+                            <p class="vm-empty">您的购物车中暂无商品，赶快选择心爱的商品吧！</p>
+                        </div>
+                    </li>
+                    <li class="mod-menu">
+                    	<a href="http://www.kadang.com/zt/ToMobile.html" class="vm-hd" style=" border:0;" target="_blank" title="手机版"><i class="mobile_icon"></i>手机版
+                        </a>
+                    <div class="vm-bd dropdown my-phone">
+                            <img src="http://img1.i.kadang.cn/static/mall/index/img-code.jpg" />
+                    </div>
+
+                    </li>
+                    <li class="mod-menu">
+                        <a href="/index.php?act=member_favorites&amp;op=fglist" class="vm-hd islog" target="_top" title="我的收藏">我的收藏<i class="intro-icons icons-down trans rotate"></i></a>
+                        <div class="vm-bd dropdown my-collect">
+                            <ul>
+                                <li>
+                                    <a href="/index.php?act=member_favorites&amp;op=fglist" class="islog" target="_top">收藏的商品</a>
+                                </li>
+                                <li>
+                                    <a href="/index.php?act=member_favorites&amp;op=fslist" class="islog" target="_top">收藏的店铺</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                                        <!---<li class="mod-menu"><a href="http://kadangwj.tmall.com/shop/view_shop.htm" target="_blank">天猫店</a></li>-->
+                    <li class="mod-menu"><span class="qqkefu" onclick="NTKF.im_openInPageChat('kd_1000_9999');" title="在线客服" >在线客服</span></li>
+                    <li class="mod-menu"><a href="javascript:void(0)" title="收藏卡当网" id="collKd">收藏卡当网</a></li>
+                </ul>
+            </div>
+            <div class="intro-login" id="J_Welcome">
+				Hi，欢迎来到卡当网
+                <a href="javascript:;" id="J_UserLogin" title="登录">登录</a>
+                <a href="javascript:;" id="J_UserReg" title="注册">注册</a>
+            </div>
+        </div>
+        <div class="kd-detail">
+          <img class="fr kdDes" src="http://img1.i.kadang.cn/static/mall/index/kdDes.png" />
+          <div class="header-mid fr">
+            <div class="lay-search" kdref="1048">
+                  <!--<input type="hidden" id="search_act" name="act" value="search">-->
+                  <input type="hidden" id="log_search_word" name="log_search_word" value="log_search_word">
+                  <input type="text" class="textinput" id="keyword"  value="" name="keyword" maxlength="60" placeholder="七夕情人节送女朋友什么？" data-keyword="" data-search-des="">
+                  <input type="submit" value="搜索" class="search-button" id="keywordBtn">
+            </div>
+                        <div class="search-tab" kdref="1365">
+                                <a style="color:#646464" target="_blank" href="http://www.kadang.com/tag/296.html" title="送女朋友">送女朋友</a>
+                                <a style="color:#666666" target="_blank" href="http://www.kadang.com/tag/199.html" title="浪漫表白">浪漫表白</a>
+                                <a style="color:#646464" target="_blank" href="http://www.kadang.com/index.php?act=member&amp;op=order" title="我的订单查询">我的订单查询</a>
+                            </div>
+          </div>
+                  </div>
+    </div>
+</div>
+<!-- 首页头部 end -->
+
+<!-- 分类导航、一级导航 start -->
+<div class="nav">
+    <div class="container clearfix">
+
+    <!--按兴趣类目选礼物代码隐藏-->
+	                          <div id="J_NavCate" class="nav-cate">
+                      <h2 id="J_CateCtrl" ><i class="nav-icons icons-arrows-cate fr"></i>送礼攻略</h2>
+                      <div id="J_Category" class="category">
+
+
+                        <div class="gift-xq" kdref="1473">
+                            <p class="gift-tle">按兴趣选礼物</p>
+                                                        <div class="cate-item">
+                                <h3 class="vm-cap">
+                                                                        <a title="礼物送给谁" href="http://www.kadang.com/tag/194.html" target="_blank"  >礼物送给谁</a>
+                                    </h3><div class="vm-cont">                                    <a title="送普通朋友" href="http://www.kadang.com/tag/192.html" target="_blank"  >送普通朋友</a>
+                                                                        <a title="送心仪/暗恋对象" href="http://www.kadang.com/tag/193.html" target="_blank"  >送心仪/暗恋对象</a>
+                                                                        <a title="送女盆友/老婆" href="http://www.kadang.com/tag/296.html" target="_blank"  >送女盆友/老婆</a>
+                                                                        <a title="送男盆友/老公" href="http://www.kadang.com/tag/76.html" target="_blank"  >送男盆友/老公</a>
+                                                                        <a title="送情侣" href="http://www.kadang.com/tag/24.html" target="_blank"  >送情侣</a>
+                                                                    </div>
+                            </div>
+                                                        <div class="cate-item">
+                                <h3 class="vm-cap">
+                                                                        <a title="收礼人个性" href="http://www.kadang.com/tag/69.html" target="_blank"  >收礼人个性</a>
+                                    </h3><div class="vm-cont">                                    <a title="女神" href="http://www.kadang.com/tag/68.html" target="_blank" style='color:#666666;' >女神</a>
+                                                                        <a title="可爱/萌妹子" href="http://www.kadang.com/tag/69.html" target="_blank"  >可爱/萌妹子</a>
+                                                                        <a title="文艺女青年" href="http://www.kadang.com/tag/183.html" target="_blank"  >文艺女青年</a>
+                                                                        <a title="吃货" href="http://www.kadang.com/tag/182.html" target="_blank"  >吃货</a>
+                                                                        <a title="学生党" href="http://www.kadang.com/tag/71.html" target="_blank"  >学生党</a>
+                                                                        <a title="星座控" href="http://www.kadang.com/tag/196.html" target="_blank"  >星座控</a>
+                                                                        <a title="白领" href="http://www.kadang.com/tag/188.html" target="_blank"  >白领</a>
+                                                                    </div>
+                            </div>
+                                                        <div class="cate-item">
+                                <h3 class="vm-cap">
+                                                                        <a title="礼物价格" href="http://www.kadang.com/tag/201.html" target="_blank"  >礼物价格</a>
+                                    </h3><div class="vm-cont">                                    <a title="100以下" href="http://www.kadang.com/tag/201.html" target="_blank"  >100以下</a>
+                                                                        <a title="100-200" href="http://www.kadang.com/tag/202.html" target="_blank" style='color:#666666;' >100-200</a>
+                                                                        <a title="200-500" href="http://www.kadang.com/tag/203.html" target="_blank"  >200-500</a>
+                                                                        <a title="500以上" href="http://www.kadang.com/tag/204.html" target="_blank"  >500以上</a>
+                                                                        <a title="包邮" href="http://www.kadang.com/tag/205.html" target="_blank"  >包邮</a>
+                                                                    </div>
+                            </div>
+                                                        <div class="cate-item">
+                                <h3 class="vm-cap">
+                                                                        <a title="礼物类型" href="http://www.kadang.com/tag/67.html" target="_blank"  >礼物类型</a>
+                                    </h3><div class="vm-cont">                                    <a title="照片定制" href="http://www.kadang.com/tag/118.html" target="_blank"  >照片定制</a>
+                                                                        <a title="名字定制" href="http://www.kadang.com/tag/126.html" target="_blank"  >名字定制</a>
+                                                                        <a title="创意又有心意" href="http://www.kadang.com/tag/200.html" target="_blank"  >创意又有心意</a>
+                                                                        <a title="一对一对的" href="http://www.kadang.com/tag/24.html" target="_blank"  >一对一对的</a>
+                                                                        <a title="实用" href="http://www.kadang.com/tag/235.html" target="_blank"  >实用</a>
+                                                                        <a title="浪漫" href="http://www.kadang.com/tag/199.html" target="_blank"  >浪漫</a>
+                                                                        <a title="礼物套装" href="http://www.kadang.com/zt/series.html" target="_blank"  >礼物套装</a>
+                                                                        <a title="星座" href="http://www.kadang.com/tag/196.html" target="_blank"  >星座</a>
+                                                                    </div>
+                            </div>
+
+                                                    </div>
+                        <div class="gift-lm" kdref="1472">
+                            <p class="gift-tle">按类目选礼物</p>
+                            <div class="cate-cont">
+                                                            <div class="cate-item">
+                                <h3 class="vm-cap">
+                                  <a title="时尚饰品" href="/list/34/" style="font-size:14px;" target="_blank">时尚饰品</a>
+                                </h3>
+                                <div class="vm-cont">
+                                                                    <a href="/list/34-35/" title="项链" target="_blank" >项链</a>
+                                                                    <a href="/list/34-45/" title="手链手镯" target="_blank" >手链手镯</a>
+                                                                    <a href="/list/34-46/" title="戒指" target="_blank" >戒指</a>
+                                                                    <a href="/list/34-48/" title="发饰/胸针" target="_blank" >发饰/胸针</a>
+                                                                    <a href="/list/34-49/" title="耳钉耳环" target="_blank" >耳钉耳环</a>
+                                                                    <a href="/list/34-51/" title="男士饰品" target="_blank" >男士饰品</a>
+                                                                    <a href="/list/34-165/" title="高档珠宝" target="_blank" >高档珠宝</a>
+                                                                                                  </div>
+                              </div>
+                                                            <div class="cate-item">
+                                <h3 class="vm-cap">
+                                  <a title="围巾配饰" href="/list/37/" style="font-size:14px;" target="_blank">围巾配饰</a>
+                                </h3>
+                                <div class="vm-cont">
+                                                                    <a href="/list/37-60/" title="围巾/手套" target="_blank" >围巾/手套</a>
+                                                                    <a href="/list/37-59/" title="钱包/背包" target="_blank" >钱包/背包</a>
+                                                                    <a href="/list/37-164/" title="手表" target="_blank" >手表</a>
+                                                                    <a href="/list/37-66/" title="皮带" target="_blank" >皮带</a>
+                                                                    <a href="/list/37-67/" title="钥匙扣" target="_blank" >钥匙扣</a>
+                                                                    <a href="/list/37-63/" title="zippo/军刀" target="_blank" >zippo/军刀</a>
+                                                                    <a href="/list/37-101/" title="梳子/化妆镜" target="_blank" >梳子/化妆镜</a>
+                                                                                                  </div>
+                              </div>
+                                                            <div class="cate-item">
+                                <h3 class="vm-cap">
+                                  <a title="创意摆件" href="/list/39/" style="font-size:14px;" target="_blank">创意摆件</a>
+                                </h3>
+                                <div class="vm-cont">
+                                                                    <a href="/list/39-187/" title="DIY模型/拼图" target="_blank" >DIY模型/拼图</a>
+                                                                    <a href="/list/39-76/" title="水晶摆件" target="_blank" >水晶摆件</a>
+                                                                    <a href="/list/39-80/" title="装饰画/摆件" target="_blank" >装饰画/摆件</a>
+                                                                    <a href="/list/39-133/" title="蜡烛/创意灯" target="_blank" >蜡烛/创意灯</a>
+                                                                    <a href="/list/39-78/" title="音乐盒" target="_blank" >音乐盒</a>
+                                                                    <a href="/list/39-139/" title="印章" target="_blank" >印章</a>
+                                                                    <a href="/list/39-68/" title="汽车饰品" target="_blank" >汽车饰品</a>
+                                                                                                  </div>
+                              </div>
+                                                            <div class="cate-item">
+                                <h3 class="vm-cap">
+                                  <a title="布艺家纺" href="/list/42/" style="font-size:14px;" target="_blank">布艺家纺</a>
+                                </h3>
+                                <div class="vm-cont">
+                                                                    <a href="/list/42-88/" title="毛绒公仔" target="_blank" >毛绒公仔</a>
+                                                                    <a href="/list/42-82/" title="抱枕靠垫" target="_blank" >抱枕靠垫</a>
+                                                                    <a href="/list/42-167/" title="居家服/情趣" target="_blank" >居家服/情趣</a>
+                                                                                                  </div>
+                              </div>
+                              </div><div class="cate-cont">                              <div class="cate-item">
+                                <h3 class="vm-cap">
+                                  <a title="花/巧克力" href="/list/40/" style="font-size:14px;" target="_blank">花/巧克力</a>
+                                </h3>
+                                <div class="vm-cont">
+                                                                    <a href="/list/40-91/" title="巧克力" target="_blank" >巧克力</a>
+                                                                    <a href="/list/40-92/" title="永生花" target="_blank" >永生花</a>
+                                                                    <a href="/list/40-125/" title="金箔花" target="_blank" >金箔花</a>
+                                                                    <a href="/list/40-93/" title="酒水饮料" target="_blank" >酒水饮料</a>
+                                                                    <a href="/list/40-89/" title="卡通花/创意花束" target="_blank" >卡通花/创意花束</a>
+                                                                    <a href="/list/40-166/" title="蜡烛/气氛配件" target="_blank" >蜡烛/气氛配件</a>
+                                                                                                  </div>
+                              </div>
+                                                            <div class="cate-item">
+                                <h3 class="vm-cap">
+                                  <a title="家居日用" href="/list/41/" style="font-size:14px;" target="_blank">家居日用</a>
+                                </h3>
+                                <div class="vm-cont">
+                                                                    <a href="/list/41-148/" title="变色杯/保温杯" target="_blank" >变色杯/保温杯</a>
+                                                                    <a href="/list/41-184/" title="遮阳伞" target="_blank" >遮阳伞</a>
+                                                                    <a href="/list/41-185/" title="创意灯" target="_blank" >创意灯</a>
+                                                                    <a href="/list/41-151/" title="情趣礼品" target="_blank" >情趣礼品</a>
+                                                                    <a href="/list/41-188/" title="生活电器" target="_blank" >生活电器</a>
+                                                                    <a href="/list/41-183/" title="碗筷锅具" target="_blank" >碗筷锅具</a>
+                                                                    <a href="/list/41-153/" title="收纳" target="_blank" >收纳</a>
+                                                                    <a href="/list/41-186/" title="洗漱用品" target="_blank" >洗漱用品</a>
+                                                                                                  </div>
+                              </div>
+                                                            <div class="cate-item">
+                                <h3 class="vm-cap">
+                                  <a title="数码办公" href="/list/43/" style="font-size:14px;" target="_blank">数码办公</a>
+                                </h3>
+                                <div class="vm-cont">
+                                                                    <a href="/list/43-114/" title="记事本" target="_blank" >记事本</a>
+                                                                    <a href="/list/43-111/" title="钢笔" target="_blank" >钢笔</a>
+                                                                    <a href="/list/43-144/" title="手机壳" target="_blank" >手机壳</a>
+                                                                    <a href="/list/43-143/" title="鼠标垫" target="_blank" >鼠标垫</a>
+                                                                    <a href="/list/43-146/" title="移动电源" target="_blank" >移动电源</a>
+                                                                    <a href="/list/43-145/" title="U盘" target="_blank" >U盘</a>
+                                                                    <a href="/list/43-113/" title="名片夹" target="_blank" >名片夹</a>
+                                                                                                  </div>
+                              </div>
+                              </div><div class="cate-cont">                              <div class="cate-item">
+                                <h3 class="vm-cap">
+                                  <a title="照片印刷" href="/list/44/" style="font-size:14px;" target="_blank">照片印刷</a>
+                                </h3>
+                                <div class="vm-cont">
+                                                                    <a href="/list/44-115/" title="照片冲印" target="_blank" >照片冲印</a>
+                                                                    <a href="/list/44-116/" title="年历挂历" target="_blank" >年历挂历</a>
+                                                                    <a href="/list/44-117/" title="报纸" target="_blank" >报纸</a>
+                                                                    <a href="/list/44-118/" title="纪念册/贺卡" target="_blank" >纪念册/贺卡</a>
+                                                                    <a href="/list/44-119/" title="扑克" target="_blank" >扑克</a>
+                                                                                                  </div>
+                              </div>
+                                                            <div class="cate-item">
+                                <h3 class="vm-cap">
+                                  <a title="服装内衣" href="/list/38/" style="font-size:14px;" target="_blank">服装内衣</a>
+                                </h3>
+                                <div class="vm-cont">
+                                                                    <a href="/list/38-69/" title="女士上装" target="_blank" >女士上装</a>
+                                                                    <a href="/list/38-71/" title="情侣套装" target="_blank" >情侣套装</a>
+                                                                    <a href="/list/38-74/" title="亲子套装" target="_blank" >亲子套装</a>
+                                                                    <a href="/list/38-75/" title="居家内衣" target="_blank" >居家内衣</a>
+                                                                                                  </div>
+                              </div>
+                                                          </div>
+                        </div>
+                      </div>
+                    </div>
+                            <div id="J_NavMenu" class="nav-menu">
+          <ul class="clearfix menu-list"  kdref="1029">
+              <li><a href="http://www.kadang.com/" title="首页">首页</a></li>
+                                    <li class="submenu index">
+                  <a class="item fl" href="http://www.kadang.com/tag/56.html" target="_blank" title="暖心礼物">
+                      暖心礼物                      <img src='http://img1.i.kadang.cn/static/mall/common/navHot.gif' class='navHot'>
+                  </a>
+            </li>
+                                                            <li class="submenu index">
+              <a class="item fl" href="http://www.kadang.com/zt/girl.html" target="_blank" title="送女生">
+      			  送女生              </a>
+                         </li>
+                                                            <li class="submenu index">
+              <a class="item fl" href="http://www.kadang.com/tag/76.html" target="_blank" title="送男生">
+      			  送男生              </a>
+                         </li>
+                                                            <li class="submenu index">
+                  <a class="item fl" href="http://www.kadang.com/zt/birthday.html" target="_blank" title="生日礼物">
+                      生日礼物                  </a>
+            </li>
+                                                            <li class="submenu index">
+              <a class="item fl" href="http://www.kadang.com/tag/375.html" target="_blank" title="本周新品">
+      			  本周新品              </a>
+                         </li>
+                                                            <li class="submenu index">
+              <a class="item fl" href="http://www.kadang.com/tag/548.html" target="_blank" title="约个会！">
+      			  约个会！              </a>
+                         </li>
+                                                <li class="navHover"></li>
+          </ul>
+        </div>
+
+	<!-- 	<div style="float: right;" kdref="1032">
+			<a href="http://love.kadang.com/zt/qixi.html" target="_blank" title="七夕礼物专场"><img src="http://www.kadang.com/static/mall/index/daohang-right.png" alt="七夕礼物专场"/></a>
+		</div> -->
+    </div>
+</div>
+<!-- 分类导航、一级导航 end -->
+
+
+<div id="J_Main" class="kd-main">
+        <div class="kd-detail-body">
+        <div class="first-screen clearfix" id="J_PartGoods">
+                <div class="goods-main">
+                <div class="bread-crumb"  kdref="1303" style="display:none;">
+                                                                                                <a href="http://www.kadang.com/index.php" target="_blank" class="bread-link">首页</a>
+                                                <span class="detail-icons detail-icons-bread"></span>
+                                                                                                <a href="http://www.kadang.com/index.php?act=search&cate_id=578" target="_blank" class="bread-link">数码</a>
+                                                <span class="detail-icons detail-icons-bread"></span>
+                                                                        <a href="http://www.kadang.com/index.php?act=search&cate_id=688" target="_blank" class="bread-link">充电器/移动电源</a>
+                                            </div>
+                <!--<div class="goods-title-box">
+                    <h2 title="限量版马卡龙充电式多功能移动电源 精致小巧一手掌握">
+                        限量版马卡龙充电式多功能移动电源 精致小巧一手掌握                        <span id="J_PrimeProp">
+                                                </span>
+                        <span id="J_TplProp">
+                                                </span>
+                    </h2>
+                    <p class="fav-count">
+                    	                        <span class="detail-icons detail-icons-graystar"><i id="J_LinkRate" class="detail-icons detail-icons-redstar" data-rate="98" style="width:98%;"></i></span>&nbsp;
+                        <a href="javascript:;" id="J_LinkComment" class="vm-link"><em class="highlight">2619</em>人评价</a>
+                        
+                                                &nbsp;|&nbsp;
+                        
+                                                一周成交<a href="javascript:;" id="J_LinkSales" class="vm-link"><em class="highlight">4</em>件</a>
+                                            </p>
+                </div>-->
+                <div class="goods-data clearfix">
+                        <div class="goods-show">
+             
+<div class="icondiv">
+                      </div>
+<div class="kd-img-zoom">
+    <a id="J_ZoomLink" class="KD-ZoomLink zoom-link" rel="imgZoom" href="http://img1.i.kadang.cn/upload/1/store/goods/5/2015/12/5_6d40140b5da58d0d46bc5c3ab759e5b0.jpg_max.jpg" wbury="1">
+        <img class="KD-ZoomThumb" src="http://img1.i.kadang.cn/upload/1/store/goods/5/2015/12/5_6d40140b5da58d0d46bc5c3ab759e5b0.jpg_mid.jpg" alt="">
+        <span class="detail-icons detail-icons-zoom"></span>
+    </a>
+</div>
+<div class="kd-img-slide">
+    <ul id="J_PhotoList" class="zoom-candidate clearfix">
+                                                            <li class="item">
+                        <a href='javascript:void(0);' data-options='{"gallery": "imgZoom", "smallimage": "http://img1.i.kadang.cn/upload/1/store/goods/5/2015/12/5_6d40140b5da58d0d46bc5c3ab759e5b0.jpg_mid.jpg", "largeimage": "http://img1.i.kadang.cn/upload/1/store/goods/5/2015/12/5_6d40140b5da58d0d46bc5c3ab759e5b0.jpg_max.jpg"}' class='zoom-full-img zoomThumbActive'>
+                            <img src="http://img4.i.kadang.cn/upload/1/store/goods/5/2015/12/5_6d40140b5da58d0d46bc5c3ab759e5b0.jpg_tiny.jpg" alt="">
+                        </a>
+                     </li>
+                                                                    <li class="item">
+                        <a href='javascript:void(0);' data-options='{"gallery": "imgZoom", "smallimage": "http://img1.i.kadang.cn/upload/1/store/goods/5/2015/12/5_ba0a5de04e0d04dfd8dd3c28fd93dc1f.jpg_mid.jpg", "largeimage": "http://img3.i.kadang.cn/upload/1/store/goods/5/2015/12/5_ba0a5de04e0d04dfd8dd3c28fd93dc1f.jpg_max.jpg"}' class='zoom-full-img'>
+                            <img src="http://img2.i.kadang.cn/upload/1/store/goods/5/2015/12/5_ba0a5de04e0d04dfd8dd3c28fd93dc1f.jpg_tiny.jpg" alt="">
+                        </a>
+                     </li>
+                                                                    <li class="item">
+                        <a href='javascript:void(0);' data-options='{"gallery": "imgZoom", "smallimage": "http://img1.i.kadang.cn/upload/1/store/goods/5/2015/12/5_d9cab383854e601d00c9959747b08bec.jpg_mid.jpg", "largeimage": "http://img3.i.kadang.cn/upload/1/store/goods/5/2015/12/5_d9cab383854e601d00c9959747b08bec.jpg_max.jpg"}' class='zoom-full-img'>
+                            <img src="http://img6.i.kadang.cn/upload/1/store/goods/5/2015/12/5_d9cab383854e601d00c9959747b08bec.jpg_tiny.jpg" alt="">
+                        </a>
+                     </li>
+                                                                    <li class="item">
+                        <a href='javascript:void(0);' data-options='{"gallery": "imgZoom", "smallimage": "http://img5.i.kadang.cn/upload/1/store/goods/5/2015/12/5_d904cd7f794ea4c1eae1ce1d37ec8bf1.jpg_mid.jpg", "largeimage": "http://img1.i.kadang.cn/upload/1/store/goods/5/2015/12/5_d904cd7f794ea4c1eae1ce1d37ec8bf1.jpg_max.jpg"}' class='zoom-full-img'>
+                            <img src="http://img3.i.kadang.cn/upload/1/store/goods/5/2015/12/5_d904cd7f794ea4c1eae1ce1d37ec8bf1.jpg_tiny.jpg" alt="">
+                        </a>
+                     </li>
+                                                                         </ul>
+</div>
+<div class="lay-social">
+    <div class="social-action">
+        <!--<a id="J_Favorite" href="javascript:void(0);" class="kd-fs action-fav">
+            <i class="detail-icons detail-icons-fav"></i>收藏（533）        </a>-->
+        <a id="J_IShare" href="javascript:void(0);" class="kd-fs action-share">
+            <i class="detail-icons detail-icons-share"></i>告诉小伙伴
+        </a>
+    </div>
+    <div id="J_ShareOverlay" class="overlay share" style="display:none;">
+        <div class="lay-body share-wrap">
+            <a href="javascript:;" class="share-btn btn-sina" target="_blank" title="分享到新浪微博"></a>
+            <a href="javascript:;" class="share-btn btn-qq" target="_blank" title="分享到腾讯微博"></a>
+        </div>
+    </div>
+</div>                    </div>
+                        <div class="goods-text" data-goodsid="8813">
+                        <h2 class="lay-title" title="限量版马卡龙充电式多功能移动电源 精致小巧一手掌握">
+    限量版马卡龙充电式多功能移动电源 精致小巧一手掌握    <span id="J_PrimeProp">
+        </span>
+    <span id="J_TplProp">
+        </span>
+</h2>
+<div class="lay-comment">
+  <p class="mod-cont"> <i class="icon icon-leftquote"></i> <span class="vm-live">大多数女生都爱美食，所以，这款马卡龙甜品造型的移动电源就是女生最无法抗拒的礼物。在大姨妈关顾的日子里，不少女生畏寒，四肢显凉，它可以帮忙暖肚子，平时又是功能强大的移动电源。好感度上升n个级别，期待她惊喜和幸福的表情吧~</span> <i class="icon icon-rightquote"></i> </p>
+</div>
+<div class="lay-meta mod-pad lay-bg">
+    <p class="del-price">
+                                                    <!--<del class="old-price">138.00</del>-->
+                                        </p>
+  <dl class="mod-unit clearfix" >
+    <dt>价格：</dt>
+    <dd>
+      <p class="row-price">
+                        <i class="dollar">&yen;</i><span id="J_Price">138.00</span>
+                        <span class="promotion">
+                        <em title="免运费" class="my"></em>
+                </span> 
+        <!--去掉七夕活动logo
+                --> 
+      </p>
+    </dd>
+  </dl>
+</div>
+<div class="lay-meta mod-pad">
+  <dl class="mod-unit clearfix" >
+    <dt>送至：</dt>
+    <dd>
+      <p class="addr-txt"></p>
+            <div class="mailAddr clearfix">
+        <dl class="addrDl" id="J_addrprov">
+          <dt><em>请选择</em><i></i></dt>
+          <dd class="clearfix">
+            <a href="javascript:void(0);" class="addrPop-close"><i class="detail-icons detail-icons-close"></i></a>
+          </dd>
+        </dl>
+        <dl class="addrDl" id="J_addrcity">
+          <dt><em>请选择</em><i></i></dt>          
+          <dd class="clearfix">
+            <a href="javascript:void(0);" class="addrPop-close"><i class="detail-icons detail-icons-close"></i></a>
+          </dd>
+        </dl> 
+        <dl class="addrDl" id="J_addrarea">
+          <dt><em>请选择</em><i></i></dt>          
+          <dd class="clearfix">
+            <a href="javascript:void(0);" class="addrPop-close"><i class="detail-icons detail-icons-close"></i></a>
+          </dd>
+        </dl>
+        <a href="/index.php?act=support&article_id=137" target="_blank" class="icon-crd" style="display:none"></a>   
+      </div>     
+      <p class="addr-txt">
+	  <span class="KD-Postage" data-is-free="1">卖家承担运费</span></p>
+            <div class="songh clearfix">
+      <p class="addr-txt delivery_info">
+      现在下单，由 卡当自营店<b class="txtlight">明天（20日）</b>发货      </p>
+        <!--<a href="javascript:;" class="buch">补充说明？
+            <span class="buch-sm">
+                1.预计送达时间为最快时间，偏远地区可能有延误<br />
+                2.天气、交通等各类不可抗因素可能会影响商品送达时间<br />
+                3.为了避免延误，请提早下单
+            </span>
+        </a>-->
+      </div>
+                      </dd>
+  </dl>
+</div>
+<div class="lay-data mod-pad">
+        <p>累计评价 <a href="javascript:;" id="J_LinkComment" class="vm-link"><span>2619</span></a></p>|
+            <p>最近30天销量 <a href="javascript:;" id="J_LinkSales" class="vm-link"><span>4</span></a></p>|
+        <p class="row-boss"><span onclick="NTKF.im_openInPageChat('kd_1005_9999');" title="联系客服" class="airlines"><i class="detail-icons detail-icons-person"></i>联系客服</span></p>
+</div>
+<div class="lay-custom mod-pad">
+  <div id="J_ValidWrap" class="valid-cont">
+            <dl class="mod-unit clearfix" >
+      <dt>
+        款式        ： </dt>
+      <dd>
+        <div class="custom-sell">
+          <ul id="J_MainWrap" class="clearfix">
+                        <li class="sel-item" data-id="391"> 白色<span class="sel-mark"></span> </li>
+                        <li class="sel-item" data-id="392"> 蓝色<span class="sel-mark"></span> </li>
+                        <li class="sel-item" data-id="393"> 红色<span class="sel-mark"></span> </li>
+                        <li class="sel-item" data-id="394"> 淡紫色<span class="sel-mark"></span> </li>
+                      </ul>
+        </div>
+      </dd>
+    </dl>
+                <dl class="mod-unit clearfix" style="display:none;">
+      <dt>
+        规格        ： </dt>
+      <dd>
+        <div class="custom-sell">
+          <ul id="J_ViceWrap" class="clearfix">
+                        <li class="sel-item selected" data-id="2025"
+                                > 不启用<span class="sel-mark"></span> </li>
+                      </ul>
+        </div>
+      </dd>
+    </dl>
+        <dl class="mod-unit clearfix">
+      <dt>件数：</dt>
+      <dd>
+        <div class="sel-count clearfix">
+          <div class="vm-control"> <a title="减少" href="javascript:;" data-cart="6247" data-role="quantity-decrease" class="minus">-</a>
+            <input type="text" value="1" id="J_Amount" class="quantity" data-max="0" />
+            <a title="增加" href="javascript:;" data-cart="6247" data-role="quantity-increase" class="plus">+</a> </div>
+          &nbsp;
+          <span id="J_Stock" class="count-tip" stock-val="76">当前库存 76 件</span>        </div>
+      </dd>
+    </dl>
+    <dl class="mod-unit clearfix valid-invisible">
+      <dt> </dt>
+      <dd>
+        <p id="J_ValidMessage" class="valid-message">请选择你要的商品信息</p>
+        <p id="J_ValidEnsure" class="valid-ensure"> <a href="javascript:void(0);" id="J_BtnEnsure" class="kd-btn kd-btn-red">确定</a> </p>
+      </dd>
+    </dl>
+    <a href="javascript:;" id="J_ValidClose" class="valid-close">X</a> </div>
+</div>
+<div class="lay-buy mod-pad" id="J_BuyOrDiy">
+      <dl class="mod-unit clearfix" id="judgement_show_buyer" style="display:none;">
+    <dt></dt>
+    <dd>
+      <div class="main-diy" > 
+        <!--判断是不是定制商品-->
+                <a href="javascript:void(0);" id="J_BtnBuy" class="kd-btn kd-btn-buy dmpClick" data-actiontype="3" rel="8813">立即购买</a> <a href="javascript:void(0);" id="J_BtnCart" class="kd-btn kd-btn-cart dmpClick" data-actiontype="3" rel="8813">加入购物车</a>
+               
+                <a href="javascript:void(0);" id="J_BtnCollect" class="kd-btn kd-btn-collect dmpClick" data-actiontype="2" rel="8813"><i></i>加入收藏</a>
+              </div>
+    </dd>
+  </dl>
+    <div class="mod-eos" id="judgement_show_stock_empty" style="display:none;">
+    <p class="red">很抱歉，此商品已下架。</p>
+    <p class="color3">您可以<span onclick="NTKF.im_openInPageChat('kd_1005_9999');" class="red" style="cursor:pointer;" title="联系卖家">联系卖家</span>咨询，或查看其他商品</p>
+  </div>
+    <p class="red" id="judegment_show_seller" style="display:none;">请先退出卖家后台再进行购买</p>
+  </div>
+<div class="amount-bubble-diailog J-bubbleDiailog" style="display: none;"> <span class="span">√</span> <em>采用已有量体尺码进行定制</em> <i class="t"></i> <b class="t"><span class="k"></span></b> </div>
+<dl class="mod-unit mod-promise">
+  <dt>承诺：</dt>
+  <dd> <a href="/index.php?act=support&article_id=117" target="_blank" class="link-real">100%正品保证</a>
+                                                <a href="/index.php?act=support&article_id=113" target="_blank" class="link-return">30天退货保障</a>
+        <a href="/index.php?act=support&article_id=129" target="_blank" class="link-code" style="display:none">二维码送祝福</a>
+    <a href="/index.php?act=support&article_id=136" target="_blank" class="link-baom">送礼价格密保</a>
+  </dd>
+</dl>
+
+<!-- <script src="/resource/products/relations-custom.js"></script> -->                    </div>
+                    </div>
+            </div>
+                <div id="J_FirRight" class="fr sideRight">
+                <div id="J_AllBuy" class="right_list right_z_noshow" kdref="116">
+                        <div class="" id="rightLike">
+                        <p class="rightTitle">Ta可能喜欢</p>
+                        <ul class="J_move_pic">
+                            </ul>
+                        <p class="changeBtn"><a href="javascript:{}" class="J_moveR changeLeft"></a><a href="javascript:{}" class="J_moveL changeRight"></a></p>
+                    </div>
+                    </div>
+            </div>
+            </div>
+        <div class="sec-screen clearfix" id="J_PartDetail">
+                <div class="fl"> 
+                <!--套餐 S-->
+                                <div id="J_RecVAV" class="bfd-banner pos-xmax noBox" kdref="1133"><!--百分点:看了还看了--></div>
+                <div class="goods-tab">
+                        <div id="J_TabBar" class="KD-TabBox tab-nav-detail">
+                        <ul class="KD-TabItem tab-trigger clearfix">
+                                <li class="item active main">商品详情</li>
+                                <li class="item">评价晒单
+                                                                <span class="small-font">（2619）</span>
+                                                            </li>
+                                <li class="item">最近30天销量
+                                                                <span class="small-font">（4）</span>
+                                                            </li>
+                                                                <li class="item" style="display:none">二维码送祝福</li>
+                                                            </ul>
+                        <div class="lay-mini-buy" id="J_MiniBuy" kdref="1081"> <span onclick="NTKF.im_openInPageChat('kd_1005_9999');" class="airlines" title="联系客服"><i class="detail-icons detail-icons-person"></i>联系客服</span> <a href="javascript:;" class="kd-btn kd-btn-red fixed-design" style="display:none;" id="judgement_show_buy_btn"> 立即购买 </a> </div>
+                    </div>
+                        <div id="J_EntireCont" class="KD-TabCont detail-diy tab-all-show">
+                        <div class="tab-item active" id="J_detailItem">
+                                <div class="detail-table-box clearfix">
+    <div class="show-more-box">
+        <div class="KD-ShowMore show-more">
+            <table class="KD-ShowTable detail-table" cellspacing="0" cellpadding="0">
+                <tbody>
+
+                    <tr>
+                        <td class="col01">商品编号</td>
+                        <td class="col02">8813</td>
+                                                
+                                            </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+        <div haha="0" class="show-all-struk" style="display:none;" >
+            <a href="javascript:void(0)" class="KD-ShowAllParam show-all">
+                查看全部商品参数<i class="detail-icons detail-icons-down"></i>
+            </a>
+        </div>
+    </div>
+    <div id="sideNavD" class="sideNavD">
+        <ul class="sub-tab clearfix">
+            <li class="item active">
+                <a href="javascript:void(0);" class="item-link"><i class="item-mark"></i>规格参数</a>
+            </li>
+        </ul>
+    </div>
+    <div class="detail-diy-main fr">
+        <div kdref="491"></div>
+        <p style="text-align:center;">
+	<img class="lazy lazy-ctrl" src="http://img3.i.kadang.cn/static/mall/common/loading.gif" data-original="http://img5.i.kadang.cn/upload/1/store/goods/5/2015/04/5_c8617b771051a07bcaa0e9c0577b924b.jpg_max.jpg" alt="image"><img class="lazy lazy-ctrl" src="http://img3.i.kadang.cn/static/mall/common/loading.gif" data-original="http://img6.i.kadang.cn/upload/1/store/goods/5/2015/04/5_bd84f0b7856f0d8fafa1baa1c2d0a027.jpg_max.jpg" alt="image"><img class="lazy lazy-ctrl" src="http://img3.i.kadang.cn/static/mall/common/loading.gif" data-original="http://img6.i.kadang.cn/upload/1/store/goods/5/2015/12/5_e70543ad44522bfc0eead5985eab9373.jpg_max.jpg" alt="image"><img class="lazy lazy-ctrl" src="http://img3.i.kadang.cn/static/mall/common/loading.gif" data-original="http://img4.i.kadang.cn/upload/1/store/goods/5/2015/04/5_209303f21aaa862138e398ee61ac20d4.jpg_max.jpg" alt="image"><img class="lazy lazy-ctrl" src="http://img3.i.kadang.cn/static/mall/common/loading.gif" data-original="http://img6.i.kadang.cn/upload/1/store/goods/5/2015/04/5_23a2d1f28a46e7c7b4efebd0c70077bb.jpg_max.jpg" alt="image"><img class="lazy lazy-ctrl" src="http://img3.i.kadang.cn/static/mall/common/loading.gif" data-original="http://img3.i.kadang.cn/upload/1/store/goods/5/2015/04/5_a30ad4e481941eba12bf19f219604d44.jpg_max.jpg" alt="image"><img class="lazy lazy-ctrl" src="http://img3.i.kadang.cn/static/mall/common/loading.gif" data-original="http://img5.i.kadang.cn/upload/1/store/goods/5/2015/04/5_7f9df0fe16813f5d98d59b51724c88be.jpg_max.jpg" alt="image"><img class="lazy lazy-ctrl" src="http://img3.i.kadang.cn/static/mall/common/loading.gif" data-original="http://img2.i.kadang.cn/upload/1/store/goods/5/2015/12/5_a6fc928db0da3f0993f50ac25e5b1e7a.jpg_max.jpg" alt="image"><img class="lazy lazy-ctrl" src="http://img3.i.kadang.cn/static/mall/common/loading.gif" data-original="http://img6.i.kadang.cn/upload/1/store/goods/5/2015/04/5_081de80dd2129e5d9db710d93e8c0750.jpg_max.jpg" alt="image"><img class="lazy lazy-ctrl" src="http://img3.i.kadang.cn/static/mall/common/loading.gif" data-original="http://img4.i.kadang.cn/upload/1/store/goods/5/2015/04/5_902bdc04572b9bfad44508d5952b146e.jpg_max.jpg" alt="image"><img class="lazy lazy-ctrl" src="http://img3.i.kadang.cn/static/mall/common/loading.gif" data-original="http://img1.i.kadang.cn/upload/1/store/goods/5/2015/04/5_6b515242277d0eeb782429ac010a56e2.jpg_max.jpg" alt="image"><img class="lazy lazy-ctrl" src="http://img3.i.kadang.cn/static/mall/common/loading.gif" data-original="http://img5.i.kadang.cn/upload/1/store/goods/5/2015/04/5_b988a77fa0128af4069ba09bc4e72ea7.jpg_max.jpg" alt="image"> 
+</p>
+<p style="text-align:center;">
+	<span style="font-family:'Microsoft YaHei';font-size:14px;"><span style="font-family:tahoma, arial, 'Hiragino Sans GB', 'microsoft yahei', 宋体, sans-serif;line-height:24px;"><span style="font-size:16px;font-family:'Microsoft YaHei';"><br />
+</span></span></span> 
+</p>
+<p style="text-align:center;">
+	<img class="lazy lazy-ctrl" src="http://img3.i.kadang.cn/static/mall/common/loading.gif" data-original="http://img6.i.kadang.cn/upload/1/editor/20141128180545_19742.gif" alt="image"><img class="lazy lazy-ctrl" src="http://img3.i.kadang.cn/static/mall/common/loading.gif" data-original="http://img4.i.kadang.cn/upload/1/editor/20141201095522_65693.gif" alt="image"><img class="lazy lazy-ctrl" src="http://img3.i.kadang.cn/static/mall/common/loading.gif" data-original="http://img5.i.kadang.cn/upload/1/store/goods/5/2015/04/5_7d03da886cc0ee653a02130551d9c8d9.jpg_max.jpg" alt="image"><img class="lazy lazy-ctrl" src="http://img3.i.kadang.cn/static/mall/common/loading.gif" data-original="http://img5.i.kadang.cn/upload/1/store/goods/5/2015/04/5_bd9d4db50d3de1f0edb41ccf70633252.jpg_max.jpg" alt="image"><img class="lazy lazy-ctrl" src="http://img3.i.kadang.cn/static/mall/common/loading.gif" data-original="http://img3.i.kadang.cn/upload/1/store/goods/5/2015/12/5_1e9e1e3e3be5fa75066d2ccc8d09568d.jpg_max.jpg" alt="image"><img class="lazy lazy-ctrl" src="http://img3.i.kadang.cn/static/mall/common/loading.gif" data-original="http://img3.i.kadang.cn/upload/1/store/goods/5/2015/04/5_aa0fd79a1033c3fb67fa85d1489ae3a0.jpg_max.jpg" alt="image"> 
+</p>
+<div>
+	<div>
+	</div>
+<a> <br />
+</a> 
+</div>
+<div style="text-align:center;">
+	<br />
+</div>
+<div style="text-align:center;">
+	<br />
+</div>
+<p style="text-align:center;">
+	<img class="lazy lazy-ctrl" src="http://img3.i.kadang.cn/static/mall/common/loading.gif" data-original="http://img1.i.kadang.cn/static/about/NEW/daohang/ccsm.png" alt="image"> 
+</p>
+<div style="text-align:center;">
+	<br />
+</div>
+<div style="text-align:center;">
+	<img class="lazy lazy-ctrl" src="http://img3.i.kadang.cn/static/mall/common/loading.gif" data-original="http://img5.i.kadang.cn/upload/1/editor/20150206154026_36371.jpg" alt="image"> 
+</div>
+<div>
+	<div>
+	</div>
+<a> <br />
+</a> 
+</div>
+<div style="text-align:center;">
+	<br />
+</div>
+<div style="text-align:center;">
+	<br />
+</div>
+<div style="text-align:center;">
+	<img class="lazy lazy-ctrl" src="http://img3.i.kadang.cn/static/mall/common/loading.gif" data-original="http://img6.i.kadang.cn/static/about/NEW/daohang/lpbz.png" alt="image"><span style="line-height:1.5;">&nbsp;</span> 
+</div>
+<div style="text-align:center;">
+	<br />
+</div>
+<div style="text-align:center;">
+	<img class="lazy lazy-ctrl" src="http://img3.i.kadang.cn/static/mall/common/loading.gif" data-original="http://img5.i.kadang.cn/upload/1/store/goods/5/2014/11/5_8c1ab714ac3d36096d653169e4ac073b.jpg_max.jpg" alt="image"> 
+</div>
+<p>
+	<br />
+</p>
+<div>
+</div>
+<a></a><br />
+<br />
+<br />
+<p>
+	<img class="lazy lazy-ctrl" src="http://img3.i.kadang.cn/static/mall/common/loading.gif" data-original="http://img3.i.kadang.cn/static/about/NEW/daohang/cjwt.png" alt="image"> 
+</p>
+<p>
+	<span style="font-family:'Microsoft YaHei';font-size:14px;"><strong>1、一次充满电可以使用多长时间？</strong></span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;">马卡龙暖手宝充满电之后，<span style="font-family:tahoma, arial, 'Hiragino Sans GB', 'microsoft yahei', 宋体, sans-serif;font-size:14px;line-height:24px;">装进绒布袋，放进冰箱冷藏室(4-8摄氏度) 发热持续了2小时10分钟，如果是室温20度左右大约可以发热4个小时20分，</span></span><span style="font-family:'Microsoft YaHei';font-size:14px;">这些都是经过测试过的哦~</span> 
+</p>
+<p>
+	<span style="font-family:'Microsoft YaHei';font-size:14px;"><strong>2、</strong></span><span style="font-family:'Microsoft YaHei';font-size:14px;"><strong>多长时间可以充满电？</strong></span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;"> 为马卡龙充满电只需3-4小时。 </span> 
+</p>
+<span style="font-family:'Microsoft YaHei';font-size:14px;"><strong>3、暖手宝可以当移动电源吗？</strong></span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;">马卡龙既是移动电源，也是暖手宝，2种功能，真心很方便有木有？</span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;"><strong>4、电池容量多少？</strong></span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;"> 马卡龙大概容量为3000mAh，能给iPhone充电1-2次。</span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;"><strong>5、苹果、安卓手机充电都支持吗？</strong></span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;">亲，我们的包装里面有转接头的，支持全部usb接头充电的。（经测试，无法给三星note系列充电）</span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;"><strong>6、有售后服务吗？</strong></span> 
+<p>
+	<span style="font-family:'Microsoft YaHei';font-size:14px;color:#E53333;">如有任何质量问题，</span><span style="font-family:'Microsoft YaHei';font-size:14px;color:#E53333;">马卡龙保修1年！售后有保障！</span> 
+</p>            </div>
+</div>                            </div>
+                        <div class="tab-item active" id="J_evalItem">
+                                <p class="tab-title">评价晒单
+                                                                <span class="small-font">（2619）</span>
+                                                            </p>
+                                <div class="goods-eval">
+    <dl class="shop-eval clearfix">
+        <dt class="eval-item shop-eval-title">
+            <i class="detail-icons detail-icons-shop"></i> <a href="/index.php?act=show_store&op=credit&id=5" target="_blank">店铺评价</a>
+        </dt>
+        <dd class="eval-item shop-positive">
+            <p class="positive-score">98<i class="positive-sign">%</i></p>
+            <p class="positive-des">好评度</p>
+        </dd>
+        <dd class="eval-item shop-score">
+            <p class="score-item"><span class="score-strip"><i class="score-redstrip" style="width:98%"></i></span>好评（98%）</p>
+            <p class="score-item"><span class="score-strip"><i class="score-redstrip" style="width:1%"></i></span>中评（1%）</p>
+            <p class="score-item"><span class="score-strip"><i class="score-redstrip" style="width:1%"></i></span>差评（1%）</p>
+        </dd>
+        <dd class="eval-item shop-eval-label" id="J_evalLabel">
+                     <a class="label-item btn-white btn-h23" href="javascript:;" data-label-id="69">小巧方便（236）</a>
+                     <a class="label-item btn-white btn-h23" href="javascript:;" data-label-id="70">携带方便（232）</a>
+                     <a class="label-item btn-white btn-h23" href="javascript:;" data-label-id="25">外观很漂亮（204）</a>
+                     <a class="label-item btn-white btn-h23" href="javascript:;" data-label-id="21">定制效果好（136）</a>
+                     <a class="label-item btn-white btn-h23" href="javascript:;" data-label-id="46">容量大（46）</a>
+                 </dd>
+    </dl>
+    <div id="J_ReviewCondition" class="eval-selector clearfix">
+        <div class="choose-level">
+            <label for="allRate" class="chooser">
+                <input type="radio" name="evalscore" id="allRate" class="choose-radio" value="0" checked>&nbsp;全部评价
+            </label>
+            <label for="goodRate" class="chooser">
+                <input type="radio" name="evalscore" id="goodRate" class="choose-radio" value="1">&nbsp;好评（<span id="eval_count_good"></span>）
+            </label>
+            <label for="mediumRate" class="chooser">
+                <input type="radio" name="evalscore" id="mediumRate" class="choose-radio" value="2">&nbsp;中评（<span id="eval_count_middle"></span>）
+            </label>
+            <label for="worstRate" class="chooser">
+                <input type="radio" name="evalscore" id="worstRate" class="choose-radio" value="3">&nbsp;差评（<span id="eval_count_bad"></span>）
+            </label>
+        </div>
+        <label for="hasContent" class="show-content">
+            <input class="choose-checkbox" type="checkbox" checked="checked" name="havecontent" id="hasContent" value="1">&nbsp;显示有内容的评价
+        </label>
+        <label for="hasImage" class="show-content">
+            <input class="choose-checkbox" type="checkbox" name="haveimage" id="hasImage" value="1">&nbsp;只显示晒单
+        </label>
+    </div>
+    <div id="J_CommentList" class="eval-list comment-show codeHover">
+    </div>
+    <div id="J_ReviewPag" class="ui-paginate-wrap">
+    </div>
+</div>
+<script type="text/template" id="J_CommentTpl">
+    <% for (var i = 0, l = list.length; i < l; i ++) { %>
+        <dl class="eval-row clearfix">
+            <dt class="user-info">
+                <img class="head-pic" src="<%=list[i].user_pic%>" alt="<%=list[i].user_nick%>" />
+                <p class="user-nick"><%=list[i].user_nick%></p>
+            </dt>
+			<% if(list[i].append_eval_label.length > 0) { %>
+            <dd class="eval-title">标签：</dd>
+            <dd class="eval-info">
+                <% for (var a = 0, b = list[i].append_eval_label.length; a < b; a ++) { %>
+                <a class="label-item btn-white btn-h23"><%=list[i].append_eval_label[a].label_name%></a>
+                <% } %>
+            </dd>
+            <% } %>
+            <dd class="eval-title">评价：</dd>
+            <dd class="eval-info">
+                <div class="eval-cont"><%=list[i].eval_body%></div>
+                <% if (list[i].eval_image.length) {%>
+                    <div class="lay-photo">
+                        <ul class="mod-thumb clearfix">
+                            <% for (var m = 0, n = list[i].eval_image.length; m < n; m++) {%>
+                            <li class="vm-photo" data-act="viewphoto" data-src="">
+                                <img src="<%=list[i].eval_image[m]%>" width="100" height="100"/>
+                                <i class="cur-arrow"></i>
+                            </li>
+                            <%}%>
+                        </ul>
+                        <div class="vm-big-photo clearfix">
+                            <div class="photo-cont" style="display:none;">
+                                <p class="photo-operate"><a href="javascript:;" class="photo-hide">收起</a><a class="photo-original" href="" target="_blank">原图</a></p>
+                                <div class="photo-show">
+                                    <img src="http://img.i.kadang.cn/static/mall/common/loading.gif" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <%}%>
+                <p class="goods-info"><%=list[i].goods_info%><% if (list[i].eval_from) {%><a class="codeLink" href="javascript:;"><%=list[i].eval_from%></a><%}%></p>
+            </dd>
+
+            <% if (list[i].reply) {%>
+            <dd class="eval-info">
+                <p class="explain-cont first-explain"><span class="append-des">[商家回复]</span><%=list[i].reply%></p>
+                <p class="goods-info"></p>
+            </dd>
+            <%}%>
+            <% if (list[i].append_eval) {%>
+            <dd class="eval-info">
+                <p class="eval-cont"><span class="append-des">[追加评论]</span><%=list[i].append_eval%></p>
+                <p class="goods-info"></p>
+            </dd>
+            <%}%>
+
+            <% if (list[i].append_reply) {%>
+            <dd class="eval-info">
+                <p class="explain-cont"><span class="append-des">[商家解释]</span><%=list[i].append_reply%></p>
+                <p class="goods-info"></p>
+            </dd>
+            <%}%>
+        </dl>
+    <% } %>
+    <div class="code-cont"></div>
+</script>                            </div>
+                        <div class="tab-item active" id="J_tradeItem">
+                                <p class="tab-title">一周成交记录
+                                                                <span class="small-font">（4）</span>
+                                                            </p>
+                                <div class="trade-box">
+    <table class="KD-TradeList trade-list" cellpadding="0" cellspacing="0">
+        <thead>
+            <tr>
+                <th class="col01">买家</th>
+                <th class="col02">购买价</th>
+                <th class="col03">款式与型号</th>
+                <th class="col04">购买数量</th>
+                <!-- <th class="col05">购买时间</th> -->
+            </tr>
+        </thead>
+        <tbody id="J_TradeList">
+
+        </tbody>
+    </table>
+    <div id="J_TradePag" class="ui-paginate-wrap">
+    </div>
+</div>                            </div>
+                                                <div class="tab-item active" id="J_codeItem" style="display:none">
+                                <p class="tab-title">二维码祝福</p>
+                                <div class="qrCode"> <img src="http://img2.i.kadang.cn/static/mall/qrcode/qrCode_01.jpg"  alt=""/> <img src="http://img4.i.kadang.cn/static/mall/qrcode/qrCode_02.jpg"  alt=""/> <img src="http://img2.i.kadang.cn/static/mall/qrcode/qrCode_03.jpg"  alt=""/> <img src="http://img4.i.kadang.cn/static/mall/qrcode/qrCode_04.jpg"  alt=""/> <img src="http://img4.i.kadang.cn/static/mall/qrcode/qrCode_05.jpg"  alt=""/> <img src="http://img2.i.kadang.cn/static/mall/qrcode/qrCode_06.jpg"  alt=""/> </div>
+                            </div>
+                                            </div>
+                    </div>
+            </div>
+                <div id="J_SecRight" class="fr sideRight">
+                <div id="J_Recomm" class="popular-tags" kdref="504">
+                        <h2 class="vm-hd">热门推荐</h2>
+                        <div class="vm-tags" id="listLable">
+                                                <ul>
+                                <!-- 默认标签 -->
+                                                                <li> <a href="/tag/534.html" target="_blank">新年礼物</a> </li>
+                                                                <li> <a href="/tag/531.html" target="_blank">全部分类</a> </li>
+                                                                <li> <a href="/tag/528.html" target="_blank">圣诞礼物</a> </li>
+                                                                <li> <a href="/tag/112.html" target="_blank">暖手神器</a> </li>
+                                                                <li> <a href="/tag/192.html" target="_blank">送普通女性朋友 礼物推荐</a> </li>
+                                                                <li> <a href="/tag/485.html" target="_blank">国庆限时低价</a> </li>
+                                                                <!-- 更多标签 -->
+                                                                <li class="more-item"> <a href="/tag/473.html" target="_blank">只是朋友</a> </li>
+                                                                <li class="more-item"> <a href="/tag/502.html" target="_blank">100-199热卖区-女生频道</a> </li>
+                                                                <li class="more-item"> <a href="/tag/497.html" target="_blank">萌妹子饰品-女生频道</a> </li>
+                                                                <li class="more-item"> <a href="/tag/496.html" target="_blank">第一次 - 日常女生频道</a> </li>
+                                                            </ul>
+                                                                                            </div>
+                    </div>
+                <div id="J_RecRM" class="bfd-banner pos-side noTop" kdref="1135"><!--百分点:热卖推荐--></div>
+                <div id="J_RecLP" class="bfd-banner pos-side noTop" kdref="1136"><!--百分点:相关礼品推荐--></div>
+                <div class="pos-side noTop downkdapp"> <img src="http://img4.i.kadang.cn/static/mall/qrcode/kdguanw.jpg" alt="" /> <span><b>关注官方微信公众号</b><br/>
+                    查订单，挑礼物更方便</span> </div>
+            </div>
+            </div>
+        <script>
+            window.KDShop = window.KDShop || {};
+            window.KDShop.entireInfo = {
+                reviewNum: 2619,
+                tradeNum: 4            }
+        </script>
+        <div id="J_Party" class="KD-Activing kd-activing"><!--以下活动正在进行--></div>
+        <div id="J_RecBAB" class="bfd-banner pos-xmax mt20" kdref="1134"><!--百分点:买了还买了--></div>
+    </div>
+    </div>
+
+<!-- 卡当footer start -->
+<div id="footer">
+  <div class="container">
+
+    <!-- 卡当服务 start -->
+    <div class="lay-service">
+      <ul class="clearfix">
+        <li title="私人定制商城">
+            <a href="http://www.kadang.com/index.php?act=support&article_id=118" target="_blank"> 
+                <p class="service-pic pic-s1"></p>
+                <p class="vm-cap">中国领先</p>
+                <p>私人定制商城</p>
+            </a>
+        </li>
+        <li title="独一无二为您定制">
+            <a href="http://www.kadang.com/index.php?act=support&article_id=116" target="_blank"> 
+                <p class="service-pic pic-s2"></p>
+                <p class="vm-cap">100%专属定制</p>
+                <p>独一无二为您定制</p>
+            </a>
+        </li>
+        <li title="正品保证">
+            <a href="http://www.kadang.com/index.php?act=support&article_id=117" target="_blank"> 
+                <p class="service-pic pic-s3"></p>
+                <p class="vm-cap">100%</p>
+                <span>正品保证</span>
+            </a>
+        </li>
+        <li title="退货保障">
+            <a href="http://www.kadang.com/index.php?act=support&article_id=113" target="_blank"> 
+                <p class="service-pic pic-s4"></p>
+                <p class="vm-cap">30天</p>
+                <span>退货保障</span>
+            </a>
+        </li>
+        <li title="80%商品闪电发货">
+            <a href="http://www.kadang.com/index.php?act=support&article_id=119" target="_blank"> 
+                <p class="service-pic pic-s5"></p>
+                <p class="vm-cap">24小时</p>
+                <span>80%商品闪电发货</span>
+            </a>
+        </li>
+        <li title="提供礼品级包装">
+          <p class="service-pic pic-s6"></p>
+          <p class="vm-cap">精美包装</p>
+          <span>提供礼品级包装</span>
+        </li>
+        <li>
+          <p class="service-pic pic-s7"></p>
+          <p class="vm-cap">199万用户</p>
+          <span>口碑信赖</span>
+        </li>
+        <li title="货到付款">
+            <a href="http://www.kadang.com/index.php?act=support&article_id=114" target="_blank"> 
+                <p class="service-pic pic-s8"></p>
+                <p class="vm-cap">1250城市</p>
+                <span>货到付款</span>
+            </a>
+        </li>
+      </ul>
+    </div>
+    <!-- 卡当服务 end -->
+
+    <!-- 底部链接 start -->
+    <div class="lay-link">
+      <p class="mod-link" kdref="1034">
+              <a href="http://www.kadang.com">首页</a>
+                                                                                                                                <a  target="_blank" href="http://www.kadang.com/list/0/">商品分类</a>
+                                <a  id="seller_login" target="_blank" href="http://seller.kadang.com/index.php?act=login&op=seller">商家登录</a>
+                                <a  target="_blank" href="http://www.kadang.com/index.php?act=market&amp;channel=www&amp;page=job">招聘英才</a>
+                                <a  target="_blank" href="/index.php?act=support&amp;article_id=23">联系我们</a>
+                                <a  target="_blank" href="/index.php?act=support&amp;article_id=22">关于我们</a>
+                                                <a  target="_blank" href="/index.php?act=support">买家帮助</a>
+                                    <a href="http://www.kadang.com/zt/ToMobile.html" target="_blank">手机卡当</a>
+      <a href="#ftlinklist" id="toshowlink">送礼导航</a>
+      </p>
+
+     <div id="ftlinklist" class="c_foot"> 
+    <div class="swhead">
+     送礼导航
+    </div>
+
+    <div class="swbody">
+              <dl> 
+          <dt>
+           人群 ： 
+          </dt> 
+          <dd>
+                            <a href="http://www.kadang.com/kysl/T002-54/">送爸爸</a>
+                            <a href="http://www.kadang.com/kysl/T003-23/">送妈妈</a>
+                            <a href="http://www.kadang.com/kysl/T004-19/">送长辈</a>
+                            <a href="http://www.kadang.com/kysl/T005-50/">送领导</a>
+                            <a href="http://www.kadang.com/kysl/T006-3/">送哥哥</a>
+                            <a href="http://www.kadang.com/kysl/T007-7/">送姐姐</a>
+                            <a href="http://www.kadang.com/kysl/T008-13/">送弟弟</a>
+                            <a href="http://www.kadang.com/kysl/T009-37/">送妹妹</a>
+                            <a href="http://www.kadang.com/kysl/T010-121/">送男朋友</a>
+                            <a href="http://www.kadang.com/kysl/T011-130/">送女朋友</a>
+                            <a href="http://www.kadang.com/kysl/T012-7/">送老公</a>
+                            <a href="http://www.kadang.com/kysl/T013-13/">送老婆</a>
+                            <a href="http://www.kadang.com/kysl/T014-6/">送老师</a>
+                            <a href="http://www.kadang.com/kysl/T015-37/">送同事</a>
+                            <a href="http://www.kadang.com/kysl/T016-29/">送同学</a>
+                            <a href="http://www.kadang.com/kysl/T017-25/">送闺蜜</a>
+                            <a href="http://www.kadang.com/kysl/T018-76/">送朋友</a>
+                            <a href="http://www.kadang.com/kysl/T019-50/">送老板</a>
+                            <a href="http://www.kadang.com/kysl/T020-44/">送上司</a>
+                            <a href="http://www.kadang.com/kysl/T021-239/">送亲戚</a>
+                      </dd>
+        </dl>
+              <dl> 
+          <dt>
+           节日 ： 
+          </dt> 
+          <dd>
+                            <a href="http://www.kadang.com/kysl/T022-9/">元旦新年礼物</a>
+                            <a href="http://www.kadang.com/kysl/T023-18/">母亲节礼物</a>
+                            <a href="http://www.kadang.com/kysl/T025-77/">开业送礼</a>
+                            <a href="http://www.kadang.com/kysl/T026-7/">春节礼物</a>
+                            <a href="http://www.kadang.com/kysl/T027-4/">儿童节礼物</a>
+                            <a href="http://www.kadang.com/kysl/T028-1/">万圣节礼物</a>
+                            <a href="http://www.kadang.com/kysl/T029-3/">探病送礼</a>
+                            <a href="http://www.kadang.com/kysl/T031-8/">父亲节礼物</a>
+                            <a href="http://www.kadang.com/kysl/T032-1/">光棍节礼物</a>
+                            <a href="http://www.kadang.com/kysl/T033-166/">结婚礼物</a>
+                            <a href="http://www.kadang.com/kysl/T034-60/">情人节礼物</a>
+                            <a href="http://www.kadang.com/kysl/T036-1/">感恩节礼物</a>
+                            <a href="http://www.kadang.com/kysl/T037-716/">生日礼物</a>
+                            <a href="http://www.kadang.com/kysl/T038-11/">三八妇女节礼物</a>
+                            <a href="http://www.kadang.com/kysl/T039-1/">教师节礼物</a>
+                            <a href="http://www.kadang.com/kysl/T040-53/">圣诞节礼物</a>
+                            <a href="http://www.kadang.com/kysl/T041-8/">商务送礼</a>
+                            <a href="http://www.kadang.com/kysl/T042-1/">白色情人节礼物</a>
+                            <a href="http://www.kadang.com/kysl/T043-50/">纪念日礼物</a>
+                            <a href="http://www.kadang.com/kysl/T044-5/">毕业送礼</a>
+                            <a href="http://www.kadang.com/kysl/T046-171/">中秋节礼物</a>
+                            <a href="http://www.kadang.com/kysl/T047-4/">周年礼物</a>
+                            <a href="http://www.kadang.com/kysl/T048-1/">开学送礼</a>
+                            <a href="http://www.kadang.com/kysl/T049-1/">五一劳动节礼物</a>
+                            <a href="http://www.kadang.com/kysl/T051-197/">情侣礼物</a>
+                            <a href="http://www.kadang.com/kysl/T052-2/">乔迁送礼</a>
+                      </dd>
+        </dl>
+              <dl> 
+          <dt>
+           星座 ： 
+          </dt> 
+          <dd>
+                            <a href="http://www.kadang.com/kysl/T053-17/">白羊座</a>
+                            <a href="http://www.kadang.com/kysl/T054-41/">双子座</a>
+                            <a href="http://www.kadang.com/kysl/T055-35/">狮子座</a>
+                            <a href="http://www.kadang.com/kysl/T056-3/">天秤座</a>
+                            <a href="http://www.kadang.com/kysl/T057-8/">射手座</a>
+                            <a href="http://www.kadang.com/kysl/T058-5/">水瓶座</a>
+                            <a href="http://www.kadang.com/kysl/T059-40/">金牛座</a>
+                            <a href="http://www.kadang.com/kysl/T060-10/">巨蟹座</a>
+                            <a href="http://www.kadang.com/kysl/T061-9/">处女座</a>
+                            <a href="http://www.kadang.com/kysl/T062-19/">天蝎座</a>
+                            <a href="http://www.kadang.com/kysl/T063-8/">魔羯座</a>
+                            <a href="http://www.kadang.com/kysl/T064-20/">双鱼座</a>
+                      </dd>
+        </dl>
+          </div> 
+
+    <div class="swhead">
+     送礼帮助
+    </div> 
+    <div class="swbody"> 
+     <ul> 
+                      <li><a href="http://www.kadang.com/kylw/1sm1t35/">圣诞节，送什么礼物</a></li>
+                      <li><a href="http://www.kadang.com/kysl/jrwfd21/">圣诞老人装礼物的袋子是什么颜色?</a></li>
+                      <li><a href="http://www.kadang.com/kylp/mhhdg2c/">圣诞节送女朋友什么礼物有创意</a></li>
+                      <li><a href="http://www.kadang.com/kylp/yrqaw3c/">圣诞节前的平安夜朋友间送什么礼物最合适，有什么特殊含义吗？</a></li>
+                      <li><a href="http://www.kadang.com/kylp/btscd33/">圣诞礼物应该要浪漫一点</a></li>
+                      <li><a href="http://www.kadang.com/kylp/d5r9z30/">就快到圣诞节了，送什么礼物给男朋友好呢？</a></li>
+                      <li><a href="http://www.kadang.com/kylw/3mgpr3/">圣诞节送男朋友什么礼物？六七百左右的！！！</a></li>
+                      <li><a href="http://www.kadang.com/kysl/gxdut13/">谁能告诉我初中生圣诞节送什么礼物浪漫又省钱</a></li>
+                      <li><a href="http://www.kadang.com/kylp/yzygfc/">圣诞送员工什么礼物</a></li>
+                      <li><a href="http://www.kadang.com/kylp/bjbqd4c/">给小朋友的圣诞礼物</a></li>
+                      <li><a href="http://www.kadang.com/kylp/zcrev4c/">圣诞节应该送女朋友什么礼物好</a></li>
+                      <li><a href="http://www.kadang.com/kylp/iyoux26/">圣诞节送女闺蜜什么礼物好</a></li>
+                      <li><a href="http://www.kadang.com/kylw/ytmnq9/">圣诞节送什么礼物给我追的女孩子比较好</a></li>
+                      <li><a href="http://www.kadang.com/kysl/gdznd23/">圣诞节就是我男友的生日了，这也是我第一次陪他一起过的生日，我该送什么礼物给他好呢？</a></li>
+                      <li><a href="http://www.kadang.com/kylp/flrwx23/">圣诞节到了，送男友什么礼物好呢？</a></li>
+                      <li><a href="http://www.kadang.com/kylp/hdqtw19/">手工制作圣诞礼物</a></li>
+                      <li><a href="http://www.kadang.com/kylw/2jqgv39/">谁能介绍我10元以下的特色小礼品啊，圣诞节卖K酷牛仔的时候要做来配送的</a></li>
+                      <li><a href="http://www.kadang.com/kylp/hbmv329/">圣诞节该送什么礼物给女朋友</a></li>
+                      <li><a href="http://www.kadang.com/kylp/5ceik26/">圣诞节给孩子送什么礼物好</a></li>
+                      <li><a href="http://www.kadang.com/kylp/zgrf129/">、圣诞该给跳街舞的男友什么礼物好呢？急需晓得！</a></li>
+           </ul> 
+    </div> 
+   </div>
+   <p class="mod-copyright">
+    Copyright © 2006-2014 kadang.com 网上经营许可证号：浙B2-20140235    </p>
+
+    </div>
+    <!-- 底部链接 end -->
+  </div>
+</div>
+<!-- 卡当footer  -->
+
+
+<a href="javascript:;" id="J_BtnCustom"></a>
+<div class="sideArea"> 
+        <!-- 定制侧拉层 -->
+        <div id="slideDoor" class="slideDoor"> <span id="J_OpenDoor" class="openDoor"><i></i>继续定制</span>
+        <div class="slideContent clearfix"> 
+                <!-- 设计器交互页 -->
+                <div class="slidePage designer clearfix">
+                <div class="diyArea fl">
+                        <h2> <span id="closeDoor" class="closeDoor"></span>
+                        <p id="proTitle" class="title"></p>
+                        <span onclick="NTKF.im_openInPageChat('kd_1005_9999');" class="airlines"><i class="detail-icons detail-icons-person"></i>联系客服</span> </h2>
+                        <ul class="tabbox clearfix">
+                        <li class="curr">商品一</li>
+                        <li>商品二</li>
+                        <li>商品三</li>
+                        <li>商品四</li>
+                        <li>商品五</li>
+                    </ul>
+                        <div class="frameWrap">
+                        <input id="diyFrameUrl" type="hidden" value="" />
+                        <iframe id="diyFrame" name="diyFrame" class="diyFrame" src="" frameborder="no" border="0" scrolling="no" width="750" height="558"></iframe>
+                    </div>
+                    </div>
+                <!--右侧产品购买-->
+                <div class="proArea pr fl">
+                        <div class="infoWrap">
+                        <p style="display:none;">想使用以前上传的图片？请先<a id="slideLogin" href="javascript:;">登录</a></p>
+                    </div>
+                        <div class="btnWrap" id="J_goods_btn">
+                        <button id="buynow" class="buynow dmpClick" data-actiontype="3" rel="8813" disabled="disabled">立即购买</button>
+                        <button id="addcart" class="addcart dmpClick" data-actiontype="3" rel="8813" disabled="disabled" kdref="1082"><i></i>加入购物车</button>
+                    </div>
+                        <div class="btnWrap" id="J_package_btn" style="display:none">
+                        <button id="package_addcart" class="addcart dmpClick" data-actiontype="3" rel="8813" disabled="disabled" kdref="1082"><i></i>加入购物车</button>
+                    </div>
+                        <a id="switch" class="switch open pa"></a> </div>
+                <!--end:右侧产品购买--> 
+            </div>
+                <!-- end:设计器交互页 -->
+                <div id="album" class="slidePage album"><!--上传相册容器--></div>
+                <div id="login" class="slidePage login"><!--用户登录容器--></div>
+            </div>
+    </div>
+        <!-- end:定制侧拉层 --> 
+    </div>
+<div id="J_IMOverlay" class="ui-modal im-info">
+        <div class="modal-dialog">
+        <div class="modal-content">
+                <div class="modal-header"> <a href="javascript:;" data-dismiss="modal" class="icons modal-close"></a> </div>
+                <div class="modal-body"> </div>
+                <div class="modal-footer"> </div>
+            </div>
+    </div>
+    </div>
+
+<!--定制套餐弹层 S-->
+<div class="package-layer" id="J_packageGuig"></div>
+<script id="seajsnode" src="http://res.kadang.cn/sea.js?global"></script> 
+<script>
+	var custom_list_data = new Array(),
+		package_mark = '',
+		package_id = 0,
+        storeId = '5';
+        
+    seajs.use('js/mall/detail/detailEntry');
+    $(document).ready(function(){
+		$.getJSON('/index.php?act=goods&op=ajax_goods_judge&goods_id=8813',function(data){
+			if(data['store_self']==0){
+				$('#judgement_show_buyer').show();
+				if(data['allow_sell']==1){
+					$('#judgement_show_buyer').show();
+					$('#judgement_show_stock_empty').hide();
+					$('#judgement_show_buy_btn').show();
+				}else{
+					$('#judgement_show_buyer').hide();
+					$('#judgement_show_stock_empty').show();
+					$('#judgement_show_buy_btn').hide();
+				}
+			}else{
+				$('#judegment_show_seller').show();
+			}
+		});
+    });//公用文件
+    seajs.use('js/mall/market/common',function(){
+        $('body').bind('gaLoaded',function(){
+            $("#sideNavD").on('click','li',function(){
+                var floorText = $(this).text();
+                ga('send', 'event', '详情页快速导航', '详情页快速导航定位', floorText);
+            });
+        $("#J_BtnCollect").on('click',function(){
+                var collText = $(this).text();
+                ga('send', 'event', '详情页主button', '加入收藏', collText);
+            });
+        });
+    });
+</script>
+</body>
+</html>

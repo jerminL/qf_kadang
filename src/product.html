@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品详情</title>
+		<link rel="stylesheet" href="css/header.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/product.css" />
+		<script src="js/jquery-1.12.0.js"></script>
+		<script src="js/common.js"></script>
+		<script src="js/product.js" ></script>
+		
+	</head>
+	<body>
+		<div id="header">
+			<span class="logo"><a href="#" target="_self" title="卡当网"></a></span>
+			<div class="intro">
+				<ul class="intro-login">
+					<li>Hi，欢迎来到卡当网</li>
+					<li class="login"><a href="#" title="登录">登录</a></li>
+					<li class="sign"><a href="#" title="注册">注册</a></li>
+				</ul>
+	        	<ul class="intro-menu">
+	        		<li>
+	        			<a href="#" title="我的卡当">我的卡当<i class="icon"></i></a>
+	        			<ul class="select">
+	        				<li><a href="#" title="我的订单">我的订单</a></li>
+	        				<li><a href="#" title="我的优惠券">我的优惠券</a></li>
+	        			</ul>
+	        		</li>
+	        		<li>
+	        			<a href="#" title="购物车"><i class="icon-cart"></i>购物车<i class="icon"></i></a>
+	        			<p class="select" style="width: 304px;left:80px;color:#999">您的购物车中暂无商品，赶快选择心爱的商品吧！</p>
+	        		</li>
+	        		<li>
+	        			<a href="#" title="手机版"><i class="icon-phone"></i>手机版</a>
+	        			<p class="select" style="left: 100px;width: 148px;height:188px;border: 0;padding: 0;"><img src="img/img-code.jpg"/></p>
+	        		</li>
+	        		<li>
+	        			<a href="#" title="我的收藏">我的收藏<i class="icon"></i></a>
+	        			<ul class="select" style="left: 240px;">
+	        				<li><a href="#" title="收藏的商品">收藏的商品</a></li>
+	        				<li><a href="#" title="收藏的店铺">收藏的店铺</a></li>
+	        			</ul>
+	        		</li>
+	        		<li><a href="#" title="在线客服">在线客服</a></li>
+	        		<li><a href="#" title="收藏卡当网">收藏卡当网</a></li>
+	        	</ul>
+        	</div>
+        	<div class="seach">
+        		<input type="text" class="seach-input" placeholder="七夕情人节送女朋友什么？" />
+        		<input type="submit" class="search-button"/>
+	        	<img src="img/kdDes.png" style="float: right;margin:12px 35px 0 0;"/>
+        		<ul class="search-tab">
+        			<li><a href="#" title="送女朋友">送女朋友</a></li>
+        			<li><a href="#" title="浪漫表白">浪漫表白</a></li>
+        			<li><a href="#" title="我的订单查询">我的订单查询</a></li>
+        		</ul>
+        	</div>
+        	
+        	<div class="gonglue">
+        		<h2><i class="nav-icons icons-arrows-cate"></i>送礼攻略</h2>
+        		<div class="giftClassify clearfix" style="display: none;width: 860px;padding: 0;">
+		        	<div class="gift-xq">
+		        		<p class="gift-tle">按兴趣选礼物</p>
+		                <div class="cate-item">
+		            		<h3 class="vm-cap">
+		                        <a title="礼物送给谁" href="">礼物送给谁</a>
+		            		</h3>
+		            		<div class="vm-cont">
+		            			<a title="送普通朋友" href="">送普通朋友</a>
+		                        <a title="送心仪/暗恋对象" href="">送心仪/暗恋对象</a>
+		                        <a title="送女盆友/老婆" href="">送女盆友/老婆</a>
+		                        <a title="送男盆友/老公" href="" >送男盆友/老公</a>
+		                        <a title="送情侣" href="" >送情侣</a>
+		                      </div>
+		      			</div>
+		                <div class="cate-item">
+					        <h3 class="vm-cap">
+					                <a title="收礼人个性" href=""  >收礼人个性</a>
+					        </h3>
+					        <div class="vm-cont">
+					        	<a title="女神" href="" style="color:#666666;">女神</a>
+				                <a title="可爱/萌妹子" href="">可爱/萌妹子</a>
+				                <a title="文艺女青年" href="">文艺女青年</a>
+				                <a title="吃货" href="">吃货</a>
+				                <a title="学生党" href="">学生党</a>
+				                <a title="星座控" href="">星座控</a>
+				                <a title="白领" href=""  >白领</a>
+				            </div>
+		      			</div>
+		        		<div class="cate-item">
+					        <h3 class="vm-cap">
+					                <a title="礼物价格" href=""  >礼物价格</a>
+					        </h3>
+					        <div class="vm-cont">
+					        	<a title="100以下" href=""  >100以下</a>
+				                <a title="100-200" href="" style='color:#666666;' >100-200</a>
+				                <a title="200-500" href=""  >200-500</a>
+				                <a title="500以上" href="" >500以上</a>
+				                <a title="包邮" href="">包邮</a>
+				            </div>
+					  </div>
+			        <div class="cate-item">
+			    		<h3 class="vm-cap">
+					        <a title="礼物类型" href=""  >礼物类型</a>
+					    </h3>
+					    <div class="vm-cont">
+					    	<a title="照片定制" href=""  >照片定制</a>
+			        		<a title="名字定制" href=""  >名字定制</a>
+					        <a title="创意又有心意" href=""  >创意又有心意</a>
+					        <a title="一对一对的" href=""  >一对一对的</a>
+					        <a title="实用" href=""  >实用</a>
+					        <a title="浪漫" href=""  >浪漫</a>
+					        <a title="礼物套装" href=""  >礼物套装</a>
+					        <a title="星座" href=""  >星座</a>
+				      	</div>
+			  		</div>
+				</div>
+				
+					<!--按类目选礼物-->
+					<div class="gift-lm" style="width: 520px;">
+					    <p class="gift-tle">按类目选礼物</p>
+					    <div class="cate-cont">
+					        <div class="cate-item">
+					        <h3 class="vm-cap"> <a title="时尚饰品" href="" style="font-size:14px;">时尚饰品</a> </h3>
+					        <div class="vm-cont">
+				                <a href="" title="项链">项链</a>
+				                <a href="" title="手链手镯">手链手镯</a>
+				                <a href="" title="戒指">戒指</a>
+				                <a href="" title="发饰/胸针">发饰/胸针</a>
+				                <a href="" title="耳钉耳环">耳钉耳环</a>
+				                <a href="" title="男士饰品">男士饰品</a>
+				                <a href="" title="高档珠宝">高档珠宝</a>
+					        </div>
+					    </div>
+					        <div class="cate-item">
+					        	<h3 class="vm-cap">
+					        		<a title="围巾配饰" href="" style="font-size:14px;">围巾配饰</a>
+					        	</h3>
+					        	<div class="vm-cont">
+					                <a href="" title="围巾/手套">围巾/手套</a>
+					                <a href="" title="钱包/背包">钱包/背包</a>
+					                <a href="" title="手表">手表</a>
+					                <a href="" title="皮带">皮带</a>
+					                <a href="" title="钥匙扣" >钥匙扣</a>
+					                <a href="" title="zippo/军刀">zippo/军刀</a>
+					                <a href="" title="梳子/化妆镜">梳子/化妆镜</a>
+					            </div>
+					      	</div>
+						    <div class="cate-item">
+						        <h3 class="vm-cap"> 
+						        	<a title="创意摆件" href="" style="font-size:14px;">创意摆件</a> 
+						        </h3>
+						        <div class="vm-cont">
+					                <a href="" title="DIY模型/拼图">DIY模型/拼图</a>
+					                <a href="" title="水晶摆件" >水晶摆件</a>
+					                <a href="" title="装饰画/摆件">装饰画/摆件</a>
+					                <a href="" title="蜡烛/创意灯">蜡烛/创意灯</a>
+					                <a href="" title="音乐盒" >音乐盒</a>
+					                <a href="" title="印章">印章</a>
+					                <a href="" title="汽车饰品">汽车饰品</a>
+						        </div>
+						    </div>
+						    <div class="cate-item">
+						        <h3 class="vm-cap"> 
+						        	<a title="布艺家纺" href="" style="font-size:14px;">布艺家纺</a> 
+						        </h3>
+						        <div class="vm-cont">
+					                <a href="" title="毛绒公仔">毛绒公仔</a>
+					                <a href="" title="抱枕靠垫">抱枕靠垫</a>
+					                <a href="" title="居家服/情趣">居家服/情趣</a>
+				              	</div>
+						    </div>
+						    <div class="cate-item">
+						        <h3 class="vm-cap"> 
+						        	<a title="花/巧克力" href="" style="font-size:14px;">花/巧克力</a> 
+						        </h3>
+						        <div class="vm-cont">
+					                <a href="" title="巧克力">巧克力</a>
+					                <a href="" title="永生花">永生花</a>
+					                <a href="" title="金箔花">金箔花</a>
+					                <a href="" title="酒水饮料" >酒水饮料</a>
+					                <a href="" title="卡通花/创意花束">卡通花/创意花束</a>
+					                <a href="/list/40-166/" title="蜡烛/气氛配件">蜡烛/气氛配件</a>
+					            </div>
+						    </div>
+						    <div class="cate-item">
+						        <h3 class="vm-cap"> 
+						        	<a title="家居日用" href="" style="font-size:14px;">家居日用</a> 
+						        </h3>
+						        <div class="vm-cont">
+					                <a href="" title="变色杯/保温杯">变色杯/保温杯</a>
+					                <a href="" title="遮阳伞">遮阳伞</a>
+					                <a href="" title="创意灯" >创意灯</a>
+					                <a href="" title="情趣礼品">情趣礼品</a>
+					                <a href="" title="生活电器">生活电器</a>
+					                <a href="" title="碗筷锅具">碗筷锅具</a>
+					                <a href="" title="收纳">收纳</a>
+					                <a href="" title="洗漱用品">洗漱用品</a>
+					            </div>
+						    </div>
+						    <div class="cate-item">
+						        <h3 class="vm-cap"> 
+						        	<a title="数码办公" href="" style="font-size:14px;">数码办公</a> 
+						        </h3>
+						        <div class="vm-cont">
+					                <a href="" title="记事本">记事本</a>
+					                <a href="" title="钢笔" >钢笔</a>
+					                <a href="" title="手机壳">手机壳</a>
+					                <a href="" title="鼠标垫">鼠标垫</a>
+					                <a href="" title="移动电源">移动电源</a>
+					                <a href="" title="U盘">U盘</a>
+					                <a href="" title="名片夹">名片夹</a>
+					            </div>
+						    </div>
+						    <div class="cate-item">
+						        <h3 class="vm-cap"> 
+						        	<a title="照片印刷" href="" style="font-size:14px;">照片印刷</a> 
+						        </h3>
+						        <div class="vm-cont">
+					                <a href="" title="照片冲印">照片冲印</a>
+					                <a href="" title="年历挂历">年历挂历</a>
+					                <a href="" title="报纸">报纸</a>
+					                <a href="" title="纪念册/贺卡">纪念册/贺卡</a>
+					                <a href="" title="扑克">扑克</a>
+					            </div>
+						    </div>
+						
+						</div>
+        			</div>
+				</div>
+        	</div>
+        	<div class="nav">
+        		<ul class="nav-list">
+        			<li><a href="#" title="首页">首页</a></li>
+        			<li><a href="#" title="暖心礼物">暖心礼物<img src="img/navHot.gif" class="nav-hot"/></a></li>
+        			<li><a href="#" title="送女生">送女生</a></li>
+        			<li><a href="#" title="送男生">送男生</a></li>
+        			<li><a href="#" title="生日礼物">生日礼物</a></li>
+        			<li><a href="#" title="本周新品">本周新品</a></li>
+        			<li><a href="#" title="约个会">约个会！</a></li>
+        			<li class="navHover"></li>
+        		</ul>
+        	</div>
+		</div>
+		
+		<div id="main">
+			<div class="mainCon">
+				<div class="first-screen clearfix">
+					<div class="goods-main">
+						<div class="goods-data clearfix">
+	                        <div class="goods-show">
+	             
+								<div id="zoom" class="kd-img-zoom">
+								    
+								    	<!--<div class="small_pic">
+											<span class="mark"></span>
+									        <span class="float_layer"></span>
+									        <img src="img/product.jpg" alt="马卡龙"/>
+									    </div>
+									
+									    <div class="big_pic">
+											<img src="img/bigProduct.jpg"/>
+										</div>-->
+										
+										    <a id="J_ZoomLink" class="KD-ZoomLink zoom-link">
+										    	<div class="zoomPad">
+											        <img class="KD-ZoomThumb" src="img/product.jpg">
+											        <span class="detail-icons detail-icons-zoom"></span>
+										        </div>
+										    </a>
+										    <div class="big_pic">
+												<img src="img/bigProduct.jpg"/>
+											</div>
+								</div>
+	
+								<!--小图-->
+								<div class="kd-img-slide">
+								    <ul id="J_PhotoList" class="zoom-candidate clearfix">
+				                        <li class="item">
+					                        <a href='' class='zoom-full-img zoomThumbActive'>
+					                            <img src="img/product1.jpg">
+					                        </a>
+					                    </li>
+	                                    <li class="item">
+					                        <a href='' class='zoom-full-img'>
+					                            <img src="img/product2.jpg">
+					                        </a>
+					                    </li>
+	                                    <li class="item">
+					                        <a href='' class='zoom-full-img'>
+					                            <img src="img/product3.jpg">
+					                        </a>
+					                     </li>
+	                                    <li class="item">
+					                        <a href='' class='zoom-full-img'>
+					                            <img src="img/product4.jpg">
+					                        </a>
+					                     </li>
+	                                </ul>
+								</div>
+								
+								<div class="lay-social">
+								    <div class="social-action">
+								        <a id="J_IShare" href="javascript:void(0);" class="kd-fs action-share">
+								            <i class="detail-icons detail-icons-share"></i>告诉小伙伴
+								        </a>
+								    </div>
+								</div>                    
+	                        
+	                        </div>
+	                        <div class="goods-text">
+		                        <h2 class="lay-title" title="限量版马卡龙充电式多功能移动电源 精致小巧一手掌握">限量版马卡龙充电式多功能移动电源 精致小巧一手掌握    <span id="J_PrimeProp"></span><span id="J_TplProp"></span></h2>
+								<div class="lay-comment">
+									<p class="mod-cont"> <i class="icon icon-leftquote"></i> 
+										<span class="vm-live">大多数女生都爱美食，所以，这款马卡龙甜品造型的移动电源就是女生最无法抗拒的礼物。在大姨妈关顾的日子里，不少女生畏寒，四肢显凉，它可以帮忙暖肚子，平时又是功能强大的移动电源。好感度上升n个级别，期待她惊喜和幸福的表情吧~</span> <i class="icon icon-rightquote"></i> 
+									</p>
+								</div>
+								<div class="lay-meta mod-pad lay-bg">
+									<dl class="mod-unit clearfix" >
+									    <dt>价格：</dt>
+									    <dd>
+									    	<p class="row-price">
+						                        <i class="dollar">&yen;</i><span id="J_Price">138.00</span>
+						                        <span class="promotion"><em title="免运费" class="my"></em></span>  
+									    	</p>
+									    </dd>
+									</dl>
+								</div>
+								<div class="lay-meta mod-pad">
+									<dl class="mod-unit clearfix" >
+									    <dt>送至：</dt>
+									    <dd>
+									    	<p class="addr-txt"></p>
+									            <div class="mailAddr clearfix">
+													<!--省-->
+											        <dl class="addrDl" id="J_addrprov">
+											          <dt><em>广东</em><i></i></dt>
+											          <dd class="clearfix">
+											            <a href="" class="addrPop-close"><i class="detail-icons detail-icons-close"></i></a>
+											            <span><a href="">北京1</a></span>
+											            <span><a href="">北京2</a></span>
+											            <span><a href="">北京3</a></span>
+											            <span><a href="">北京4</a></span>
+											            <span><a href="">北京5</a></span>
+											            <span><a href="">北京6</a></span>
+											            <span><a href="">北京7</a></span>
+											            <span><a href="">北京8</a></span>
+											            <span><a href="">北京9</a></span>
+											            <span><a href="" class="selected">广东</a></span>
+											            <span><a href="">北京11</a></span>
+											            <span><a href="">北京12</a></span>
+											            <span><a href="">北京13</a></span>
+											            <span><a href="">北京14</a></span>
+											            <span><a href="">北京15</a></span>
+											            <span><a href="">北京16</a></span>
+											            <span><a href="">北京17</a></span>
+											            <span><a href="">北京18</a></span>
+											            <span><a href="">北京19</a></span>
+											            <span><a href="">北京20</a></span>
+											            <span><a href="">北京21</a></span>
+											            <span><a href="">北京22</a></span>
+											            <span><a href="">北京23</a></span>
+											            <span><a href="">北京24</a></span>
+											            <span><a href="">北京25</a></span>
+											            <span><a href="">北京26</a></span>
+											            <span><a href="">北京27</a></span>
+											            <span><a href="">北京28</a></span>
+											            <span><a href="">北京29</a></span>
+											            <span><a href="">北京30</a></span>
+											            <span><a href="">北京31</a></span>
+											            <span><a href="">北京32</a></span>
+											            <span><a href="">北京33</a></span>
+											            <span><a href="">北京34</a></span>
+											            <span><a href="">北京35</a></span>
+											          </dd>
+											        </dl>
+											        <!--市-->
+											        <dl class="addrDl" id="J_addrcity">
+											          <dt><em>深圳市</em><i></i></dt>          
+											          <dd class="clearfix">
+											            <a href="" class="addrPop-close"><i class="detail-icons detail-icons-close"></i></a>
+											            <span><a href="">广州1</a></span>
+											            <span><a href="" class="selected">深圳</a></span>
+											            <span><a href="">广州3</a></span>
+											            <span><a href="">广州4</a></span>
+											            <span><a href="">广州5</a></span>
+											            <span><a href="">广州6</a></span>
+											            <span><a href="">广州7</a></span>
+											            <span><a href="">广州8</a></span>
+											            <span><a href="">广州9</a></span>
+											            <span><a href="">广州10</a></span>
+											            <span><a href="">广州11</a></span>
+											            <span><a href="">广州12</a></span>
+											            <span><a href="">广州13</a></span>
+											            <span><a href="">广州14</a></span>
+											            <span><a href="">广州15</a></span>
+											            <span><a href="">广州16</a></span>
+											            <span><a href="">广州17</a></span>
+											            <span><a href="">广州18</a></span>
+											          </dd>
+											        </dl> 
+									    		</div>     
+										    <p class="addr-txt">
+											  	<span class="KD-Postage" data-is-free="1">卖家承担运费</span>
+										    </p>
+										    <div class="songh clearfix">
+										    	<p class="addr-txt delivery_info"> 现在下单，由 卡当自营店<b class="txtlight">明天（20日）</b>发货</p>
+									    	</div>
+								        </dd>
+									</dl>
+								</div>
+								<div class="lay-data mod-pad">
+							        <p>累计评价 <a href="" id="J_LinkComment" class="vm-link"><span>2619</span></a></p>|
+							            <p>最近30天销量 <a href="" id="J_LinkSales" class="vm-link"><span>4</span></a></p>|
+							        <p class="row-boss"><span title="联系客服" class="airlines"><i class="detail-icons detail-icons-person"></i>联系客服</span></p>
+								</div>
+								<div class="lay-custom mod-pad">
+								  <div id="J_ValidWrap" class="valid-cont">
+								        <dl class="mod-unit clearfix" >
+										    <dt>款式 ：</dt>
+										    <dd>
+										        <div class="custom-sell">
+										        	<ul id="J_MainWrap" class="clearfix">
+								                        <li class="sel-item" data-id="391"> 白色<span class="sel-mark"></span> </li>
+								                        <li class="sel-item" data-id="392"> 蓝色<span class="sel-mark"></span> </li>
+								                        <li class="sel-item" data-id="393"> 红色<span class="sel-mark"></span> </li>
+								                        <li class="sel-item" data-id="394"> 淡紫色<span class="sel-mark"></span> </li>
+										            </ul>
+										        </div>
+										    </dd>
+								    	</dl>
+								        <dl class="mod-unit clearfix">
+									    	<dt>件数：</dt>
+									    	<dd>
+									        	<div class="sel-count clearfix">
+									        		<div class="vm-control"> <a title="减少" href="" class="minus">-</a>
+									            		<input type="text" value="1" id="J_Amount" class="quantity"/>
+									            		<a title="增加" href=""  class="plus">+</a> 
+									        		</div>
+									          		&nbsp;
+									          		<span id="J_Stock" class="count-tip">当前库存 76 件</span>
+									        	</div>
+									      </dd>
+								    	</dl>
+									</div>
+								</div>
+								<div class="lay-buy mod-pad" id="J_BuyOrDiy">
+								    <dl class="mod-unit clearfix" id="judgement_show_buyer">
+									    <dt></dt>
+									    <dd>
+									    	<div class="main-diy" > 
+								                <a href="" id="J_BtnBuy" class="kd-btn kd-btn-buy dmpClick">立即购买</a> 
+								                <a href="" id="J_BtnCart" class="kd-btn kd-btn-cart dmpClick">加入购物车</a>
+								                <a href="" id="J_BtnCollect" class="kd-btn kd-btn-collect dmpClick" ><i></i>加入收藏</a>
+									    	</div>
+									    </dd>
+									</dl>
+								</div>
+								<dl class="mod-unit mod-promise">
+									<dt>承诺：</dt>
+									<dd> 
+									  	<a href="" class="link-real">100%正品保证</a>
+									    <a href="" class="link-return">30天退货保障</a>
+									    <a href="" class="link-baom">送礼价格密保</a>
+									</dd>
+								</dl>
+	             			</div>
+						</div>
+					</div>
+					
+					
+				</div>
+				
+			</div><!--content-->
+			
+		</div><!--main-->
+		
+		
+		
+		
+		
+	
+	
+	</body>
+</html>
