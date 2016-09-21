@@ -1,5 +1,8 @@
 jQuery(function($){
-
+//	$("a").click(function(e){
+//		e.preventDefault();
+//	});
+	
 	/*顶部导航栏的下拉菜单【需完善】*/
 	var $introMenu=$("#header .intro-menu");
 	var $menuSel=$("#header .intro-menu .select");
@@ -45,12 +48,35 @@ jQuery(function($){
 		})
 	});
 	
-		/*送礼导航*/
+	/*送礼攻略*/
+	$(".gonglue h2").on("mouseenter",function(){
+		$(".giftClassify").slideDown().on("mouseenter",function(){
+			$(this).show();
+		}).on("mouseleave",function(){
+			$(this).hide();
+		});
+	}).on("mouseleave",function(){
+		$(".giftClassify").hide();
+	});
+	
+	
+	/*送礼导航*/
 	$("#toshowlink").click(function(){
 		$("#ftlinklist").toggle();
 	})
 	
 	/*回到顶部*/
+	$(window).scroll(function(){
+		var currentTop=($(window).scrollTop())+($(window).innerHeight()/2);
+		
+		if (currentTop>$(window).innerHeight()) {
+			$("#gotop").show();
+		}else{
+			$("#gotop").hide();
+		}
+	});
+	
+	
 	//鼠标移入时移除箭头，创建span
 	$("#gotop").on("mouseenter",function(){
 		$(this).find("i").remove();
@@ -61,7 +87,7 @@ jQuery(function($){
 			height: 38
 		}).appendTo($(this).find("a"));
 	})
-	//鼠标移除，移除span，创建箭头
+	//鼠标移出，移除span，创建箭头
 	.on("mouseleave",function(){
 		$(this).find("span").remove();
 		$("<i/>").addClass("icon gotop").appendTo($(this).find("a"));

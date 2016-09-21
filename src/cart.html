@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/cart.css" />
+		<script src="js/jquery-1.12.0.js"></script>
+		<script src="js/common.js"></script>
+		<script src="js/cart.js" ></script>
+	</head>
+	
+	<body>
+		<div class="mini-container">
+			<div class="header">
+			    <div class="lay-logo"> 
+			    	<a href="" class="logo-link" title="卡当网"> <img src="img/cartLogo.png" alt="卡当网"> </a> 
+			    </div>
+			    <div class="cart-steps"></div>
+			</div>
+			<div class="main">
+			    <div class="part-upside">
+	            	<span>现在<a id="J_Login" href="">登录</a>，购物车中的商品将永久保存<span>
+	            </div>
+			    <div id="J_PartShop">
+			        <form method="post" id="J_FormCart">
+			            <table class="cart-table">
+			                <thead class="cart-table-hd">
+			                    <tr>
+			                        <th class="w60">
+			                        	<label class="check-all">
+			                                <input id="J_CheckAll" type="checkbox" class="checkbox" /> 全选
+			                        	</label>
+			                        </th>
+			                        <th colspan="2"> 商品信息</th>
+			                        <th class="w120"> 单价（元）</th>
+			                        <th>数量</th>
+			                        <th class="w120"> 总计（元）</th>
+			                        <th class="w210"> 操作</th>
+			                    </tr>
+			                </thead>
+			                <tbody class="wrap-store">
+			                    <tr class="lay-store-hd">
+			                        <th>
+			                        	<label>
+			                            	<input class="cbox-store" type="checkbox" />
+			                            </label>
+			                        </th>
+			                        <th colspan="5" class="mod-name"> 店铺：
+			                        	<a href="" target="_blank">卡当自营店</a>
+			                        	<span title="联系客服" class="airlines"><i class="detail-icons"></i>联系客服</span> 
+			                        </th>
+			                        <th class="mod-promotion"> </th>
+			                    </tr>
+			                    
+								<!--商品内容-->
+			                    <tr class="lay-goods-item">
+			                    	<td><input type="checkbox"/></td>
+			                        <td>
+			                        	<a href=""><img src="img/product1.jpg" alt="限量版马卡龙充电式多功能移动电源 精致小巧一手掌握" width="60" height="60" /></a>
+			                        </td>
+			                    	<td class="w190">
+			                    		<dl class="mod-goods-info">
+				                            <dt class="vm-tit">
+				                            	<a href="">限量版马卡龙充电式多功能移动电源 精致小巧一手掌握</a>
+				                            </dt>
+				                            <dd class="vm-spec">款式:淡紫色&nbsp;&nbsp;&nbsp;</dd>
+			                        	</dl>
+			                    	</td>
+			                    	<td data-role="container-money-price">
+			                    		<div class="mod-price-discount">
+				                            <p class="vm-original">138.00</p>
+				                            <p class="vm-cutprice">138.00</p>
+				                        </div>
+			                    	</td>
+			                        <td data-behavor="empty-on-zhxs" class="mod-quantity">
+			                        	<div class="vm-control"> 
+			                        		<a class="minus" href="" title="减少">-</a>
+				                            <input class="quantity" type="text" value="1" />
+				                            <a class="plus" href="" title="增加" >+</a> 
+			                        	</div>
+			                        </td>
+			                    	<td class="mod-price">138.00</td>
+			                        <td class="more_actions">
+			                        	<a class="del" href="">删除</a>
+			                        </td>
+			                	</tr>
+			                	
+			                    <!--商品内容结束-->           
+			                </tbody>
+			            </table>
+			            
+			            <div class="pay">
+			                <label id="J_Cod">
+			                    <input id="J_CodCbox" class="checkbox" type="checkbox"/> 货到付款
+			                </label>
+			                <span> 商品金额（不含运费和优惠）： <em id="J_TotalPrice" class="vm-total"> <i class="vm-dollar">&yen;</i> 138.00 </em></span>
+			            </div>
+			            <div class="pay"> 
+			            	<a class="btn-gray mr20" href="">继续购物</a> <a href="" id="J_BtnSettlement" class="btn-red">去结算</a>
+			            </div>
+			        </form>
+			    </div>
+			    <div id="J_BfdTab" class="bfd-tab pos-xmax">
+        <ul class="tabNav clearfix">
+        	<!--待写-->
+        </ul>
+        <div class="tabCon">
+            <div id="J_RecCAC" class="bfd-banner tab-item" kdref="1138"></div>
+        </div>
+        <div id="footer" class="footer">
+            <div class="lay-link">
+                <p class="mod-copyright">Copyright © 2006-2014 kadang.com 网上经营许可证号：浙B2-20140235</p>
+            </div>
+        </div>
+    </div>
+			</div>
+		</div>
+		
+		
+		<!--固定屏幕导航栏-->
+		<div id="fastNav">
+			<ul>
+				<li class="fast-li olSer">
+					<a class="fast-a onl_askme">
+						<i class="icon wenwo"></i>
+						<span>送礼<br/>问我</span>
+					</a>
+				</li>
+				<li class="fast-li">
+					<a class="fast-a">
+						<span>我的<br/>收藏</span>
+					</a>
+				</li>
+				<li class="fast-li">
+					<a class="fast-a">
+						<span>我有<br/>话说</span>
+					</a>
+				</li>
+				<li class="fast-li">
+					<a class="fast-a" title="APP下载">
+						<i class="icon weixin" id="weixin"></i>
+					</a>
+					<div id="wxApp"></div>
+				</li>
+				<li class="fast-li" id="gotop">
+					<a class="fast-a">
+						<i class="icon gotop"></i>
+						<!--<span class="span-gotop">回到<br/>顶部</span>-->
+					</a>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

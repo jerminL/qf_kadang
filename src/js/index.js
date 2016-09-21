@@ -2,7 +2,7 @@ jQuery(function($){
 	/*左边"全部礼物"的二级菜单【有bug】*/
 	var $navGift=$("#main .nav-gift dl");
 	
-	//显示隐藏div
+	//显示隐藏二级菜单div
 	$navGift.on("mouseenter",function(){
 		$(this).find(".gift-dd").css("display","inline");
 		
@@ -109,13 +109,6 @@ jQuery(function($){
 	
 	$(window).scroll(function(){
 		var currentTop=($(window).scrollTop())+($(window).innerHeight()/2);
-		
-		if (currentTop>$(window).innerHeight()) {
-			$("#gotop").show();
-		}else{
-			$("#gotop").hide();
-		}
-		
 		
 		/*导航栏固定屏幕上方*/	
 		if(currentTop>=top+($(window).innerHeight()/2)&&currentTop<=6990+($(window).innerHeight()/2)){

@@ -2,19 +2,17 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>商品详情</title>
+		<title>列表页</title>
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/common.css" />
-		<link rel="stylesheet" href="css/product.css" />
+		<link rel="stylesheet" href="css/list.css" />
 		<script src="js/jquery-1.12.0.js"></script>
 		<script src="js/common.js"></script>
-		<script src="js/mycookie.js"></script>
-		<script src="js/product.js" ></script>
-		
+		<script src="js/list.js" ></script>
 	</head>
 	<body>
 		<div id="header">
-			<span class="logo"><a href="index.html" target="_self" title="卡当网"></a></span>
+			<span class="logo"><a href="#" target="_self" title="卡当网"></a></span>
 			<div class="intro">
 				<ul class="intro-login">
 					<li>Hi，欢迎来到卡当网</li>
@@ -30,7 +28,7 @@
 	        			</ul>
 	        		</li>
 	        		<li>
-	        			<a href="cart.html" target="_blank" title="购物车"><i class="icon-cart"></i>购物车<i class="icon"></i></a>
+	        			<a href="#" title="购物车"><i class="icon-cart"></i>购物车<i class="icon"></i></a>
 	        			<p class="select" style="width: 304px;left:80px;color:#999">您的购物车中暂无商品，赶快选择心爱的商品吧！</p>
 	        		</li>
 	        		<li>
@@ -234,7 +232,7 @@
         	</div>
         	<div class="nav">
         		<ul class="nav-list">
-        			<li><a href="index.html" target="_blank" title="首页">首页</a></li>
+        			<li><a href="#" title="首页">首页</a></li>
         			<li><a href="#" title="暖心礼物">暖心礼物<img src="img/navHot.gif" class="nav-hot"/></a></li>
         			<li><a href="#" title="送女生">送女生</a></li>
         			<li><a href="#" title="送男生">送男生</a></li>
@@ -245,347 +243,11 @@
         		</ul>
         	</div>
 		</div>
-		
-		<div id="main">
-			<div class="mainCon">
-				<div class="first-screen clearfix">
-					<div class="goods-main">
-						<div class="goods-data clearfix">
-	                        <div class="goods-show">
-	             				<!--放大镜-->
-								<div id="zoom" class="kd-img-zoom">
-								    <a id="zoomPad">
-									    <img id="smallPic" src="img/product1.jpg">
-									    <div id="bigPic">
-											<img src="img/bigProduct1.jpg"/>
-										</div>
-								    </a>
-								</div>
 	
-								<!--小图-->
-								<div class="kd-img-slide">
-								    <ul id="J_PhotoList" class="zoom-candidate clearfix">
-				                        <li class="item">
-					                        <a href='' class='zoom-full-img zoomThumbActive'>
-					                            <img src="img/product1.jpg">
-					                        </a>
-					                    </li>
-	                                    <li class="item">
-					                        <a href='' class='zoom-full-img'>
-					                            <img src="img/product2.jpg">
-					                        </a>
-					                    </li>
-	                                    <li class="item">
-					                        <a href='' class='zoom-full-img'>
-					                            <img src="img/product3.jpg">
-					                        </a>
-					                     </li>
-	                                    <li class="item">
-					                        <a href='' class='zoom-full-img'>
-					                            <img src="img/product4.jpg">
-					                        </a>
-					                     </li>
-	                                </ul>
-								</div>
-								
-								<div class="lay-social">
-								    <div class="social-action">
-								        <a id="J_IShare" href="" class="kd-fs action-share">
-								            <i class="detail-icons detail-icons-share"></i>告诉小伙伴
-								        </a>
-								    </div>
-								</div>                    
-	                        
-	                        </div>
-	                        <div class="goods-text">
-		                        <h2 class="lay-title" title="限量版马卡龙充电式多功能移动电源 精致小巧一手掌握">限量版马卡龙充电式多功能移动电源 精致小巧一手掌握    <span id="J_PrimeProp"></span><span id="J_TplProp"></span></h2>
-								<div class="lay-comment">
-									<p class="mod-cont"> <i class="icon icon-leftquote"></i> 
-										<span class="vm-live">大多数女生都爱美食，所以，这款马卡龙甜品造型的移动电源就是女生最无法抗拒的礼物。在大姨妈关顾的日子里，不少女生畏寒，四肢显凉，它可以帮忙暖肚子，平时又是功能强大的移动电源。好感度上升n个级别，期待她惊喜和幸福的表情吧~</span> <i class="icon icon-rightquote"></i> 
-									</p>
-								</div>
-								<div class="lay-meta mod-pad lay-bg">
-									<dl class="mod-unit clearfix" >
-									    <dt>价格：</dt>
-									    <dd>
-									    	<p class="row-price">
-						                        <i class="dollar">&yen;</i><span id="J_Price">138.00</span>
-						                        <span class="promotion"><em title="免运费" class="my"></em></span>  
-									    	</p>
-									    </dd>
-									</dl>
-								</div>
-								<div class="lay-meta mod-pad">
-									<dl class="mod-unit clearfix" >
-									    <dt>送至：</dt>
-									    <dd>
-									    	<p class="addr-txt"></p>
-									            <div class="mailAddr clearfix">
-													<!--省-->
-											        <dl class="addrDl" id="J_addrprov">
-											          <dt><em>广东</em><i></i></dt>
-											          <dd class="clearfix">
-											            <a href="" class="addrPop-close"><i class="detail-icons detail-icons-close"></i></a>
-											            <span><a href="">北京1</a></span>
-											            <span><a href="">北京2</a></span>
-											            <span><a href="">北京3</a></span>
-											            <span><a href="">北京4</a></span>
-											            <span><a href="">北京5</a></span>
-											            <span><a href="">北京6</a></span>
-											            <span><a href="">北京7</a></span>
-											            <span><a href="">北京8</a></span>
-											            <span><a href="">北京9</a></span>
-											            <span><a href="" class="selected">广东</a></span>
-											            <span><a href="">北京11</a></span>
-											            <span><a href="">北京12</a></span>
-											            <span><a href="">北京13</a></span>
-											            <span><a href="">北京14</a></span>
-											            <span><a href="">北京15</a></span>
-											            <span><a href="">北京16</a></span>
-											            <span><a href="">北京17</a></span>
-											            <span><a href="">北京18</a></span>
-											            <span><a href="">北京19</a></span>
-											            <span><a href="">北京20</a></span>
-											            <span><a href="">北京21</a></span>
-											            <span><a href="">北京22</a></span>
-											            <span><a href="">北京23</a></span>
-											            <span><a href="">北京24</a></span>
-											            <span><a href="">北京25</a></span>
-											            <span><a href="">北京26</a></span>
-											            <span><a href="">北京27</a></span>
-											            <span><a href="">北京28</a></span>
-											            <span><a href="">北京29</a></span>
-											            <span><a href="">北京30</a></span>
-											            <span><a href="">北京31</a></span>
-											            <span><a href="">北京32</a></span>
-											            <span><a href="">北京33</a></span>
-											            <span><a href="">北京34</a></span>
-											            <span><a href="">北京35</a></span>
-											          </dd>
-											        </dl>
-											        <!--市-->
-											        <dl class="addrDl" id="J_addrcity">
-											          <dt><em>深圳市</em><i></i></dt>          
-											          <dd class="clearfix">
-											            <a href="" class="addrPop-close"><i class="detail-icons detail-icons-close"></i></a>
-											            <span><a href="">广州1</a></span>
-											            <span><a href="" class="selected">深圳</a></span>
-											            <span><a href="">广州3</a></span>
-											            <span><a href="">广州4</a></span>
-											            <span><a href="">广州5</a></span>
-											            <span><a href="">广州6</a></span>
-											            <span><a href="">广州7</a></span>
-											            <span><a href="">广州8</a></span>
-											            <span><a href="">广州9</a></span>
-											            <span><a href="">广州10</a></span>
-											            <span><a href="">广州11</a></span>
-											            <span><a href="">广州12</a></span>
-											            <span><a href="">广州13</a></span>
-											            <span><a href="">广州14</a></span>
-											            <span><a href="">广州15</a></span>
-											            <span><a href="">广州16</a></span>
-											            <span><a href="">广州17</a></span>
-											            <span><a href="">广州18</a></span>
-											          </dd>
-											        </dl> 
-									    		</div>     
-										    <p class="addr-txt">
-											  	<span class="KD-Postage" data-is-free="1">卖家承担运费</span>
-										    </p>
-										    <div class="songh clearfix">
-										    	<p class="addr-txt delivery_info"> 现在下单，由 卡当自营店<b class="txtlight">明天（20日）</b>发货</p>
-									    	</div>
-								        </dd>
-									</dl>
-								</div>
-								<div class="lay-data mod-pad">
-							        <p>累计评价 <a href="" id="J_LinkComment" class="vm-link"><span>2619</span></a></p>|
-							            <p>最近30天销量 <a href="" id="J_LinkSales" class="vm-link"><span>4</span></a></p>|
-							        <p class="row-boss"><span title="联系客服" class="airlines"><i class="detail-icons detail-icons-person onair"></i>联系客服</span></p>
-								</div>
-								<div class="lay-custom mod-pad">
-								  <div id="J_ValidWrap" class="valid-cont">
-								        <dl class="mod-unit clearfix" >
-										    <dt>款式 ：</dt>
-										    <dd>
-										        <div class="custom-sell">
-										        	<ul id="J_MainWrap" class="clearfix">
-								                        <li class="sel-item"> 白色<span class="sel-mark"></span> </li>
-								                        <li class="sel-item"> 蓝色<span class="sel-mark"></span> </li>
-								                        <li class="sel-item"> 红色<span class="sel-mark"></span> </li>
-								                        <li class="sel-item"> 淡紫色<span class="sel-mark"></span> </li>
-										            </ul>
-										        </div>
-										    </dd>
-								    	</dl>
-								        <dl class="mod-unit clearfix">
-									    	<dt>件数：</dt>
-									    	<dd>
-									        	<div class="sel-count clearfix">
-									        		<div class="vm-control"> <a title="减少" href="" class="minus">-</a>
-									            		<input type="text" value="1" id="J_Amount" class="quantity"/>
-									            		<a title="增加" href=""  class="plus">+</a> 
-									        		</div>
-									          		&nbsp;
-									          		<span id="J_Stock" class="count-tip">当前库存 76 件</span>
-									        	</div>
-									      </dd>
-								    	</dl>
-									</div>
-								</div>
-								<div class="lay-buy mod-pad" id="J_BuyOrDiy">
-								    <dl class="mod-unit clearfix" id="judgement_show_buyer">
-									    <dt></dt>
-									    <dd>
-									    	<div class="main-diy" > 
-								                <a href="" class="kd-btn kd-btn-buy dmpClick">立即购买</a> 
-								                <a href="" id="BtnCart" class="kd-btn kd-btn-cart dmpClick">加入购物车</a>
-								                <a href="" class="kd-btn kd-btn-collect dmpClick" ><i></i>加入收藏</a>
-									    	</div>
-									    </dd>
-									</dl>
-								</div>
-								<dl class="mod-unit mod-promise">
-									<dt>承诺：</dt>
-									<dd> 
-									  	<a href="" class="link-real">100%正品保证</a>
-									    <a href="" class="link-return">30天退货保障</a>
-									    <a href="" class="link-baom">送礼价格密保</a>
-									</dd>
-								</dl>
-	             			</div>
-						</div>
-					</div>
-					
-					<!--Ta可能喜欢-->
-					<div class="sideRight">
-                        <div class="rightLike">
-	                        <p class="rightTitle">Ta可能喜欢</p>
-	                        <ul class="J_move_pic">
-	                        	<li style="opacity: 1;">
-	                        		<div>
-	                        			<p class="imgLike">
-	                        				<a><img src="img/birthgift5.jpg"/></a>
-	                        			</p>
-	                        			<p class="imgPrice">
-	                        				<span class="spanPrice"><s>￥</s>"179.00"</span>
-	                        			</p>
-                        			</div>
-	                        		<div>
-	                        			<p class="imgLike">
-	                        				<a><img src="img/birthgift5.jpg"/></a>
-	                        			</p>
-	                        			<p class="imgPrice">
-	                        				<span class="spanPrice"><s>￥</s>"179.00"</span>
-	                        			</p>
-	                        		</div>
-	                        		<div>
-	                        			<p class="imgLike">
-	                        				<a><img src="img/birthgift5.jpg"/></a>
-	                        			</p>
-	                        			<p class="imgPrice">
-	                        				<span class="spanPrice"><s>￥</s>"179.00"</span>
-	                        			</p>
-	                        		</div>
-                        		</li>
-                        		<li>
-	                        		<div>
-	                        			<p class="imgLike">
-	                        				<a><img src="img/birthgift3.jpg"/></a>
-	                        			</p>
-	                        			<p class="imgPrice">
-	                        				<span class="spanPrice"><s>￥</s>"179.00"</span>
-	                        			</p>
-                        			</div>
-	                        		<div>
-	                        			<p class="imgLike">
-	                        				<a><img src="img/birthgift3.jpg"/></a>
-	                        			</p>
-	                        			<p class="imgPrice">
-	                        				<span class="spanPrice"><s>￥</s>"179.00"</span>
-	                        			</p>
-	                        		</div>
-	                        		<div>
-	                        			<p class="imgLike">
-	                        				<a><img src="img/birthgift3.jpg"/></a>
-	                        			</p>
-	                        			<p class="imgPrice">
-	                        				<span class="spanPrice"><s>￥</s>"179.00"</span>
-	                        			</p>
-	                        		</div>
-                        		</li>
-                        		<li>
-	                        		<div>
-	                        			<p class="imgLike">
-	                        				<a><img src="img/birthgift7.jpg"/></a>
-	                        			</p>
-	                        			<p class="imgPrice">
-	                        				<span class="spanPrice"><s>￥</s>"179.00"</span>
-	                        			</p>
-                        			</div>
-	                        		<div>
-	                        			<p class="imgLike">
-	                        				<a><img src="img/birthgift7.jpg"/></a>
-	                        			</p>
-	                        			<p class="imgPrice">
-	                        				<span class="spanPrice"><s>￥</s>"179.00"</span>
-	                        			</p>
-	                        		</div>
-	                        		<div>
-	                        			<p class="imgLike">
-	                        				<a><img src="img/birthgift7.jpg"/></a>
-	                        			</p>
-	                        			<p class="imgPrice">
-	                        				<span class="spanPrice"><s>￥</s>"179.00"</span>
-	                        			</p>
-	                        		</div>
-                        		</li>
-                        		<li>
-	                        		<div>
-	                        			<p class="imgLike">
-	                        				<a><img src="img/birthgift8.jpg"/></a>
-	                        			</p>
-	                        			<p class="imgPrice">
-	                        				<span class="spanPrice"><s>￥</s>"179.00"</span>
-	                        			</p>
-                        			</div>
-	                        		<div>
-	                        			<p class="imgLike">
-	                        				<a><img src="img/birthgift8.jpg"/></a>
-	                        			</p>
-	                        			<p class="imgPrice">
-	                        				<span class="spanPrice"><s>￥</s>"179.00"</span>
-	                        			</p>
-	                        		</div>
-	                        		<div>
-	                        			<p class="imgLike">
-	                        				<a><img src="img/birthgift8.jpg"/></a>
-	                        			</p>
-	                        			<p class="imgPrice">
-	                        				<span class="spanPrice"><s>￥</s>"179.00"</span>
-	                        			</p>
-	                        		</div>
-                        		</li>
-	                        </ul>
-                        	<p class="pageBtn">
-                        		<a class="pagePre"></a>
-                        		<a class="pageNext"></a>
-                        	</p>
-	                        <p class="changeBtn"><a href="" class="J_moveR changeLeft"></a><a href="" class="J_moveL changeRight"></a></p>
-                    	</div>
-            		</div>
-				</div><!--first-screen-->
-				
-				<div class="sec-screen">
-					
-				</div><!--sec-screen-->
+		<div class="main">
 			
-			
-			</div><!--content-->
-			
-		</div><!--main-->
-		
-		
+		</div>
+	
 		<div id="footer">
 			<div class="container">
 			    <div class="lay-service">
@@ -767,8 +429,7 @@
 			    </div> <!-- lay-link -->
 			</div>
 		</div>
-		
-		
+	
 		<!--固定屏幕导航栏-->
 		<div id="fastNav">
 			<ul>

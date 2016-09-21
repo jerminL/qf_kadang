@@ -1,6 +1,7 @@
 jQuery(function($){
-	
-	
+	$("a").click(function(e){
+		e.preventDefault();
+	});
 	
 	/*头部导航菜单下划线 弹性运动【需完善】*/
 	var $navList=$("#header .nav");
@@ -16,16 +17,6 @@ jQuery(function($){
 			width:0,
 			left:0
 		});
-	});
-	
-	$(".gonglue h2").on("mouseenter",function(){
-		$(".giftClassify").slideDown().on("mouseenter",function(){
-			$(this).show();
-		}).on("mouseleave",function(){
-			$(this).hide();
-		});
-	}).on("mouseleave",function(){
-		$(".giftClassify").hide();
 	});
 	
 	/*省市点击事件*/
@@ -46,12 +37,98 @@ jQuery(function($){
 	/*颜色选择*/
 	$("#J_MainWrap").on("click","li",function(){
 		$(this).children().toggle();
-		$(this).toggleClass("selected");
+		$(this).siblings().children().hide();
+		$(this).toggleClass("selected").siblings("li").removeClass("selected");
+	});
+	
+	/*数量选择*/
+	var oldVal=$("#J_Amount").val();
+	$(".sel-count .vm-control").on("click",".plus",function(){
+		$("#J_Amount").val(++oldVal);
+	})
+	.on("click",".minus",function(){
+		if (oldVal<=1) {
+			oldVal=2;
+		}
+		$("#J_Amount").val(--oldVal);
+	});
+	
+	/*小图点击切换*/
+	var $smallPic=$("#smallPic");
+	var $bigPic=$("#bigPic");
+	
+	$("#J_PhotoList").on("click","a",function(){
+		//选中高亮
+		$(this).addClass("zoomThumbActive").parent().siblings().children("a").removeClass("zoomThumbActive");
+		
+		var i=$(this).parent().index()+1;
+		$smallPic.attr("src","img/product"+i+".jpg");
+		$bigPic.children().attr("src","img/bigProduct"+i+".jpg");
 	})
 	
+	/*放大镜*/
+	$("#zoomPad").on("mouseenter",function(){
+		$bigPic.show();
+	})
+	.on("mouseleave",function(){
+		$bigPic.hide();
+	})
+	.on("mousemove",function(e){
+		// 获取鼠标在div中的位置
+		var pos = {
+			x:e.pageX - $smallPic.offset().left,
+			y:e.pageY - $smallPic.offset().top
+		};
+		
+		$bigPic.css({
+			left:-pos.x,
+			top:-pos.y
+		});
+	});
 	
+	/*Ta可能喜欢,按钮*/
+	var $li=$(".J_move_pic").children("li");
+	var i=0;
+	$(".pageBtn").on("click",".pageNext",function(){
+		i++;
+		if (i>=$li.length-1) {
+			i=0;
+		}
+		liShow(i);
+	})
+	.on("click",".pagePre",function(){
+		i--;
+		if(i==-1){
+			i=$li.length-1;
+		}
+		liShow(i);
+	})
 	
-	
+	function liShow(i){
+		$li.eq(i).animate({opacity:1},600).siblings("li").animate({opacity:0},600);
+	}
+
+
+	/*加入购物车*/
+	$("#BtnCart").on("click",function(){
+		//图片下标
+		var i=$smallPic.attr("src").charAt(11);
+		addCookie("imgIndex", i, 7);
+		
+		var title=$(".lay-title").text();
+		addCookie("title", title, 7);
+		
+		var price=$("#J_Price").text();
+		addCookie("price", price, 7);
+		
+		var amount=$("#J_Amount").val();
+		addCookie("amount", amount, 7);
+		
+		var pattern=$("#J_MainWrap")
+
+
+
+	})
 
 	
 	
@@ -59,3 +136,6 @@ jQuery(function($){
 	
 
 })
+
+
+
