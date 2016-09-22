@@ -1,6 +1,8 @@
 .detail-icons-share,.lay-comment .icon,.lay-meta .row-price .promotion em,.detail-icons ,.icons, .sel-item .sel-mark{background: url(img/icons.png) no-repeat;}
 .kd-btn-collect i,.mod-promise dd a{background: url(img/common.png) no-repeat;}
 
+#wrap{width:100%;min-width: 1227px;margin: 0 auto;background-color: #fff;}
+
 #main {position: relative;z-index: 100;float: left;margin-left: 31px;}
 .mainCon {margin: 0 auto; width: 1200px;}
 .first-screen {margin-bottom: 30px;}
@@ -24,7 +26,6 @@
 .lay-social .social-action a {color: #999;}
 .detail-icons-share {background-position: -64px -61px;}
 .detail-icons-fav, .detail-icons-share { width: 12px;height: 14px;}
-.detail-icons {display: inline-block;margin: 0 3px;width: 12px;height: 12px;font-size: 0;line-height: 0;vertical-align: middle;overflow: hidden;}
 .goods-main .goods-data .goods-text {float: left;padding-left: 30px;width: 540px;}
 
 /*商品说明*/
@@ -51,7 +52,6 @@
 .mailAddr .addrDl dd {display: none;position: absolute;z-index: 10;top: 21px;left: 0;width: 350px;padding: 10px;background-color: #fff;border: 1px solid #dedede;}
 .mailAddr .addrDl dd .addrPop-close { position: absolute;right: 0;top: 0;}
 .detail-icons-close {background-position: -45px -133px;}
-.detail-icons {display: inline-block;margin: 0 3px;width: 15px;height: 14px;font-size: 0;line-height: 0;vertical-align: middle;overflow: hidden;}
 
 .onair{width: 20px;height: 22px;background: url(img/onair.gif) no-repeat;}
 .mailAddr .addrDl dd span {float: left;width: 54px;height: 22px; line-height: 22px;overflow: hidden;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
@@ -120,5 +120,63 @@
 #fastNav .wenwo{background-image:none ;}
 #fastNav .olSer{background:url(../img/fast-onair.png) no-repeat;padding-top: 35px;border: 0;}
 #fastNav .olSerSpan{border: 1px solid #ccc;padding: 10px 5px; color: #e84847;}
+
+
+/*商品详情*/
+.sec-screen .goods-tab {width: 1200px;min-height: 220px;border-top: 1px solid #dedede;min-height: 300px;}
+.sec-screen .goods-tab .tab-nav-detail {position:static;background-color: #fff;width: 1200px;}
+.tab-trigger {border: 1px solid #dedede;background-color: #fcfcfc;border-top: none;}
+.tab-trigger .item {float: left;padding: 0 40px;margin-left: -1px;height: 50px;line-height: 50px;font-size: 16px;color: #666;border-left: 1px solid #dedede;border-right: 1px solid #dedede;cursor: pointer;font-family: 'Hiragino Sans GB','Microsoft YaHei';}
+.tab-trigger .active {color: #e84847;background-color: #fff;}
+.tab-trigger .item .small-font {font-size: 12px;}
+.detail-diy .tab-item {padding-bottom: 20px;margin-bottom: 20px;border: 1px solid #dedede;border-top: none;}
+.detail-wrap{border: 1px solid #dedede;}
+.detail-diy-main {overflow: hidden;width: 790px;margin: 30px auto 0px;}
+.detail-diy-main span{font-family:'Microsoft YaHei';font-size:14px;}
+#J_RecRM, #J_RecLP, #J_evalItem {position: relative;}
+.tab-title {height: 50px;line-height: 50px;border-top: 1px solid #dedede;border-bottom: 1px solid #dedede; background-color: #FCFCFC;color: #E84946;padding-left: 20px;font-size: 16px;font-family: 'Microsoft YaHei';/*display: none;*/}
+.shop-eval .eval-item {float: left;display: inline;}
+.shop-eval .shop-eval-title {float: right;padding: 0 40px;margin: 20px 0;height: 110px;line-height: 110px;border-left: 1px dashed #DEDEDE;}
+.detail-icons {display: inline-block;margin: 0 3px;/*width: 12px;height: 12px;*/font-size: 0;line-height: 0;vertical-align: middle;overflow: hidden;}
+.detail-icons-shop {width: 18px;height: 22px;background-position: -43px -109px;}
+.hover:hover{color: #f00;text-decoration: underline;}
+.shop-eval .shop-positive {height: 90px;padding: 30px 40px;}
+.shop-eval .shop-positive .positive-score {font-size: 40px;font-weight: bold;color: #E34917;}
+.shop-eval .shop-positive .positive-sign {font-size: 30px;font-weight: normal;}
+.shop-eval .shop-positive .positive-des {text-align: center;line-height: 1;}
+.shop-eval .shop-score {height: 110px;max-width: 185px;margin: 20px 0; padding-right: 40px;}
+.shop-eval .shop-score .score-item {height: 36px;line-height: 36px;}
+.shop-eval .shop-score .score-strip {width: 100px;height: 10px; margin-top: 13px;line-height: 0;display: inline;float: right;position: relative; background-color: #DEDEDE;}
+.shop-eval .shop-score .score-redstrip {height: 10px;line-height: 0;display: inline-block;background-color: #F5604C;}
+.shop-eval .shop-eval-label {height: 110px;width: 395px;margin: 20px 0;padding-left: 20px;border-left: 1px dashed #DEDEDE;}
+a.btn-white, a.btn-white:visited {background: #F8F8F8;color: #333;display: inline-block;border-radius: 2px;font-weight: bold;border: 1px solid #ccc;height: 28px;line-height: 28px;padding: 0 20px;font-size: 14px;font-family: 'Microsoft YaHei';text-decoration: none;}
+a.btn-h23{ height: 21px;line-height: 21px;padding: 0 10px;font-size: 12px;}
+a.btn-h23:hover{background: #fff;}
+#J_evalLabel a {margin: 20px 8px 0 0;}
+.eval-selector {border-bottom: 1px solid #dedede;border-top: 1px solid #dedede;}
+.eval-selector .choose-level {float: left;}
+.eval-selector .choose-level .chooser {float: left;margin-left: 38px;height: 38px;line-height: 38px;}
+.eval-selector .show-content {float: right;padding-right: 40px;height: 38px;line-height: 38px;}
+.eval-list {padding: 0 30px;overflow: hidden;zoom: 1;margin-top: -1px;}
+.eval-list .eval-row {padding: 25px 0;border-top: 1px solid #dedede;}
+.eval-list .user-info {float: left;width: 80px;padding: 0 5px;text-align: center;overflow: hidden;}
+.eval-list .user-info .head-pic {width: 32px;height: 32px;border-radius: 16px;}
+.eval-list .eval-title {float: left;display: inline;padding-left: 20px;}
+.eval-list .eval-info {padding-left: 150px;margin-bottom: 20px;}
+.biaoqian{line-height: 23px;height: 23px;display: inline-block;padding: 0 5px;background-color: #eee;color: #666;text-decoration: none;margin: 0;font-size: 12px;font-weight: bold;border: 1px solid #ccc;font-family: 'Microsoft YaHei';}
+.eval-list .eval-info .eval-cont {color: #000;}
+.eval-list .eval-info .goods-info {margin-top: 10px;color: #999;}
+.eval-list .user-info .user-nick {margin-top: 5px;line-height: 26px;height: 26px;color: #000;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.goods-eval{border: 1px solid #DEDEDE;}
+
+#J_CommentList table{width: 100%;border-collapse: collapse;}
+#J_CommentList thead{border-bottom: 1px solid #DEDEDE;}
+#J_CommentList tr{height: 40px;}
+#J_CommentList td{text-align: center;}
+
+
+
+
+
 
 

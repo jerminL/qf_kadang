@@ -1,4 +1,6 @@
-#main{width:100%;float: left; margin:25px 0 0 30px;}
+#wrap{width:100%;min-width: 1227px;margin: 0 auto;background-color: #fff;}
+
+#main{width:1220px;float: left; margin:25px 0 0 30px;}
 
 #main   .qixi{clear: both;margin: 8px auto;margin-top: 40px;margin-bottom: 10px;position: relative;}
 #main   .head{font-family: 'Microsoft YaHei';font-size: 12px;color: #999;padding-bottom: 15px;}

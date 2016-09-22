@@ -3,8 +3,6 @@ jQuery(function($){
 		e.preventDefault();
 	});
 	
-	
-	
 	/*省市点击事件*/
 	$(".mailAddr").on("click","dl",function(){
 		var $self=$(this);
@@ -119,7 +117,35 @@ jQuery(function($){
 		addCookie("arr", arr.toSource(), 7);
 		
 		alert("添加成功");
-	})
+	});
+	
+	//评价晒单的导航栏固定屏幕上方
+	$(window).on("scroll",function(){
+		if ($(window).scrollTop()>=852) {
+			$("#J_TabBar").css({
+				position:"fixed",
+				top:0,
+				zIndex:100
+			})
+		}
+		else{
+			$("#J_TabBar").css({position:"static"})
+		}
+	});
+	//评价晒单的导航栏点击跳转
+	$("#J_TabBar").on("click","li",function(){
+		$(this).addClass("active").siblings().removeClass("active");
+		var i=$(this).index();
+		switch (i){
+			case 0:
+				$("html,body").animate({scrollTop:852});break;
+			case 1:
+				$("html,body").animate({scrollTop:9285});break;
+			case 2:
+				$("html,body").animate({scrollTop:10174});break;
+		}
+	});
+	
 })
 
 

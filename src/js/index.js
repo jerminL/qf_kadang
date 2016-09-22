@@ -262,7 +262,12 @@ jQuery(function($){
 	//提交按钮
 	$(".submit").on("click",function(e){
 		e.preventDefault();
-		if(($(this).closest(".username").val()!="")&&($(this).closest(".pwd").val()!="")&&($(this).closest(".codeText").val()!="")){
+		var un=$(this).parent().siblings("dl").find(".username").val();
+		var pw=$(this).parent().siblings("dl").find(".pwd").val();
+		var cd=$(this).parent().siblings("dl").find(".codeText").val();
+		//输入框不能为空
+		if((un!="")&&(pw!="")&&(cd!="")){
+			//没有错误提示
 			if ($(".loginFrom dl dd p").text()=="") {
 				alert("验证成功！");
 			}

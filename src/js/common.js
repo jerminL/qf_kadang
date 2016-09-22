@@ -57,7 +57,8 @@ jQuery(function($){
 	});
 	
 	/*送礼导航*/
-	$("#toshowlink").click(function(){
+	$("#toshowlink").click(function(e){
+		e.preventDefault();
 		$("#ftlinklist").toggle();
 	})
 	

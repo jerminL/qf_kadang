@@ -62,7 +62,7 @@ body,a{color: #666;}
 .giftClassify .gift-lm .cate-item {padding: 12px 0;width: 270px;height: 85px;float: left;}
 
 /*快速导航栏*/
-#fastNav {position: fixed;right: 10px;bottom: 10px;width: 40px;z-index: 100;}
+#fastNav {position: fixed;right: 10px;bottom: 10px;width: 40px;z-index:1000;}
 #fastNav .fast-li {margin-bottom: 10px;border: 1px solid #ccc;background: #eee;}
 #fastNav span{text-align: center;display: block;color: #666; margin-top: 3px;}
 #fastNav span:hover{color: #E44715;}
