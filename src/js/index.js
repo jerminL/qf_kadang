@@ -41,20 +41,20 @@ jQuery(function($){
 	
 	/*头部导航菜单下划线 弹性运动【需完善】*/
 	var $navList=$("#header .nav");
+	var $navHover=$("#header .nav-list li.navHover");
 	$navList.on("mouseenter","li",function(){
-		$("#header .nav-list li.navHover").stop().animate({
+		$navHover.stop().animate({
 			opacity:1,
 			width:$(this).children("a").width(),
 			left:$(this).offset().left-154
 		});
 	}).on("mouseleave","li",function(){
-		$("#header .nav-list li.navHover").css({
+		$navHover.css({
 			opacity:0,
 			width:0,
 			left:0
 		});
 	});
-	
 	
 	//初始化
 	$pic.eq(0).css("z-index",2).siblings("li").css("opacity",0);
@@ -185,11 +185,13 @@ jQuery(function($){
 	/*登录页面*/
 	$("#login").on("click",function(){
 		$("#loginWrap").show();
+		$(".loginPop").show();
 		$("#loginPage").stop().animate({right:0});
 	});
 	
 	$("#sign").on("click",function(){
 		$("#signWrap").show();
+		$(".signPop").show();
 		$("#signPage").stop().animate({right:0});
 	});
 	
@@ -203,7 +205,7 @@ jQuery(function($){
 			$("#signWrap").hide();
 		});
 	})
-	//验证码
+	//验证码更换
 	.on("click",".code",function(){
 		var str="";
 		for (var i = 0; i < 4; i++) {
@@ -213,22 +215,74 @@ jQuery(function($){
 		$(this).html(str);
 	});
 	
-	
-	$(".username").get().oninput=function(){
-		var str=$("this").val()
-	}
-	//用户名称只能包含数字、字母、下划线，长度不小于8位
-	function checkUsername(str){
-		var reg=/^\w{8,}$/;
-		if (str&&!(reg.test(str)))
-		{
-			//所有的错误提示信息，要放在顶部的吐司提示框中显示
-			oTips.style.display='block';
-			oTips.innerHTML="用户名不合法，请重新输入";
-			return 0;
+	//用户名
+	$(".username").get(1).oninput=function(){
+		var str=$(this).val();
+		var reg=/^\w{6,}@(\w+)\.(\w{2,})$/;
+		if (!(reg.test(str))){
+			$(this).closest("p").next().html("邮箱格式不正确，请重新输入");
 		}
-		return 1;
+		else{
+			$(this).closest("p").next().empty();
+		}
 	}
+	//密码
+	$(".pwd").get(0).oninput=function(){
+		var str=$(this).val();
+		var reg=/^\w{6,20}$/;
+		if (!(reg.test(str))){
+			$(this).closest("p").next().html("请输入6-20位密码");
+		}
+		else{
+			$(this).closest("p").next().empty();
+		}
+	}
+	$(".pwd").get(1).oninput=function(){
+		var str=$(this).val();
+		var reg=/^\w{6,20}$/;
+		if (!(reg.test(str))){
+			$(this).closest("p").next().html("请输入6-20位密码");
+		}
+		else{
+			$(this).closest("p").next().empty();
+		}
+	}
+	//验证码验证
+	$(".codeText").on("change",function(){
+		var str=Number($(this).val());
+		var code=Number($(".code").html());
+		
+		if (str!=code) {
+			$(this).siblings("p").html("验证码错误");
+		}
+		else{
+			$(this).siblings("p").empty();
+		}
+	})
+	//提交按钮
+	$(".submit").on("click",function(e){
+		e.preventDefault();
+		if(($(this).closest(".username").val()!="")&&($(this).closest(".pwd").val()!="")&&($(this).closest(".codeText").val()!="")){
+			if ($(".loginFrom dl dd p").text()=="") {
+				alert("验证成功！");
+			}
+		}
+	})
+	
+	//登录，注册的切换
+	$(".loginA").on("click",function(e){
+		e.preventDefault();
+		$("#loginWrap").show();
+		$("#loginPage").css({right:0});
+		$("#signWrap").hide();
+	});
+	$(".signA").on("click",function(e){
+		e.preventDefault();
+		$("#signWrap").show();
+		$("#signPage").css({right:0});
+		$("#loginWrap").hide();
+	});
+	
 })
 
 
