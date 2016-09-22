@@ -26,28 +26,25 @@ jQuery(function($){
 			$(this).css("display","none");
 		});
 	}
-
-//	$(".seach-input").click(function(e){
-//		e.preventDefault();
-//	})
-
-
+	
+	
 	/*头部导航菜单下划线 弹性运动【需完善】*/
 	var $navList=$("#header .nav");
 	$navList.on("mouseenter","li",function(){
 		$("#header .nav-list li.navHover").stop().animate({
 			opacity:1,
 			width:$(this).children("a").width(),
-			left:$(this).offset().left+25
+			left:$(this).offset().left-290
 		});
 	}).on("mouseleave","li",function(){
 		$("#header .nav-list li.navHover").css({
 			opacity:0,
 			width:0,
 			left:0
-		})
+		});
 	});
-	
+
+
 	/*送礼攻略*/
 	$(".gonglue h2").on("mouseenter",function(){
 		$(".giftClassify").slideDown().on("mouseenter",function(){
@@ -58,7 +55,6 @@ jQuery(function($){
 	}).on("mouseleave",function(){
 		$(".giftClassify").hide();
 	});
-	
 	
 	/*送礼导航*/
 	$("#toshowlink").click(function(){

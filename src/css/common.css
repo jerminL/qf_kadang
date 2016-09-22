@@ -48,7 +48,7 @@ body,a{color: #666;}
 
 /*按兴趣选礼物*/
 .giftClassify {border: 1px solid #ebebeb;background-color: #fff;padding: 26px 0; margin-top: 20px;width: 1200px;margin: 0 auto;margin-bottom: 20px;}
-.giftClassify .gift-xq { height: 450px;width: 300px;float: left;padding-left: 20px;border-right: 1px #ccc solid;}
+.giftClassify .gift-xq { height: 450px;width: 300px;float: left;padding-left: 20px;}
 .giftClassify .gift-tle {font-size: 20px;font-weight: bold;font-family:'Microsoft YaHei';padding: 20px 0 0;}
 .giftClassify .gift-xq .cate-item {padding: 12px 0;}
 .giftClassify .gift-xq .vm-cap {font-size: 14px;}
@@ -56,13 +56,13 @@ body,a{color: #666;}
 .giftClassify .vm-cap a, .giftClassify .vm-cap a:visited {color: #000;}
 .giftClassify a, .giftClassify a:visited {color: #999;line-height: 1.8;white-space: nowrap;padding-right: 10px;}
 .giftClassify .vm-cap a:hover,.giftClassify a:hover, .giftClassify a:active {color: #f4614d;}
-.giftClassify .gift-lm {width: 860px;float: left;padding-left: 10px;}
+.giftClassify .gift-lm {width: 860px;float: left;padding-left: 10px;border-left: 1px #ccc solid;}
 .giftClassify .gift-lm .gift-tle {margin-left: 10px;}
 .giftClassify .cate-cont {float: left; display: inline; width: 860px;margin-left: 15px;line-height: 1.8;}
 .giftClassify .gift-lm .cate-item {padding: 12px 0;width: 270px;height: 85px;float: left;}
 
 /*快速导航栏*/
-#fastNav {position: fixed;right: 10px;bottom: 10px;width: 40px;z-index: 10000;}
+#fastNav {position: fixed;right: 10px;bottom: 10px;width: 40px;z-index: 100;}
 #fastNav .fast-li {margin-bottom: 10px;border: 1px solid #ccc;background: #eee;}
 #fastNav span{text-align: center;display: block;color: #666; margin-top: 3px;}
 #fastNav span:hover{color: #E44715;}

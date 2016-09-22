@@ -11,7 +11,7 @@ function addCookie(name, val, day)
 
 	oDate.setDate(oDate.getDate() + day);
 	
-	document.cookie = ""+name+"="+val+";expires=" + oDate;
+	document.cookie =name+"="+val+";expires=" + oDate;
 }
 
 // 函数名： getCookie

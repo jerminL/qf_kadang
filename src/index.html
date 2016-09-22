@@ -7,8 +7,8 @@
 		<link rel="stylesheet" href="css/common.css" />
 		<link rel="stylesheet" href="css/index.css" />
 		<script src="js/jquery-1.12.0.js"></script>
-		<script src="js/index.js"></script>
 		<script src="js/common.js"></script>
+		<script src="js/index.js"></script>
 	</head>
 	<body>
 
@@ -18,8 +18,8 @@
 			<div class="intro">
 				<ul class="intro-login">
 					<li>Hi，欢迎来到卡当网</li>
-					<li class="login"><a href="#" title="登录">登录</a></li>
-					<li class="sign"><a href="#" title="注册">注册</a></li>
+					<li id="login"><a href="#" title="登录">登录</a></li>
+					<li id="sign"><a href="#" title="注册">注册</a></li>
 				</ul>
 	        	<ul class="intro-menu">
 	        		<li>
@@ -1111,9 +1111,91 @@
 					</a>
 				</li>
 			</ul>
-			
 		</div>
-	
+		
+		
+		<!--登录页面-->
+		<div id="loginWrap">
+			<div id="loginPage">
+				<div class="loginCon">
+					<span class="loginClose"></span>
+					<dl class="other-login">
+						<dt>
+							<p class="f18">无需注册</p>
+							<p class="f14">直接使用社交账号登录</p>
+						</dt>
+						<dd><a href="" title="微博" class="weibo">微博</a></dd>
+						<dd><a href="" title="QQ" class="qq">QQ</a></dd>
+						<dd><a href="" title="支付宝" class="alipay">支付宝</a></dd>
+					</dl>
+					<div class="login">
+						<form class="loginFrom" method="post">
+							<dl>
+								<dt class="f18">用户登录</dt>
+								<dd>
+									<p><input type="text" class="username" placeholder="邮箱/用户名" /></p>
+									<p></p>
+								</dd>
+								<dd>
+									<p><input type="password" class="pwd" placeholder="密码" /></p>
+									<p></p>
+								</dd>
+								<dd>
+									<input type="text" placeholder="验证码" class="codeText"/>
+									<span class="code" >1234</span> 看不清？点击验证码更新
+								</dd>
+							</dl>
+							<p class="login-auto"><input type="checkbox" checked/>下次自动登录</p>
+							<p><input type="submit" value="立即登录" class="submit"/></p>
+							<p class="bottom"><span>还没账号？<a href="">注册</a></span><a class="foget" href="">忘记密码？</a></p>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="loginPop"></div>
+		</div>
+		
+		<!--注册页面-->
+		<div id="signWrap">
+			<div id="signPage">
+				<div class="loginCon">
+					<span class="loginClose"></span>
+					<dl class="other-login">
+						<dt>
+							<p class="f18">无需注册</p>
+							<p class="f14">直接使用社交账号登录</p>
+						</dt>
+						<dd><a href="" title="微博" class="weibo">微博</a></dd>
+						<dd><a href="" title="QQ" class="qq">QQ</a></dd>
+						<dd><a href="" title="支付宝" class="alipay">支付宝</a></dd>
+					</dl>
+					<div class="login">
+						<form class="loginFrom" method="post">
+							<dl>
+								<dt class="f18">用户注册</dt>
+								<dd>
+									<p><input type="text" class="username" placeholder="邮箱" /></p>
+									<p></p>
+								</dd>
+								<dd>
+									<p><input type="password" class="pwd" placeholder="密码" /></p>
+									<p></p>
+								</dd>
+								<dd>
+									<input type="text" placeholder="验证码" class="codeText"/>
+									<span class="code" >1234</span> 看不清？点击验证码更新
+								</dd>
+							</dl>
+							<p class="login-auto">《卡当注册协议》</p>
+							<p><input type="submit" value="同意协议并注册" class="submit"/></p>
+							<p class="bottom"><span>已有账号？<a href="">登录</a></span></p>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="loginPop"></div>
+		</div>
+		
 	</div><!--wrap-->
 	
 	</body>

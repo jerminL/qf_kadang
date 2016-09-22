@@ -1,0 +1,18 @@
+#main{width:100%;float: left; margin:25px 0 0 30px;}
+
+#main   .qixi{clear: both;margin: 8px auto;margin-top: 40px;margin-bottom: 10px;position: relative;}
+#main   .head{font-family: 'Microsoft YaHei';font-size: 12px;color: #999;padding-bottom: 15px;}
+#main   .qixi-title{font-family: 'Microsoft YaHei';font-weight: bold;font-size: 20px;color: #333;margin-right: 15px;position: relative;bottom: 2px;}
+#main   .qixiCon{width: 1220px;position: relative;top: 0;left: 0;}
+#main   .qixi-list{min-height: 716px;width: 1220px;}
+#main   .qixi-list li{float: left;margin:0 20px 20px 0;}
+#main   .qixi-list li a img{width: 285px;height: 280px;}
+#main   .price{display: block;width: 100%;color: #666;font-size: 18px;line-height: 19px;height: 19px;padding: 10px 0 5px 0;}
+#main   .price em{font-size: 12px;font-family: "Microsoft YaHei";}
+#main   .price div{display: inline-block;float: right;color: #666;font-size: 12px;}
+#main   .text{width: 285px;overflow: hidden;height: 24px;}
+#main   .text a{font-size: 16px;text-decoration: none;color: #666;font-family: "Microsoft YaHei";}
+#main   .text a:hover{color: #e44715;}
+#main   .qixi-footer{width: 1200px; height:144px;padding-bottom: 20px;}
+#main   .qixi-footer .left{float: left;}
+#main   .qixi-footer .right{float: right;}

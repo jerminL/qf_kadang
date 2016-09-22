@@ -1,23 +1,9 @@
 jQuery(function($){
-	$("a").click(function(e){
+	$("a:not('#cart')").click(function(e){
 		e.preventDefault();
 	});
 	
-	/*头部导航菜单下划线 弹性运动【需完善】*/
-	var $navList=$("#header .nav");
-	$navList.on("mouseenter","li",function(){
-		$("#header .nav-list li.navHover").stop().animate({
-			opacity:1,
-			width:$(this).children("a").width(),
-			left:$(this).offset().left-290
-		});
-	}).on("mouseleave","li",function(){
-		$("#header .nav-list li.navHover").css({
-			opacity:0,
-			width:0,
-			left:0
-		});
-	});
+	
 	
 	/*省市点击事件*/
 	$(".mailAddr").on("click","dl",function(){
@@ -62,8 +48,8 @@ jQuery(function($){
 		$(this).addClass("zoomThumbActive").parent().siblings().children("a").removeClass("zoomThumbActive");
 		
 		var i=$(this).parent().index()+1;
-		$smallPic.attr("src","img/product"+i+".jpg");
-		$bigPic.children().attr("src","img/bigProduct"+i+".jpg");
+		$smallPic.attr("src","../img/product"+i+".jpg");
+		$bigPic.children().attr("src","../img/bigProduct"+i+".jpg");
 	})
 	
 	/*放大镜*/
@@ -111,30 +97,29 @@ jQuery(function($){
 
 	/*加入购物车*/
 	$("#BtnCart").on("click",function(){
-		//图片下标
-		var i=$smallPic.attr("src").charAt(11);
-		addCookie("imgIndex", i, 7);
-		
-		var title=$(".lay-title").text();
-		addCookie("title", title, 7);
-		
-		var price=$("#J_Price").text();
-		addCookie("price", price, 7);
-		
-		var amount=$("#J_Amount").val();
-		addCookie("amount", amount, 7);
-		
-		var pattern=$("#J_MainWrap")
+		var str = getCookie("arr");
 
-
-
+		// 用于存储所有的商品信息
+		var arr = [];
+		if (str != ""){
+			// 说明之前 cookie 中有商品的内容
+			// 取出来转换成数组
+			arr = eval(str);
+		}
+		
+		var obj={};
+		obj.i=$smallPic.attr("src").charAt(14);//图片下标
+		obj.title=$(".lay-title").text();
+		obj.price=$("#J_Price").text();
+		obj.amount=$("#J_Amount").val();
+		obj.pattern=$("#J_MainWrap").find(".selected").text();//款式
+		
+		arr.push(obj);
+		
+		addCookie("arr", arr.toSource(), 7);
+		
+		alert("添加成功");
 	})
-
-	
-	
-	
-	
-
 })
 
 

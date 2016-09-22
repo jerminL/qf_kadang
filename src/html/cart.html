@@ -3,19 +3,20 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>购物车</title>
-		<link rel="stylesheet" href="css/reset.css" />
-		<link rel="stylesheet" href="css/common.css" />
-		<link rel="stylesheet" href="css/cart.css" />
-		<script src="js/jquery-1.12.0.js"></script>
-		<script src="js/common.js"></script>
-		<script src="js/cart.js" ></script>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/cart.css" />
+		<script src="../js/jquery-1.12.0.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/mycookie.js"></script>
+		<script src="../js/cart.js" ></script>
 	</head>
 	
 	<body>
 		<div class="mini-container">
 			<div class="header">
 			    <div class="lay-logo"> 
-			    	<a href="" class="logo-link" title="卡当网"> <img src="img/cartLogo.png" alt="卡当网"> </a> 
+			    	<a href="" class="logo-link" title="卡当网"> <img src="../img/cartLogo.png" alt="卡当网"> </a> 
 			    </div>
 			    <div class="cart-steps"></div>
 			</div>
@@ -30,7 +31,7 @@
 			                    <tr>
 			                        <th class="w60">
 			                        	<label class="check-all">
-			                                <input id="J_CheckAll" type="checkbox" class="checkbox" /> 全选
+			                                <input id="J_CheckAll" type="checkbox" class="checkbox" checked> 全选
 			                        	</label>
 			                        </th>
 			                        <th colspan="2"> 商品信息</th>
@@ -42,11 +43,6 @@
 			                </thead>
 			                <tbody class="wrap-store">
 			                    <tr class="lay-store-hd">
-			                        <th>
-			                        	<label>
-			                            	<input class="cbox-store" type="checkbox" />
-			                            </label>
-			                        </th>
 			                        <th colspan="5" class="mod-name"> 店铺：
 			                        	<a href="" target="_blank">卡当自营店</a>
 			                        	<span title="联系客服" class="airlines"><i class="detail-icons"></i>联系客服</span> 
@@ -55,26 +51,26 @@
 			                    </tr>
 			                    
 								<!--商品内容-->
-			                    <tr class="lay-goods-item">
-			                    	<td><input type="checkbox"/></td>
+			                    <!--<tr class="lay-goods-item">
+			                    	<td><input type="checkbox" class="check"/></td>
 			                        <td>
-			                        	<a href=""><img src="img/product1.jpg" alt="限量版马卡龙充电式多功能移动电源 精致小巧一手掌握" width="60" height="60" /></a>
+			                        	<a href=""><img src="img/smallProduct1.jpg" alt="限量版马卡龙充电式多功能移动电源 精致小巧一手掌握" /></a>
 			                        </td>
 			                    	<td class="w190">
 			                    		<dl class="mod-goods-info">
 				                            <dt class="vm-tit">
 				                            	<a href="">限量版马卡龙充电式多功能移动电源 精致小巧一手掌握</a>
 				                            </dt>
-				                            <dd class="vm-spec">款式:淡紫色&nbsp;&nbsp;&nbsp;</dd>
+				                            <dd class="vm-spec">款式：淡紫色</dd>
 			                        	</dl>
 			                    	</td>
-			                    	<td data-role="container-money-price">
+			                    	<td>
 			                    		<div class="mod-price-discount">
 				                            <p class="vm-original">138.00</p>
 				                            <p class="vm-cutprice">138.00</p>
 				                        </div>
 			                    	</td>
-			                        <td data-behavor="empty-on-zhxs" class="mod-quantity">
+			                        <td class="mod-quantity">
 			                        	<div class="vm-control"> 
 			                        		<a class="minus" href="" title="减少">-</a>
 				                            <input class="quantity" type="text" value="1" />
@@ -85,7 +81,7 @@
 			                        <td class="more_actions">
 			                        	<a class="del" href="">删除</a>
 			                        </td>
-			                	</tr>
+			                	</tr>-->
 			                	
 			                    <!--商品内容结束-->           
 			                </tbody>
@@ -95,7 +91,7 @@
 			                <label id="J_Cod">
 			                    <input id="J_CodCbox" class="checkbox" type="checkbox"/> 货到付款
 			                </label>
-			                <span> 商品金额（不含运费和优惠）： <em id="J_TotalPrice" class="vm-total"> <i class="vm-dollar">&yen;</i> 138.00 </em></span>
+			                <span> 商品金额（不含运费和优惠）： <em id="J_TotalPrice" class="vm-total">￥ 138.00 </em></span>
 			            </div>
 			            <div class="pay"> 
 			            	<a class="btn-gray mr20" href="">继续购物</a> <a href="" id="J_BtnSettlement" class="btn-red">去结算</a>

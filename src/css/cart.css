@@ -1,5 +1,5 @@
 body {color: #333;}
-a {color: #999;}
+a {color: #999;cursor: pointer;}
 .w60 {width: 60px;}
 .w120 {width: 120px;}
 .w190 {width: 190px;}
@@ -29,16 +29,16 @@ table {border-collapse: collapse;border-spacing: 0;}
 .lay-store-hd .mod-promotion {color: #333;font-weight: normal;}
 
 /*商品行*/
-.lay-goods-item td {padding: 16px 8px;border-bottom: 1px solid #dedede;}
+.lay-goods-item td {padding: 16px 8px;border-top: 1px solid #dedede;}
 .lay-goods-item .mod-goods-info {text-align: left;}
 .lay-goods-item .mod-goods-info .vm-spec {margin-top: 5px;color: #999;}
 .lay-goods-item .mod-price-discount .vm-original {text-decoration: line-through;color: #999;}
 .lay-goods-item .mod-quantity .vm-control{position: relative;z-index: 1;height: 25px;width: 80px;margin: 0 auto;overflow: hidden;}
 .lay-goods-item .mod-quantity a {position: absolute;width: 18px;height: 22px;background: #f0f0f0;font-size: 14px;text-decoration: none;font-weight: bold;border: 1px solid #dedede;text-align: center;}
+.lay-goods-item .mod-quantity a:hover{color: #f00;}
 .lay-goods-item .mod-quantity input{width: 38px;height: 18px;position: absolute;z-index: 2;left: 20px;border: 1px solid #dedede;padding: 2px 0;text-align: center;color: #343434;}
 .lay-goods-item .mod-quantity .minus{left: 0;}
 .lay-goods-item .mod-quantity .plus {left: 60px;}
-.lay-goods-item .mod-price{font-weight:600;color:#f30;font-size:14px;}
 
 /* 货到付款 */
 .pay{margin-top: 10px;text-align: right;}

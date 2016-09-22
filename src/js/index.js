@@ -39,6 +39,23 @@ jQuery(function($){
 		$("<li/>").appendTo($bannerNav);
 	});
 	
+	/*头部导航菜单下划线 弹性运动【需完善】*/
+	var $navList=$("#header .nav");
+	$navList.on("mouseenter","li",function(){
+		$("#header .nav-list li.navHover").stop().animate({
+			opacity:1,
+			width:$(this).children("a").width(),
+			left:$(this).offset().left-154
+		});
+	}).on("mouseleave","li",function(){
+		$("#header .nav-list li.navHover").css({
+			opacity:0,
+			width:0,
+			left:0
+		});
+	});
+	
+	
 	//初始化
 	$pic.eq(0).css("z-index",2).siblings("li").css("opacity",0);
 	$bannerNav.children("li").eq(0).addClass("active");
@@ -162,7 +179,56 @@ jQuery(function($){
 				$("html,body").animate({scrollTop:f5});break;
 		}
 		$(this).addClass("current").siblings("li").removeClass("current");
+	});
+	
+	
+	/*登录页面*/
+	$("#login").on("click",function(){
+		$("#loginWrap").show();
+		$("#loginPage").stop().animate({right:0});
+	});
+	
+	$("#sign").on("click",function(){
+		$("#signWrap").show();
+		$("#signPage").stop().animate({right:0});
+	});
+	
+	//关闭按钮
+	$("#loginPage,#signPage").on("click",".loginClose",function(){
+		$(".loginPop").hide();
+		$("#loginPage").stop().animate({right:-1150},function(){
+			$("#loginWrap").hide();
+		});
+		$("#signPage").stop().animate({right:-1150},function(){
+			$("#signWrap").hide();
+		});
 	})
+	//验证码
+	.on("click",".code",function(){
+		var str="";
+		for (var i = 0; i < 4; i++) {
+			var code=parseInt(Math.random()*10);
+			str+=code;
+		}
+		$(this).html(str);
+	});
+	
+	
+	$(".username").get().oninput=function(){
+		var str=$("this").val()
+	}
+	//用户名称只能包含数字、字母、下划线，长度不小于8位
+	function checkUsername(str){
+		var reg=/^\w{8,}$/;
+		if (str&&!(reg.test(str)))
+		{
+			//所有的错误提示信息，要放在顶部的吐司提示框中显示
+			oTips.style.display='block';
+			oTips.innerHTML="用户名不合法，请重新输入";
+			return 0;
+		}
+		return 1;
+	}
 })
 
 
