@@ -16,7 +16,7 @@
 		<div class="mini-container">
 			<div class="header">
 			    <div class="lay-logo"> 
-			    	<a href="" class="logo-link" title="卡当网"> <img src="../img/cartLogo.png" alt="卡当网"> </a> 
+			    	<a href="../index.html" class="logo-link" title="卡当网"> <img src="../img/cartLogo.png" alt="卡当网"> </a> 
 			    </div>
 			    <div class="cart-steps"></div>
 			</div>
@@ -25,13 +25,15 @@
 	            	<span>现在<a id="J_Login" href="">登录</a>，购物车中的商品将永久保存<span>
 	            </div>
 			    <div id="J_PartShop">
+			    	<!--商品表格-->
 			        <form method="post" id="J_FormCart">
 			            <table class="cart-table">
+			            	<!--表头标题-->
 			                <thead class="cart-table-hd">
 			                    <tr>
 			                        <th class="w60">
 			                        	<label class="check-all">
-			                                <input id="J_CheckAll" type="checkbox" class="checkbox" checked> 全选
+			                                <input id="J_CheckAll" type="checkbox" class="checkbox"> 全选
 			                        	</label>
 			                        </th>
 			                        <th colspan="2"> 商品信息</th>
@@ -82,8 +84,6 @@
 			                        	<a class="del" href="">删除</a>
 			                        </td>
 			                	</tr>-->
-			                	
-			                    <!--商品内容结束-->           
 			                </tbody>
 			            </table>
 			            
@@ -91,29 +91,21 @@
 			                <label id="J_Cod">
 			                    <input id="J_CodCbox" class="checkbox" type="checkbox"/> 货到付款
 			                </label>
-			                <span> 商品金额（不含运费和优惠）： <em id="J_TotalPrice" class="vm-total">￥ 138.00 </em></span>
+			                <span> 商品金额（不含运费和优惠）： <em id="J_TotalPrice" class="vm-total">￥ 0.00 </em></span>
 			            </div>
 			            <div class="pay"> 
 			            	<a class="btn-gray mr20" href="">继续购物</a> <a href="" id="J_BtnSettlement" class="btn-red">去结算</a>
 			            </div>
 			        </form>
 			    </div>
-			    <div id="J_BfdTab" class="bfd-tab pos-xmax">
-        <ul class="tabNav clearfix">
-        	<!--待写-->
-        </ul>
-        <div class="tabCon">
-            <div id="J_RecCAC" class="bfd-banner tab-item" kdref="1138"></div>
-        </div>
-        <div id="footer" class="footer">
-            <div class="lay-link">
-                <p class="mod-copyright">Copyright © 2006-2014 kadang.com 网上经营许可证号：浙B2-20140235</p>
-            </div>
-        </div>
-    </div>
+			    <!--版本信息-->
+		        <div id="footer" class="footer">
+		            <div class="lay-link">
+		                <p class="mod-copyright">Copyright © 2006-2014 kadang.com 网上经营许可证号：浙B2-20140235</p>
+		            </div>
+		        </div>
 			</div>
 		</div>
-		
 		
 		<!--固定屏幕导航栏-->
 		<div id="fastNav">

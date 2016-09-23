@@ -52,7 +52,6 @@
 .mailAddr .addrDl dd {display: none;position: absolute;z-index: 10;top: 21px;left: 0;width: 350px;padding: 10px;background-color: #fff;border: 1px solid #dedede;}
 .mailAddr .addrDl dd .addrPop-close { position: absolute;right: 0;top: 0;}
 .detail-icons-close {background-position: -45px -133px;}
-
 .onair{width: 20px;height: 22px;background: url(img/onair.gif) no-repeat;}
 .mailAddr .addrDl dd span {float: left;width: 54px;height: 22px; line-height: 22px;overflow: hidden;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
 .mailAddr .addrDl dd span a.selected,.mailAddr .addrDl dd span a:hover{background-color: #ff8e7e;color: #fff;}
@@ -63,7 +62,7 @@
 .lay-data p span {font-size: 14px;}
 .lay-meta .row-boss .airlines, .lay-data .row-boss .airlines {cursor: pointer;font-size: 12px;color: #6da4e3;line-height: 22px; display: inline-block;margin: 1px;padding: 0 5px;}
 .lay-meta .row-boss .airlines, .lay-data .row-boss .airlines:hover {text-decoration: none;border: 1px solid #CCC;background-color: #F8F8F8;border-radius: 2px;margin: 0;}
-
+/*款式、件数*/
 .lay-custom {padding: 5px 10px;margin-left: -15px;}
 .lay-custom .valid-cont {position: relative;border: 2px solid #fff;}
 .lay-custom .mod-unit {padding-left: 15px;}
@@ -97,6 +96,7 @@
 .mod-promise dd a.link-return {background-position: -3px -261px;}
 .mod-promise dd a.link-baom {background-position: -3px -312px;}
 
+/*Ta可能喜欢*/
 .sideRight{float: right;}
 .rightLike {font-family: 'Microsoft YaHei';border: 1px solid #dedede;border-top: none;float: right;width: 208px;}
 .rightLike .rightTitle {font-size: 18px; font-weight: bold;margin: 20px 0 10px; padding-left: 20px;color: #f16199;}
@@ -121,7 +121,6 @@
 #fastNav .olSer{background:url(../img/fast-onair.png) no-repeat;padding-top: 35px;border: 0;}
 #fastNav .olSerSpan{border: 1px solid #ccc;padding: 10px 5px; color: #e84847;}
 
-
 /*商品详情*/
 .sec-screen .goods-tab {width: 1200px;min-height: 220px;border-top: 1px solid #dedede;min-height: 300px;}
 .sec-screen .goods-tab .tab-nav-detail {position:static;background-color: #fff;width: 1200px;}
@@ -134,6 +133,7 @@
 .detail-diy-main {overflow: hidden;width: 790px;margin: 30px auto 0px;}
 .detail-diy-main span{font-family:'Microsoft YaHei';font-size:14px;}
 #J_RecRM, #J_RecLP, #J_evalItem {position: relative;}
+/*评论*/
 .tab-title {height: 50px;line-height: 50px;border-top: 1px solid #dedede;border-bottom: 1px solid #dedede; background-color: #FCFCFC;color: #E84946;padding-left: 20px;font-size: 16px;font-family: 'Microsoft YaHei';/*display: none;*/}
 .shop-eval .eval-item {float: left;display: inline;}
 .shop-eval .shop-eval-title {float: right;padding: 0 40px;margin: 20px 0;height: 110px;line-height: 110px;border-left: 1px dashed #DEDEDE;}
@@ -168,7 +168,7 @@ a.btn-h23:hover{background: #fff;}
 .eval-list .eval-info .goods-info {margin-top: 10px;color: #999;}
 .eval-list .user-info .user-nick {margin-top: 5px;line-height: 26px;height: 26px;color: #000;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
 .goods-eval{border: 1px solid #DEDEDE;}
-
+/*销量*/
 #J_CommentList table{width: 100%;border-collapse: collapse;}
 #J_CommentList thead{border-bottom: 1px solid #DEDEDE;}
 #J_CommentList tr{height: 40px;}

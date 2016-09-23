@@ -3,7 +3,7 @@ jQuery(function($){
 //		e.preventDefault();
 //	});
 	
-	/*顶部导航栏的下拉菜单【需完善】*/
+	/*顶部导航栏的下拉菜单*/
 	var $introMenu=$("#header .intro-menu");
 	var $menuSel=$("#header .intro-menu .select");
 	
@@ -27,23 +27,28 @@ jQuery(function($){
 		});
 	}
 	
-	
-	/*头部导航菜单下划线 弹性运动【需完善】*/
+	/*头部导航菜单下划线 弹性运动*/
 	var $navList=$("#header .nav");
+	var $navHover=$("#header .nav-list li.navHover");
 	$navList.on("mouseenter","li",function(){
-		$("#header .nav-list li.navHover").stop().animate({
+		$navHover.stop().animate({
 			opacity:1,
 			width:$(this).children("a").width(),
 			left:$(this).offset().left-290
+		},200);
+	})
+	.on("mouseleave","li",function(){
+		$navHover.css({
+			left:$(this).offset().left-290
 		});
-	}).on("mouseleave","li",function(){
-		$("#header .nav-list li.navHover").css({
+	})
+	.on("mouseleave",function(){
+		$navHover.stop().animate({
 			opacity:0,
 			width:0,
 			left:0
 		});
 	});
-
 
 	/*送礼攻略*/
 	$(".gonglue h2").on("mouseenter",function(){
@@ -60,7 +65,7 @@ jQuery(function($){
 	$("#toshowlink").click(function(e){
 		e.preventDefault();
 		$("#ftlinklist").toggle();
-	})
+	});
 	
 	/*回到顶部*/
 	$(window).scroll(function(){
@@ -72,8 +77,6 @@ jQuery(function($){
 			$("#gotop").hide();
 		}
 	});
-	
-	
 	//鼠标移入时移除箭头，创建span
 	$("#gotop").on("mouseenter",function(){
 		$(this).find("i").remove();
@@ -99,5 +102,7 @@ jQuery(function($){
 		$("#wxApp").fadeIn();
 	}).on("mouseleave",function(){
 		$("#wxApp").fadeOut();
-	})
-})
+	});
+});
+
+

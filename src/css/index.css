@@ -1,10 +1,8 @@
-
 #wrap{width:100%;min-width: 1227px;margin: 0 auto;background-color: #fff;}
 
-/*main*/
-#main{height: 7537px;float: left; }
-
-/*container*/
+/*main主体部分*/
+#main{height: 7537px;float: left;width: 100%; }
+/*container 第一屏*/
 #main>.container{height: 1380px;position: relative;margin:25px 0 0 30px;}
 #main .container .nav{width: 150px;margin-right: 20px;float: left;height: 460px;}
 #main .container .nav-hot>a,.nav-gift p{font-size: 16px;font-family: 'Microsoft YaHei';font-weight: bold;margin-bottom: 5px;color: #000;}
@@ -17,7 +15,6 @@
 #main .container .nav-gift .gift-list{width: 120px;height: 460px;float: left;display: none;padding-left: 20px;}
 #main .container .nav-gift .gift-list a{display: block;line-height: 21px;height: 21px;margin-bottom: 15px;padding-left: 10px;}
 #main .container .nav-gift .gift-list a:hover{background: #999;color: #fff;}
-
 #main .container .banner{position: relative;width: 820px;height: 460px;float: left;overflow: hidden;}
 #main .container .banner .pic li{position: absolute;top: 0;left: 0;z-index: 1;}
 #main .container .banner .nav{position: absolute;bottom: 8px;left: 50%;margin-left: -58px;height: 11px;z-index: 2;}
@@ -28,10 +25,9 @@
 #main .container .banner span:hover{opacity: 1;}
 #main .container .banner span.prev{left:50px;}
 #main .container .banner span.next{background-position:0 -68px;right: 50px;}
-
 #main .container .featured{float: left;width: 190px;display: inline;margin-left: 20px;}
 #main .container .featured p{margin-bottom: 20px;}
-
+/*爆款推荐*/
 #main .container .qixi{clear: both;margin: 8px auto;margin-top: 40px;margin-bottom: 10px;position: relative;}
 #main .container .head{font-family: 'Microsoft YaHei';font-size: 12px;color: #999;padding-bottom: 15px;}
 #main .container .qixi-title{font-family: 'Microsoft YaHei';font-weight: bold;font-size: 20px;color: #333;margin-right: 15px;position: relative;bottom: 2px;}
@@ -49,11 +45,11 @@
 #main .container .qixi-footer .left{float: left;}
 #main .container .qixi-footer .right{float: right;}
 
-#main .floor-nav{height: 46px;padding: 20px 0 0 30px;position: static;top: 0px;margin: 0 auto;background-color: #fff;width: 1230px;}
+/*第二屏 楼层导航栏*/
+#main .floor-nav{height: 46px;padding: 20px 0 0 30px;position: static;top: 0px;margin: 0 auto;background-color: #fff;width: 100%;}
 #main .floor-nav .floorCon li{width: 128px;height: 46px;text-align: center;float: left;margin-right: 2px;font: 14px/46px "宋体";font-weight: bold;color: #666;cursor: pointer;}
 #main .floor-nav .floorCon li:hover,#main .floor-nav .floorCon .current{background-color: #e44715;color: #fff;}
-
-
+/*楼层主体*/
 #bigWrap{background-color: #F5F5F5;padding-left:30px ;width: 1230px;}
 #main .floor-main{background-color: #f5f5f5;padding-top: 20px;width: 100%;}
 #main .floor-main .container{width: 1200px;}
@@ -71,148 +67,32 @@
 #main .floorBox ul .pp .price em {font-size: 12px;}
 #main .floorBox ul .eval-cont {width: 246px;line-height: 22px;height: 22px; color: #999;overflow: hidden;text-overflow: ellipsis; white-space: nowrap;font-family: "宋体";margin: 2px auto 0;}
 
-
-
-
-
 /*登录，注册页面*/
-#loginWrap,#signWrap{position: fixed;top: 0;z-index:1000; width: 1263px;
-    height: 7923px;display: none;}
-.loginPop{
-	position: absolute;
-    top: 0px;
-    left: 0px;
-    opacity: 0.2;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(0, 0, 0);
-}
-#loginPage,#signPage {
-	font-size: 12px;
-	font-family: "微软雅黑";
-    width: 1150px;
-    height: 590px;
-    position: absolute;
-    z-index: 100;
-    right: -1150px;
-    top: 0;
-    background: #fff;
-    padding-top: 25px;
-}
-.loginCon {
-    overflow: hidden;
-    width: 640px;
-    padding: 50px;
-    margin: 0 auto;
-}
-.loginClose {
-    display: block;
-    width: 40px;
-    height: 40px;
-    background: url(../css/img/closePop.gif) no-repeat center center #E14835;
-    position: absolute;
-    top: 0;
-    left: 0;
-    line-height: 40px;
-    cursor: pointer;
-}
-.loginCon .other-login {
-    float: left;
-    display: inline;
-    overflow: hidden;
-    width: 195px;
-    line-height: 1.5;
-}
+#loginWrap,#signWrap{position: fixed;top: 0;z-index:1000; width: 100%;height: 7923px;display: none;}
+.loginPop{position: absolute;top: 0px;left: 0px;opacity: 0.3;width: 100%;height: 100%;background-color: rgb(0, 0, 0);}
+#loginPage,#signPage {font-size: 12px;font-family: "Microsoft YaHei";width: 1150px;height: 590px;position: absolute;z-index: 100;right: -1150px;top: 0;background: #fff;padding-top: 25px;}
+.loginCon {overflow: hidden;width: 640px;padding: 50px;margin: 0 auto;}
+.loginClose {display: block;width: 40px;height: 40px;background: url(../css/img/closePop.gif) no-repeat center center #E14835;position: absolute;top: 0;left: 0;line-height: 40px;cursor: pointer;}
+.loginCon .other-login {float: left;display: inline;overflow: hidden;width: 195px;line-height: 1.5;}
 .loginCon .other-login dt{margin-bottom:20px}
 .f18{font-size: 18px;color: #333333;}
 .f14{font-size: 14px;color: #999;}
-.loginCon .other-login dd {
-    float: left;
-    display: inline;
-    margin-right: 17px;
-}
-.loginCon .other-login a{
-    background: url(../css/img/login.png) no-repeat;
-    width: 44px;
-    height: 25px;
-    display: block;
-    padding-top: 44px;
-    color: #333;
-    text-align: center;
-    line-height: 25px;
-}
+.loginCon .other-login dd {float: left;display: inline;margin-right: 17px;}
+.loginCon .other-login a{background: url(../css/img/login.png) no-repeat;width: 44px;height: 25px;display: block;padding-top: 44px;color: #333;text-align: center;line-height: 25px;}
 .loginCon .other-login a:hover{color: #f00;text-decoration: underline;}
-.loginCon .other-login a.qq {
-    background-position: 0 -68px;
-}
-.loginCon .other-login a.alipay {
-    background-position: 0 -137px;
-}
-.login {
-    float: left;
-    padding-left: 25px;
-    border-left: 1px solid #e8e8e8;
-    width: 320px;
-}
-.loginFrom dl dt {
-    line-height: 20px;
-    height: 20px;
-    margin: 8px 0 30px 0;
-    text-shadow: 1px 1px 0 #FFF;
-}
-.loginFrom dl dd p {
-    height: 20px;
-    line-height: 20px;
-    margin-bottom: 10px;
-    padding-top: 10px;
-    display: block;
-    text-align: right;
-    color: #f46e6e;
-}
-.username,.pwd{
-    font-family: Tahoma;
-    width: 280px;
-    height: 32px;
-    line-height: 32px;
-    background: url(../css/img/login.png) no-repeat transparent;
-    border: solid 1px #D8D8D8;
-    border-radius: 2px;
-    padding: 1px 1px 1px 32px!important;
-    position: relative;
-    z-index: 1200;
-}
-.username {
-    background-position: 7px -203px;
-}
-.pwd {
-    background-position: 7px -238px;
-}
-.codeText{width: 60px; float: left;
-    height: 32px;
-    line-height: 32px;
-    border: solid 1px #D8D8D8;
-    border-radius: 2px;
-    padding: 5px;
-    position: relative;
-    z-index: 1200;
-}
+.loginCon .other-login a.qq {background-position: 0 -68px;}
+.loginCon .other-login a.alipay {background-position: 0 -137px;}
+.login {float: left;padding-left: 25px;border-left: 1px solid #e8e8e8;width: 320px;}
+.loginFrom dl dt {line-height: 20px;height: 20px;margin: 8px 0 30px 0;text-shadow: 1px 1px 0 #FFF;}
+.loginFrom dl dd p {height: 20px;line-height: 20px;margin-bottom: 10px;padding-top: 10px;display: block;text-align: right;color: #f46e6e;}
+.username,.pwd{font-family: Tahoma;width: 280px;height: 32px;line-height: 32px;background: url(../css/img/login.png) no-repeat transparent;border: solid 1px #D8D8D8;border-radius: 2px;padding: 1px 1px 1px 32px!important;position: relative;z-index: 1200;}
+.username {background-position: 7px -203px;}
+.pwd {background-position: 7px -238px;}
+.codeText{width: 60px; float: left;height: 32px;line-height: 32px;border: solid 1px #D8D8D8;border-radius: 2px;padding: 5px;position: relative;z-index: 1200;}
 .code{display: inline-block;width: 80px;height: 30px;border: 1px solid #999;background-color: #FFEBCD;margin:5px 0 10px 20px;line-height: 30px;font-size: 20px;text-align: center;cursor: pointer;}
 .code:hover{border-color: #f00;}
 .login-auto{height: 30px;line-height: 16px;color: #999;margin-top: 10px;}
-.submit {
-    height: 45px;
-    width: 315px;
-    font-size: 18px;
-    background: #F6614B;
-    color: #fff;
-    display: inline-block;
-    border: none;
-    cursor: pointer;
-    border-radius: 2px;
-    font-weight: bold;
-    padding: 0 20px;
-    font-family: "微软雅黑";
-}
+.submit {height: 45px;width: 315px;font-size: 18px;background: #F6614B;color: #fff;display: inline-block;border: none;cursor: pointer;border-radius: 2px;font-weight: bold;padding: 0 20px;font-family: "Microsoft YaHei";}
 .foget{float: right;}
 .bottom{height: 25px;margin-top: 10px;}
 

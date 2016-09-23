@@ -4,14 +4,14 @@ body,a{color: #666;}
 .icon,.icon-cart,.icon-phone{ background: url(img/new-common.png) no-repeat;}
 .seach-input,.search-button{background: url(img/bg-search.png) no-repeat;}
 
-
 #header{width:100%;height: 160px; border-bottom: 1px solid #999;float: left;}
 #header .logo{float: left;}
 #header .logo a{display:inline-block;width: 150px;height: 170px;background: #f4604b url(img/kadang.png) 20px 20px no-repeat; margin-left: 30px;}
+/*我的卡当 导航栏*/
 #header .intro{width: 1200px;height: 26px; border-bottom: 1px solid #ededed;line-height: 26px; margin: 0 auto;}
 #header .intro a:hover{color:#f4604b ;}
 #header .intro-menu{width: 480px; height: 25px;float: right;position: relative;}
-#header .intro-menu li a{float: left;color: #999;width:80px;text-align: center;}
+#header .intro-menu li>a{float: left;color: #999;width:80px;text-align: center;}
 #header .intro-menu .select{width:70px;position: absolute;top: 24px;background: #fff;padding: 5px 8px;border-style: solid;border: 1px solid #ccc;line-height: 26px;display:none;z-index: 3;}
 #header .intro-menu .select li a{text-align: left;}
 #header .icon{display:inline-block;width:12px;height: 12px;background-position: 0 -403px;}
@@ -20,6 +20,7 @@ body,a{color: #666;}
 #header .intro-login li a{color: #999;}
 #header .icon-cart{display:inline-block;width:12px;height: 12px; background-position: 0 -427px;margin-right:5px;vertical-align: middle;}
 #header .icon-phone{display:inline-block;width:9px;height: 15px; background-position: 0 -443px;margin-right:5px;vertical-align: middle;}
+/*搜索框*/
 #header .seach{border-bottom:1px solid #ededed; ;}
 #header .seach-input{padding-left: 20px;height: 36px;line-height: 30px;width:335px;border:0;float: left;margin: 20px 0 0 270px;border-radius: 50px;}
 #header .search-button{cursor: pointer;width: 40px;height: 36px;margin:20px 0 0 -45px;border: 0;text-indent: -999em;background-position: right 0;}
@@ -27,6 +28,7 @@ body,a{color: #666;}
 #header .search-tab{margin-left: 450px;height: 40px; padding-top: 5px;}
 #header .search-tab li{float: left;padding-left: 20px;}
 #header .search-tab li a{color: #646464;}
+/*导航栏*/
 #header .nav{height: 34px;}
 #header .nav-list{position: relative;}
 #header .nav-list li.navHover{height: 2px;width:0;/*line-height: 0;font-size: 0;*/position: absolute;background-color: #F4604B;top: 31px;left:0;opacity: 0;}
@@ -75,7 +77,6 @@ body,a{color: #666;}
 #gotop{display: none;}
 .gotop{display: block;width: 20px;height: 20px;margin: 8px 0 0 9px;background:url(img/online.png) no-repeat -10px -10px;}
 #gotop .span-gotop{margin: 0;padding-top: 3px;}
-
 
 /*footer*/
 #footer { margin-top: 10px;overflow: hidden;zoom: 1;width: 100%;}

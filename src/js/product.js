@@ -48,7 +48,7 @@ jQuery(function($){
 		var i=$(this).parent().index()+1;
 		$smallPic.attr("src","../img/product"+i+".jpg");
 		$bigPic.children().attr("src","../img/bigProduct"+i+".jpg");
-	})
+	});
 	
 	/*放大镜*/
 	$("#zoomPad").on("mouseenter",function(){
@@ -70,6 +70,12 @@ jQuery(function($){
 		});
 	});
 	
+	//加入收藏
+	$(".kd-btn-collect").on("click",function(){
+		$(this).html("<i/>查看收藏");
+		$(".kd-btn-collect i").css("background-position","-65px -30px");
+	});
+	
 	/*Ta可能喜欢,按钮*/
 	var $li=$(".J_move_pic").children("li");
 	var i=0;
@@ -86,35 +92,31 @@ jQuery(function($){
 			i=$li.length-1;
 		}
 		liShow(i);
-	})
+	});
 	
 	function liShow(i){
 		$li.eq(i).animate({opacity:1},600).siblings("li").animate({opacity:0},600);
 	}
 
-
 	/*加入购物车*/
 	$("#BtnCart").on("click",function(){
-		var str = getCookie("arr");
-
-		// 用于存储所有的商品信息
 		var arr = [];
+		var str = getCookie("arr");
+		
+		// 取出cookie中原有的商品信息
 		if (str != ""){
-			// 说明之前 cookie 中有商品的内容
-			// 取出来转换成数组
-			arr = eval(str);
+			arr = JSON.parse(str);
 		}
 		
 		var obj={};
 		obj.i=$smallPic.attr("src").charAt(14);//图片下标
-		obj.title=$(".lay-title").text();
-		obj.price=$("#J_Price").text();
-		obj.amount=$("#J_Amount").val();
+		obj.title=$(".lay-title").text();//标题
+		obj.price=$("#J_Price").text();//价格
+		obj.amount=$("#J_Amount").val();//数量
 		obj.pattern=$("#J_MainWrap").find(".selected").text();//款式
 		
 		arr.push(obj);
-		
-		addCookie("arr", arr.toSource(), 7);
+		addCookie("arr", JSON.stringify(arr), 7);
 		
 		alert("添加成功");
 	});
@@ -145,8 +147,7 @@ jQuery(function($){
 				$("html,body").animate({scrollTop:10174});break;
 		}
 	});
-	
-})
+});
 
 
 

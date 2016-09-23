@@ -1,5 +1,4 @@
 jQuery(function($){
-	
 	$.ajaxSetup({
 		/*type:"get",
 		async:true,*/
@@ -25,27 +24,50 @@ jQuery(function($){
 					alt:item.title
 				}).appendTo($a);
 				
-				var $span=$("<span/>").addClass("price").html("<em>￥</em>"+item.price).appendTo($Li);
-				$("<div/>").html(item.amount+"人购买").appendTo($span);
+				var $div=$("<div/>").addClass("hideBox").appendTo($Li);
+				var $p1=$("<p/>").addClass("toLike").appendTo($div);
+				$("<a/>").html("<i/>加入收藏").appendTo($p1);
+				var $p2=$("<p/>").addClass("toLook").appendTo($div);
+				$("<a/>").html("去看看").appendTo($p2);
 				
-				var $p=$("<p/>").addClass("text").appendTo($Li);
-				$("<a/>").html(item.title).appendTo($p);
+				var $div2=$("<div/>").addClass("mbox").appendTo($Li);
+				var $span=$("<span/>").addClass("price").html("<em>￥</em>"+item.price).appendTo($div2);
+				$("<div/>").html(item.amount+"人购买").appendTo($span);
+				var $p3=$("<p/>").addClass("text").appendTo($div2);
+				$("<a/>").html(item.title).appendTo($p3);
 			});
 		}
 	});
 	
 	$.ajax();
-	
+//	滚动条滚动到页面高度的二分之一时,加载新数据
 	$(window).on("scroll",function(){
-		if ($(window).scrollTop()>=$("body").height()/1.5){
+		if ($(window).scrollTop()>=$("body").height()/2){
 			$.ajax();
-			
 			//数据足够多了就不要再请求了
 			if($("body").height()>=8000){
 				$(window).off("scroll");
 			}
 		}
+	});
+	
+	/*移入商品,显示加入收藏*/
+	$(".qixi-list").on("mouseenter","li",function(){
+		$(this).find(".hideBox").stop().animate({opacity:0.7},200);
 	})
-	
-	
-})
+	.on("mouseleave","li",function(){
+		$(this).find(".hideBox").stop().animate({opacity:0},200);
+	});
+});
+
+
+
+
+
+
+
+
+
+
+
+
