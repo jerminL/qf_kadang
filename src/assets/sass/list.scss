@@ -1,0 +1,163 @@
+#wrap {
+	width: 100%;
+	min-width: 1227px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+#main {
+	width: 1220px;
+	float: left;
+	margin: 25px 0 0 30px;
+
+	.qixi {
+		clear: both;
+		margin: 8px auto;
+		margin-top: 40px;
+		margin-bottom: 10px;
+		position: relative;
+	}
+
+	.head {
+		font-family: 'Microsoft YaHei';
+		font-size: 12px;
+		color: #999;
+		padding-bottom: 15px;
+	}
+
+	.qixi-title {
+		font-family: 'Microsoft YaHei';
+		font-weight: bold;
+		font-size: 20px;
+		color: #333;
+		margin-right: 15px;
+		position: relative;
+		bottom: 2px;
+	}
+
+	.qixiCon {
+		width: 1220px;
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+
+	.qixi-list {
+		min-height: 716px;
+		width: 1230px;
+
+		li {
+			float: left;
+			margin: 0 20px 20px 0;
+			border: 1px solid #ccc;
+			box-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+			position: relative;
+
+			a img {
+				width: 285px;
+				height: 280px;
+			}
+		}
+
+		.toLike {
+			width: 161px;
+			float: left;
+		}
+
+		.toLook {
+			width: 123px;
+			float: left;
+			border-left: 1px solid #ccc;
+		}
+
+		.mbox {
+			padding: 0 20px 10px;
+			width: 245px;
+		}
+	}
+
+	.price {
+		display: block;
+		width: 100%;
+		color: #666;
+		font-size: 18px;
+		line-height: 19px;
+		height: 19px;
+		padding: 10px 0 5px 0;
+
+		em {
+			font-size: 12px;
+			font-family: "Microsoft YaHei";
+		}
+
+		div {
+			display: inline-block;
+			float: right;
+			color: #666;
+			font-size: 12px;
+		}
+	}
+
+	.text {
+		width: 285px;
+		overflow: hidden;
+		height: 24px;
+
+		a {
+			font-size: 16px;
+			text-decoration: none;
+			color: #666;
+			font-family: "Microsoft YaHei";
+		}
+		a:hover {
+			color: #e44715;
+		}
+	}
+
+	.qixi-footer {
+		width: 1200px;
+		height: 144px;
+		padding-bottom: 20px;
+
+		.left {
+			float: left;
+		}
+		.right {
+			float: right;
+		}
+	}
+} 
+
+/*加入收藏*/
+.qixi-list .hideBox {
+	width: 285px;
+	height: 40px;/*display:none;*/
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	top: 240px;
+	z-index: 10;
+
+	p {
+		text-align: center;
+		height: 40px;
+		line-height: 40px;
+		background-color: #333;
+
+		a {
+			color: #fff;
+			font-size: 13px;
+		}
+	}
+	p:hover {
+		background-color: #E44715;
+	}
+
+	.toLike i {
+		display: inline-block;
+		width: 14px;
+		height: 13px;
+		background: url(img/common.png) -37px -169px;
+		vertical-align: middle;
+		margin-right: 6px;
+	}
+}

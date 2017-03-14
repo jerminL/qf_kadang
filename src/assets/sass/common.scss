@@ -176,44 +176,46 @@ body, a {
 				float: left;
 				line-height: 34px;
 				position: relative;
+
+				a {
+					padding: 0 18px;
+					color: #000;
+					margin: 0 8px;
+					font-size: 14px;
+					text-decoration: none;
+					font-weight: bold;
+				}
+
+				a:hover, .hot-links a:hover {
+					color: #eb744f;
+				}
+			}
+
+			.nav-hot {
+				position: absolute;
+				right: 0;
+				top: 0;
+				width: 13px;
+				height: 13px;
 			}
 		}
 	}
 }
-#header .nav-list 
-#header .nav-list li a {
-	padding: 0 18px;
-	color: #000;
-	margin: 0 8px;
-	font-size: 14px;
-	text-decoration: none;
-	font-weight: bold;
-}
-#header .nav-list li a:hover, .hot-links a:hover {
-	color: #eb744f;
-}
-#header .nav-hot {
-	position: absolute;
-	right: 0;
-	top: 0;
-	width: 13px;
-	height: 13px;
-}
-
 /*送礼攻略*/
 .gonglue {
 	float: left;
 	width: 140px;
 	position: relative;
 	cursor: pointer;
-}
-.gonglue h2 {
-	font-size: 14px;
-	line-height: 34px;
-	height: 34px;
-	padding-left: 45px;
-	position: relative;
-	cursor: pointer;
+
+	h2 {
+		font-size: 14px;
+		line-height: 34px;
+		height: 34px;
+		padding-left: 45px;
+		position: relative;
+		cursor: pointer;
+	}
 }
 .nav {
 	float: left;
@@ -234,18 +236,22 @@ body, a {
 	z-index: 1000;
 	position: relative;
 	top: -3px;
-}
-.giftClassify .gift-lm {
-	width: 540px;
-}
-.giftClassify .gift-lm .cate-item {
-	width: 258px;
-}
-.giftClassify .cate-cont {
-	width: 540px;
-}
-.giftClassify .gift-xq {
-	height: 488px;
+
+	.gift-lm {
+		width: 540px;
+
+		.cate-item {
+			width: 258px;
+		}
+	}
+
+	.cate-cont {
+		width: 540px;
+	}
+
+	.gift-xq {
+		height: 488px;
+	}
 }
 
 /*按兴趣选礼物*/
@@ -396,80 +402,93 @@ body, a {
 	overflow: hidden;
 	zoom: 1;
 	width: 100%;
-}
-#footer>.container {
-	width: 1200px;
-	margin: 0 auto;
-}
-.lay-service {
-	padding: 20px;
-	color: #999;
-	font-family: 'Hiragino Sans GB', 'Microsoft YaHei';
-}
-.lay-service a {
-	color: #999;
-}
-.lay-service li {
-	display: inline;
-	float: left;
-	width: 12%;
-	text-align: center;
-}
-.lay-service li .vm-cap {
-	color: #000;
-	line-height: 2em;
-	font-size: 14px;
-}
-.service-pic {
-	height: 48px;
-	width: 48px;
-	margin: 0 auto;
-	background: url(img/service.png) no-repeat;
-}
-.service-pic.pic1 {
-	background-position: 0 0;
-}
-.service-pic.pic2 {
-	background-position: 0 -49px;
-}
-.service-pic.pic3 {
-	background-position: 0 -98px;
-}
-.service-pic.pic4 {
-	background-position: 0 -147px;
-}
-.service-pic.pic5 {
-	background-position: 0 -196px;
-}
-.service-pic.pic6 {
-	background-position: 0 -245px;
-}
-.service-pic.pic7 {
-	background-position: 0 -294px;
-}
-.service-pic.pic8 {
-	background-position: 0 -343px;
-}
-.lay-link {
-	margin: 15px 0;
-	font-family: tahoma, arial, 'Hiragino Sans GB', '\5B8B\4F53', sans-serif;
-	color: #606060;
-	text-align: center;
-	word-spacing: 5px;
-}
-.lay-link .mod-link a {
-	display: inline-block;
-	line-height: 2em;
-	margin: 0 10px;
-	color: #606060;
-}
-.lay-link .mod-link a:hover {
-	text-decoration: underline;
-}
-.lay-link .mod-copyright {
-	margin-top: 10px;
-	text-align: center;
-	color: #acacac;
+
+	>.container {
+		width: 1200px;
+		margin: 0 auto;
+
+		// 底部服务
+		.lay-service {
+			padding: 20px;
+			color: #999;
+			font-family: 'Hiragino Sans GB', 'Microsoft YaHei';
+
+			a {
+				color: #999;
+			}
+
+			li {
+				display: inline;
+				float: left;
+				width: 12%;
+				text-align: center;
+
+				.vm-cap {
+					color: #000;
+					line-height: 2em;
+					font-size: 14px;
+				}
+			}
+
+			.service-pic {
+				height: 48px;
+				width: 48px;
+				margin: 0 auto;
+				background: url(img/service.png) no-repeat;
+
+				&.pic1 {
+					background-position: 0 0;
+				}
+				&.pic2 {
+					background-position: 0 -49px;
+				}
+				&.pic3 {
+					background-position: 0 -98px;
+				}
+				&.pic4 {
+					background-position: 0 -147px;
+				}
+				&.pic5 {
+					background-position: 0 -196px;
+				}
+				&.pic6 {
+					background-position: 0 -245px;
+				}
+				&.pic7 {
+					background-position: 0 -294px;
+				}
+				&.pic8 {
+					background-position: 0 -343px;
+				}
+			}
+		}
+
+		// 底部链接
+		.lay-link {
+			margin: 15px 0;
+			font-family: tahoma, arial, 'Hiragino Sans GB', '\5B8B\4F53', sans-serif;
+			color: #606060;
+			text-align: center;
+			word-spacing: 5px;
+
+			.mod-link a {
+				display: inline-block;
+				line-height: 2em;
+				margin: 0 10px;
+				color: #606060;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+
+			.mod-copyright {
+				margin-top: 10px;
+				text-align: center;
+				color: #acacac;
+			}
+		}
+	}
 }
 #ftlinklist {
 	clear: both;
@@ -479,6 +498,15 @@ body, a {
 	border: 1px solid #dcdee1;
 	line-height: 200%;
 	display: none;
+
+	a:link, #ftlinklist a:visited {
+		color: #777;
+	}
+
+	a:hover {
+		color: #f00;
+		text-decoration: underline;
+	} 
 }
 .swhead, .swbody {
 	width: 100%;
@@ -500,43 +528,40 @@ body, a {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	color: #777;
-}
-.swbody dl {
-	width: 100% !important;
-	margin: 0;
-	padding: 8px 0;
-	clear: both;
-	overflow: hidden;
-	border-bottom: 1px dashed #ddd;
-}
-.swbody dt {
-	width: 5%;
-	font-weight: bold;
-	text-align: right;
-}
-.swbody dd {
-	width: 95%;
-}
-.swbody dt, .swbody dd {
-	float: left;
-}
-#ftlinklist a:link, #ftlinklist a:visited {
-	color: #777;
-}
-#ftlinklist a:hover {
-	color: #f00;
-	text-decoration: underline;
-}
-.swbody dd a {
-	display: block;
-	float: left;
-	margin-right: 10px;
-}
-.swbody ul li {
-	width: 30%;
-	float: left;
-	padding-left: 2%;
-	height: 24px;
-	overflow: hidden;
-	text-align: left !important;
+
+	dl {
+		width: 100% !important;
+		margin: 0;
+		padding: 8px 0;
+		clear: both;
+		overflow: hidden;
+		border-bottom: 1px dashed #ddd;
+
+		dt {
+			width: 5%;
+			font-weight: bold;
+			text-align: right;
+			float: left;
+		}
+
+		dd {
+			width: 95%;
+			float: left;
+
+			a {
+				display: block;
+				float: left;
+				margin-right: 10px;
+			}
+		}
+	}
+
+	ul li {
+		width: 30%;
+		float: left;
+		padding-left: 2%;
+		height: 24px;
+		overflow: hidden;
+		text-align: left !important;
+	}
 }

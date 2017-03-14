@@ -1,0 +1,236 @@
+body {
+	color: #333;
+}
+a {
+	color: #999;
+	cursor: pointer;
+}
+.w60 {
+	width: 60px;
+}
+.w120 {
+	width: 120px;
+}
+.w190 {
+	width: 190px;
+}
+.w210 {
+	width: 210px;
+}
+.mini-container {
+	width: 990px;
+	margin: 0 auto;
+}
+
+/*header*/
+.header {
+	overflow: hidden;
+	padding: 20px 0 10px;
+
+	.cart-steps {
+		width: 300px;
+		height: 80px;
+		background: url(../img/cart_step.png) no-repeat;
+		float: right;
+	}
+}
+.lay-logo {
+	float: left;
+}
+.part-upside {
+	margin-bottom: 20px;
+
+	span {
+		color: #999;
+
+		a {
+			color: #333;
+		}
+	}
+}
+
+/*table*/
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.cart-table {
+	width: 100%;
+	border: 1px solid #dedede;
+	text-align: center;
+
+	.cart-table-hd th {
+		padding: 8px 5px;
+		background: #f8f8f8;
+		border-bottom: 1px solid #dedede;
+		text-align: center;
+	}
+}
+.checkbox {
+	vertical-align: middle;
+	margin-top: -2px;
+}
+.lay-store-hd {
+	border: 1px solid #fff;
+
+	th {
+		padding: 20px 10px 8px;
+		border-bottom: 1px solid #dedede;
+		text-align: center;
+	}
+
+	.mod-name {
+		text-align: left;
+		color: #999;
+		line-height: 22px;
+		font-weight: normal;
+
+		a {
+			color: #333;
+		}
+	}
+
+	.mod-promotion {
+		color: #333;
+		font-weight: normal;
+	}
+}
+.lay-goods-item .mod-goods-info .vm-tit a {
+	color: #333;
+}
+.airlines {
+	color: #6da4e3;
+	line-height: 22px;
+	display: inline-block;
+	margin: 1px;
+	padding: 0 5px;
+	font-weight: normal;
+	font-size: 12px;
+	cursor: pointer;
+}
+.airlines:hover {
+	text-decoration: none;
+	border: 1px solid #CCC;
+	background-color: #F8F8F8;
+	border-radius: 2px;
+	margin: 0;
+}
+.detail-icons {
+	display: inline-block;
+	margin: 0 3px;
+	font-size: 0;
+	line-height: 0;
+	overflow: hidden;
+	height: 22px;
+	width: 20px;
+	background: url(img/onair.gif) no-repeat 0 2px;
+	vertical-align: -5px;
+}
+
+/*商品行*/
+.lay-goods-item {
+	td {
+		padding: 16px 8px;
+		border-top: 1px solid #dedede;
+	}
+
+	.mod-goods-info {
+		text-align: left;
+
+		.vm-spec {
+			margin-top: 5px;
+			color: #999;
+		}
+	}
+
+	.mod-price-discount .vm-original {
+		text-decoration: line-through;
+		color: #999;
+	}
+
+	.mod-quantity {
+		.vm-control {
+			position: relative;
+			z-index: 1;
+			height: 25px;
+			width: 80px;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+
+		a {
+			position: absolute;
+			width: 18px;
+			height: 22px;
+			background: #f0f0f0;
+			font-size: 14px;
+			text-decoration: none;
+			font-weight: bold;
+			border: 1px solid #dedede;
+			text-align: center;
+		}
+		a:hover {
+			color: #f00;
+		}
+
+		input {
+			width: 38px;
+			height: 18px;
+			position: absolute;
+			z-index: 2;
+			left: 20px;
+			border: 1px solid #dedede;
+			padding: 2px 0;
+			text-align: center;
+			color: #343434;
+		}
+
+		.minus {
+			left: 0;
+		}
+		.plus {
+			left: 60px;
+		}
+	}
+}
+
+/* 货到付款 */
+.pay {
+	margin-top: 10px;
+	text-align: right;
+}
+#J_Cod {
+	margin-right: 20px;
+}
+.vm-dollar {
+	font-style: normal;
+	font-size: 14px;
+}
+.vm-total {
+	font-size: 20px;
+	font-weight: bold;
+	color: #E8776A;
+	font-family: 'Microsoft YaHei';
+	font-style: normal;
+}
+a.btn-gray {
+	padding: 4px 20px;
+	font-size: 16px;
+}
+a.btn-gray:hover {
+	text-decoration: underline;
+}
+a.btn-red {
+	background: #F6614B;
+	color: #fff;
+	display: inline-block;
+	font-weight: bold;
+	border: 1px solid #F6614B;
+	border-radius: 5%;
+	height: 28px;
+	line-height: 28px;
+	padding: 5px 20px;
+	font-size: 16px;
+	font-family: 'Microsoft YaHei';
+	text-decoration: none;
+}
