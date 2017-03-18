@@ -130,7 +130,8 @@ jQuery(function($) {
 	//导航栏固定屏幕上方
 	$(window).scroll(function() {
 		var currentTop = ($(window).scrollTop()) + ($(window).innerHeight() / 2);
-		if (currentTop >= top + ($(window).innerHeight() / 2) && currentTop <= 6990 + ($(window).innerHeight() / 2)) {
+		// console.log(currentTop)
+		if (currentTop >= top + ($(window).innerHeight() / 2) && currentTop <= 6975 + ($(window).innerHeight() / 2)) {
 			$floorNav.css({
 				position: "fixed",
 				top: -20,

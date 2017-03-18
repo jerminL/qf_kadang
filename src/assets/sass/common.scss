@@ -15,6 +15,10 @@ body, a {
 	border-bottom: 1px solid #999;
 	float: left;
 
+	.container {
+		width: 1270px;
+		margin: 0 auto;
+	}
 	.logo {
 		float: left;
 
@@ -481,13 +485,13 @@ body, a {
 					text-decoration: underline;
 				}
 			}
-
-			.mod-copyright {
-				margin-top: 10px;
-				text-align: center;
-				color: #acacac;
-			}
 		}
+	}
+
+	.mod-copyright {
+		margin-top: 10px;
+		text-align: center;
+		color: #acacac;
 	}
 }
 #ftlinklist {

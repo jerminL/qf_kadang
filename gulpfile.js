@@ -28,7 +28,7 @@ gulp.task('clean', function(cb) {
 
 // 监视文件变动
 gulp.task('watch', function() {
-  gulp.watch(['./src/assets/js/*.js'], ['uglify'])
+  // gulp.watch(['./src/assets/js/*.js'], ['uglify'])
   gulp.watch(['./src/assets/sass/*.scss'], ['sass'])
 })
 

@@ -18,6 +18,7 @@
 	height: 7537px;
 	float: left;
 	width: 100%;
+	margin-top: 15px;
 	
 	/*container 第一屏*/
 	>.container {
@@ -299,13 +300,21 @@
 	/*第二屏 楼层导航栏*/
 	.floor-nav {
 		height: 46px;
-		padding: 20px 0 0 30px;
+		width: 100%;
+		/*padding: 20px 0 0 127px;*/
 		position: static;
 		top: 0px;
-		margin: 0 auto;
+		/*margin: 0 auto;*/
 		background-color: #fff;
-		width: 100%;
+		margin-top: 20px;
 
+		.floorCon {
+			height: 100%;
+			width: 1200px;
+			margin: 0 auto;
+
+		}
+	
 		.floorCon li {
 			width: 128px;
 			height: 46px;
@@ -318,7 +327,7 @@
 			cursor: pointer;
 		}
 
-		li:hover, #main .floor-nav .floorCon .current {
+		li:hover, li.current {
 			background-color: #e44715;
 			color: #fff;
 		}
