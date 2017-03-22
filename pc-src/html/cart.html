@@ -5,21 +5,67 @@
 		<title>购物车</title>
 		<link rel="stylesheet" href="../lib/css/reset.css" />
 		<link rel="stylesheet" href="../dist/css/common.css" />
-		<link rel="stylesheet" href="../dist/css/cart.css" />
+    <link rel="stylesheet" href="../dist/css/cart.css" />
+		<link rel="shortcut icon" href="../dist/css/img/onair.ico" />
 	</head>
 	
 	<body>
 		<div class="mini-container">
-			<div class="header">
+			<!-- <div class="header">
 		    <div class="lay-logo"> 
 		    	<a href="../index.html" class="logo-link" title="卡当网"> <img src="../img/cartLogo.png" alt="卡当网"> </a> 
 		    </div>
 		    <div class="cart-steps"></div>
-			</div>
-			<div class="main">
-		    <div class="part-upside">
-        	<span>现在<a id="J_Login" href="">登录</a>，购物车中的商品将永久保存<span>
+			</div> -->
+      <div id="header">
+        <div class="container">
+          <!-- <span class="logo"><a href="index.html" target="_self" title="卡当网"></a></span> -->
+          <div class="lay-logo"> 
+            <a href="../index.html" class="logo-link" title="卡当网"> <img src="../img/cartLogo.png" alt="卡当网"> </a> 
+          </div>
+          <div class="intro">
+            <ul class="intro-login">
+              <li>Hi，欢迎来到卡当网</li>
+              <li id="un"></li>
+              <li id="login"><a href="#" title="登录">登录</a></li>
+              <li id="sign"><a href="#" title="注册">注册</a></li>
+            </ul>
+            <!--我的卡当 导航栏-->
+            <ul class="intro-menu">
+              <li>
+                <a href="#" title="我的卡当">我的卡当<i class="icon"></i></a>
+                <ul class="select">
+                  <li><a href="#" title="我的订单">我的订单</a></li>
+                  <li><a href="#" title="我的优惠券">我的优惠券</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="html/cart.html" target="_blank" title="购物车"><i class="icon-cart"></i>购物车<i class="icon"></i></a>
+                <p class="select" style="width: 304px;left:80px;color:#999">您的购物车中暂无商品，赶快选择心爱的商品吧！</p>
+              </li>
+              <li>
+                <a href="#" title="手机版"><i class="icon-phone"></i>手机版</a>
+                <p class="select" style="left: 100px;width: 148px;height:188px;border: 0;padding: 0;"><img src="img/img-code.jpg"/></p>
+              </li>
+              <li>
+                <a href="#" title="我的收藏">我的收藏<i class="icon"></i></a>
+                <ul class="select" style="left: 240px;">
+                  <li><a href="#" title="收藏的商品">收藏的商品</a></li>
+                  <li><a href="#" title="收藏的店铺">收藏的店铺</a></li>
+                </ul>
+              </li>
+              <li><a href="#" title="在线客服">在线客服</a></li>
+              <li><a href="#" title="收藏卡当网">收藏卡当网</a></li>
+            </ul>
+          </div>
+          <!--搜索框-->
+          <!-- <div class="seach">
+            <input type="text" class="seach-input" placeholder="七夕情人节送女朋友什么？" />
+            <input type="submit" class="search-button"/>
+          </div> -->
         </div>
+      </div>
+			<div class="main">
 		    <div id="J_PartShop">
 		    	<!--商品表格-->
 	        <form method="post" id="J_FormCart">
@@ -97,7 +143,7 @@
 		    <!--版本信息-->
         <div id="footer" class="footer">
           <div class="lay-link">
-            <p class="mod-copyright">Copyright © 2006-2014 kadang.com 网上经营许可证号：浙B2-20140235</p>
+            <p class="mod-copyright">Copyright © 2016-2017 kadang.com 网上经营许可证号：粤B2-20140235</p>
           </div>
         </div>
 			</div>
