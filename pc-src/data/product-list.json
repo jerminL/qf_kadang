@@ -1,0 +1,131 @@
+[
+	{
+		"comId": "2017010011",
+		"comName": "单排扣牛仔外套",
+		"comInfo": "img/coat1.jpg",
+		"comPrice": "179.00",
+		"sales": 1313,
+		"isDelete": 1
+	},
+	{
+		"comId": "2017010012",
+		"comName": "猫头花纹棒球服",
+		"comInfo": "img/coat2.jpg",
+		"comPrice": "188.00",
+		"sales": 2020,
+		"isDelete": 1
+	},
+	{
+		"comId": "2017010013",
+		"comName": "爆红连帽风衣",
+		"comInfo": "img/coat3.jpg",
+		"comPrice": "165.00",
+		"sales": 3633,
+		"isDelete": 1
+	},
+	{
+		"comId": "2017010014",
+		"comName": "情侣外套 牛仔外套",
+		"comInfo": "img/coat4.jpg",
+		"comPrice": "152.00",
+		"sales": 5050,
+		"isDelete": 1
+	},
+	{
+		"comId": "2017010015",
+		"comName":"撞色拼接卫衣",
+		"comInfo":"img/coat5.jpg",
+		"comPrice":"136.00",
+		"sales": 1818,
+		"isDelete": 1
+	},
+	{
+		"comId": "2017010016",
+		"comName":"人气卫衣",
+		"comInfo":"img/coat6.jpg",
+		"comPrice":"172.00",
+		"sales":2525,
+		"isDelete": 1
+	},
+	{
+		"comId": "2017010017",
+		"comName":"长袖T恤",
+		"comInfo":"img/coat7.jpg",
+		"comPrice":"166.00",
+		"sales":6633,
+		"isDelete": 1
+	},
+	{
+		"comId": "2017010018",
+		"comName":"外套",
+		"comInfo":"img/coat8.jpg",
+		"comPrice":"145.00",
+		"sales":8822,
+		"isDelete": 1
+	},
+	{
+		"comId": "2017010019",
+		"comName":"牛仔外套加棉",
+		"comInfo":"img/coat9.jpg",
+		"comPrice":"179.00",
+		"sales":1313,
+		"isDelete": 1
+	},
+	{
+		"comId": "2017010021",
+		"comName":"竖条修身牛仔裤",
+		"comInfo":"img/jeans1.jpg",
+		"comPrice":"188.00",
+		"sales":2020,
+		"isDelete": 1
+	},
+	{
+		"comId": "2017010022",
+		"comInfo":"img/jeans2.jpg",
+		"comPrice":"165.00",
+		"sales":5533,
+		"comName":"破洞牛仔裤",
+		"isDelete": 1
+	},
+	{
+		"comId": "2017010023",
+		"comInfo":"img/jeans3.jpg",
+		"comPrice":"152.00",
+		"sales":5050,
+		"comName":"休闲运动裤",
+		"isDelete": 1
+	},
+	{
+		"comId": "2017010024",
+		"comInfo":"img/jeans4.jpg",
+		"comPrice":"136.00",
+		"sales":1818,
+		"comName":"休闲运动裤",
+		"isDelete": 1
+	},
+	{
+		"comId": "2017010025",
+		"comInfo":"img/jeans5.jpg",
+		"comPrice":"172.00",
+		"sales":2525,
+		"comName":"膝盖破洞牛仔裤",
+		"isDelete": 1
+	},
+	{
+		"comId": "2017010026",
+		"comInfo":"img/jeans6.jpgg",
+		"comPrice":"166.00",
+		"sales":1133,
+		"comName":"破洞牛仔裤",
+		"isDelete": 1
+	},
+	{
+		"comId": "2017010027",
+		"comInfo":"img/jeans7.jpg",
+		"comPrice":"145.00",
+		"sales":3322,
+		"comName":"休闲运动裤",
+		"isDelete": 1
+	}
+]
+
